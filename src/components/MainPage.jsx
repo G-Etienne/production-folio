@@ -20,7 +20,7 @@ function Main() {
         <div className={`mainBack ${theme + "main"}`}>
             {/* virtual screen in the site */}
             <Screen></Screen>
-            <div><Footer></Footer></div>
+            <Footer></Footer>
         </div>
     );
 }

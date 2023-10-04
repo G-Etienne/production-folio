@@ -719,11 +719,6 @@ template {
 .mainBack {
   height: 100vh;
 }
-.mainBack > div {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-}
 
 h1,
 h2,
@@ -2677,10 +2672,9 @@ p {
   }
 }
 .footer {
-  position: absolute;
+  position: relative;
   box-sizing: border-box;
   height: 215px;
-  bottom: 2px;
   width: 100%;
   min-width: 280px;
 }
@@ -2720,7 +2714,7 @@ p {
   border: 2px rgb(178, 178, 178) solid;
   width: 98%;
   margin: auto;
-  top: 0px;
+  top: 1%;
   height: 75%;
 }
 
