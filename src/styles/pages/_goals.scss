@@ -1,0 +1,189 @@
+//---------------------------------------------------------
+//utils
+@import "../utils/Mixins/mixinPositionPages";
+@import "../utils/variables";
+@import "../utils/Mixins/goalMixin";
+
+//-----------------------------------------------------------
+
+//rules for the image behind the text in a presentation bloc
+.backStoreFront{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    border-radius: 20px;
+}
+
+//main rules
+.goalMain {
+    height: 100%;
+    width: 100%;
+
+    //big title of the page
+    &__goalTitle {
+        position: relative;
+        display: block;
+        font-family: "Roboto Mono", monospace;
+        font-size: 40px;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 0px;
+
+        //dark theme
+        &.dark {
+            color: $fluo-color;
+        }
+    }
+
+    //contaienr with all the main page
+    &__goalContainer {
+        font-family: "Roboto Mono", monospace;
+        height: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+
+        //images in the objectivs blocks
+        &__image {
+            z-index: 12;
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+            border-radius: 20px 20px 0px 0px;
+
+            //dark theme
+            &.dark {
+                opacity: 0.8;
+            }
+        }
+
+        //titles for the objectivs blocks
+        &__title {
+            z-index: 12;
+            font-family: "Roboto Mono", monospace;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+
+            //dark theme
+            &.dark {
+                text-shadow: 0px 0px 5px black;
+            }
+        }
+
+        //fake button in the objectivs blocks
+        &__clic {
+            z-index: 12;
+            width: 50%;
+            margin: auto;
+            margin-top: 10%;
+            text-align: center;
+            font-size: 15px;
+
+            //dark theme
+            &.dark {
+                box-shadow: 0px 0px 5px $fluo-color;
+            }
+        }
+    }
+
+    //first objectiv block
+    &__firstGoal {
+        //mixin with the base for a block
+        @include styleElementObjectiv;
+
+        //hide part withe the text
+        &__textGoal {
+            z-index: 201;
+
+            //dark theme
+            &.dark {
+                color: $fluo-color;
+                text-shadow: none;
+            }
+        }
+    }
+
+    //second objectiv bloc
+    &__secondGoal {
+        //mixin with the base for a block
+        @include styleElementObjectiv;
+
+
+        //hide part withe the text
+        &__textGoal {
+            z-index: 201;
+            
+            //dark them
+            &.dark {
+                color: $fluo-color;
+                text-shadow: none;
+            }
+        }
+    }
+
+    //third objectiv block
+    &__thirdGoal {
+        //mixin with the base for a block
+        @include styleElementObjectiv;
+
+        
+
+        //hide text about the objectiv
+        &__textGoal {
+            z-index: 201;
+
+
+            //dark theme
+            &.dark {
+                color: $fluo-color;
+                text-shadow: none;
+            }
+        }
+    }
+}
+
+//---------------------------------------------------------
+//rules for the fake header
+.headerGoal {
+    position: relative;
+    z-index: 101;
+    height: 100%;
+    width: 99.5%;
+    margin: auto;
+    margin-top: 12px;
+}
+
+//**************************************************************************************
+//placing the page in the virtual screen
+.goalScreen {
+    @include positionPage;
+    height: 73.5%;
+    width: 97.5%;
+    margin-top: 1%;
+    margin-left: 4px;
+    & > img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+
+    //change the apparence of the scrool rod
+    &__main {
+        &::-webkit-scrollbar-track {
+            background: $secondary-color-about;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: darken($main-color-about, 30%);
+        }
+    }
+}

@@ -1,0 +1,380 @@
+//------------------------------------------------------
+//mixin position page
+@import "../utils/Mixins/mixinPositionPages";
+@import "../utils/variables";
+
+//------------------------------------------------------
+//style global
+.trainingsMain {
+    position: relative;
+    z-index: 105;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    //part for the web developpement trainings
+    &__web {
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        min-height: 650px;
+
+        //border under the text bloc
+        &__decorativSquare {
+            position: absolute;
+            z-index: 113;
+            bottom: -30px;
+            left: -30px;
+            box-shadow: 3px 3px 5px darken($color-main-trainings, 20%);
+            height: 30px;
+            width: 400px;
+            background-color: $color-main-trainings;
+
+            //dark mode
+            &.dark {
+                background-color: $fluo-color;
+                box-shadow: 3px 3px 5px $fluo-color;
+            }
+        }
+
+        //big web image
+        &__imageOne {
+            width: 25%;
+            object-fit: cover;
+            position: absolute;
+            z-index: 109;
+            top: 120px;
+            left: 15%;
+            border-radius: 50% 50% 50% 0%;
+            box-shadow: 3px 3px 5px darken($color-main-trainings, 30%);
+
+            //dark mode
+            &.dark {
+                border: 2px $fluo-color solid;
+                box-shadow: 3px 3px 5px $fluo-color;
+            }
+        }
+
+        //little web image
+        &__imageTwo {
+            width: 10%;
+            object-fit: cover;
+            position: absolute;
+            z-index: 111;
+            left: 12%;
+            top: 50px;
+            border-radius: 50%;
+            &.dark {
+                border: 2px $fluo-color solid;
+            }
+        }
+
+        //textes about the web training
+        &__textContainer {
+            position: relative;
+            z-index: 110;
+            box-sizing: border-box;
+            margin: auto;
+            margin-right: 13%;
+            border-radius: 0px 200px 200px 0px;
+            padding: 40px;
+            padding-top: 0px;
+            width: 50%;
+            border-left: 30px $color-main-trainings solid;
+            box-shadow: 3px 3px 5px darken($color-main-trainings, 20%);
+            color: darken($color-main-trainings, 30%);
+            background-color: $color-secondary-trainings;
+
+            //dakmode
+            &.dark {
+                background-color: $main-back-color;
+                border-left: 30px $fluo-color solid;
+                box-shadow: 3px 3px 5px $fluo-color;
+                color: $fluo-color;
+            }
+
+            //first title
+            & > h2 {
+                font-family: "Roboto Mono", monospace;
+                font-size: 33px;
+                width: 80%;
+            }
+
+            //formation type
+            & > h4 {
+                font-family: "Roboto Mono", monospace;
+                font-size: 20px;
+                width: 90%;
+            }
+
+            //center of training
+            &__center {
+                font-weight: bold;
+                width: 90%;
+            }
+
+            //explanation text
+            & > p {
+                line-height: 1.5;
+                width: 90%;
+            }
+        }
+
+        //decorativ bubulles in the web text
+        //big bubulle
+        &__decorativOne {
+            position: absolute;
+            z-index: 101;
+            top: 60px;
+            right: 13%;
+            height: 150px;
+            width: 150px;
+            box-shadow: 0px 0px 4px darken($color-main-trainings, 20%);
+
+            background: radial-gradient(
+                $color-main-trainings,
+                $color-secondary-trainings
+            );
+            border-radius: 50%;
+
+            //dark mode
+            &.dark {
+                box-shadow: 0px 0px 4px $fluo-color;
+                background: radial-gradient($fluo-color, $main-back-color);
+            }
+        }
+
+        //medium bubulle
+        &__decorativTwo {
+            position: absolute;
+            z-index: 113;
+            bottom: 50px;
+            right: -10px;
+            height: 80px;
+            width: 80px;
+            box-shadow: 0px 0px 4px darken($color-main-trainings, 20%);
+            background: radial-gradient(
+                $color-main-trainings,
+                $color-secondary-trainings
+            );
+            border-radius: 50%;
+
+            //dark mode
+            &.dark {
+                box-shadow: 0px 0px 4px $fluo-color;
+                background: radial-gradient($fluo-color, $main-back-color);
+            }
+        }
+
+        //small bubulle
+        &__decorativThree {
+            position: absolute;
+            z-index: 112;
+            bottom: 0px;
+            right: 60px;
+            height: 60px;
+            width: 60px;
+            box-shadow: 0px 0px 4px darken($color-main-trainings, 20%);
+            background: radial-gradient(
+                $color-main-trainings,
+                $color-secondary-trainings
+            );
+            border-radius: 50%;
+
+            //dark mode
+            &.dark {
+                box-shadow: 0px 0px 4px $fluo-color;
+                background: radial-gradient($fluo-color, $main-back-color);
+            }
+        }
+
+        //very small bubulle
+        &__decorativFour {
+            position: absolute;
+            z-index: 114;
+            bottom: -15px;
+            right: 130px;
+            height: 40px;
+            width: 40px;
+            box-shadow: 0px 0px 4px darken($color-main-trainings, 20%);
+            border-radius: 50%;
+
+            background: radial-gradient(
+                $color-main-trainings,
+                $color-secondary-trainings
+            );
+
+            //dark mode
+            &.dark {
+                box-shadow: 0px 0px 4px $fluo-color;
+                background: radial-gradient($fluo-color, $main-back-color);
+            }
+        }
+    }
+
+    //part about the carpenter carreer
+    &__carpenter {
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        margin: auto;
+        position: relative;
+        min-height: 500px;
+
+        //carpenter text
+        &__textContainer {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            flex-direction: column;
+            text-align: end;
+            padding: 30px;
+            position: absolute;
+            z-index: 101;
+            border-right: 25px $color-main-trainings solid;
+            box-shadow: -3px 3px 5px darken($color-main-trainings, 20%);
+            color: darken($color-main-trainings, 30%);
+            background-color: $color-secondary-trainings;
+            border-radius: 200px 0px 0px 200px;
+            width: 50%;
+            margin-left: 15%;
+            margin-top: 80px;
+
+            //dark mode
+            &.dark {
+                background-color: $main-back-color;
+                border-right: 25px $fluo-color solid;
+                box-shadow: -3px 3px 5px $fluo-color;
+                color: $fluo-color;
+            }
+
+            //main carpenter title
+            & > h2 {
+                font-family: "Roboto Mono", monospace;
+                width: 80%;
+                margin: none;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+            //trainings
+            & > h4 {
+                font-family: "Roboto Mono", monospace;
+                width: 90%;
+                margin-top: 15px;
+                margin-bottom: 0px;
+            }
+
+            //experience in this job
+            &__experience {
+                width: 90%;
+            }
+
+            //explanation text
+            & > p {
+                line-height: 1.5;
+                width: 90%;
+                margin-bottom: 0px;
+            }
+        }
+
+        //carpenter image
+        &__image {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            margin-top: 30px;
+
+            & > img {
+                width: 25%;
+                object-fit: cover;
+                border-radius: 50% 50% 0% 50%;
+                margin-right: 12%;
+                box-shadow: 3px 3px 5px darken($color-main-trainings, 20%);
+            }
+
+            //dark theme
+            &.dark {
+                & > img {
+                    box-sizing: border-box;
+                    border: 2px $fluo-color solid;
+                    box-shadow: 3px 3px 5px $fluo-color;
+                }
+            }
+        }
+
+        //text at the end of the page for good visual purpose
+        &__decorativSquare {
+            position: absolute;
+            z-index: 113;
+            right: -25px;
+            top: -14px;
+            height: 15px;
+            width: 300px;
+            background-color: $color-main-trainings;
+            &.dark {
+                background-color: $fluo-color;
+            }
+        }
+    }
+}
+//**************************************************************************************
+//placing the page in the virtual screen
+.trainingsScreen {
+    @include positionPage;
+    height: 72.5%;
+
+    //change the apparence of the scrool rod
+    &__main {
+        &::-webkit-scrollbar-track {
+            background: $secondary-color-about;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: darken($main-color-about, 30%);
+        }
+    }
+}
+
+//------------------------------------------------------
+//style for the back of the site
+
+//trainings page
+.trainingsScreen {
+    background-color: white;
+    margin-top: 0.8%;
+    margin-left: 3px;
+    width: 97.6%;
+
+    //back of the page
+    >img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    //dark theme
+    &.dark {
+        background-color: black;
+
+        //dark back of the page
+        &::after {
+            position: relative;
+            top: -80px;
+            display: block;
+            content: " ";
+            height: 100%;
+            width: 100%;
+            background-image: url("../../assets/Trainings/back-dark-trainings.jpg");
+            background-size: cover;
+            opacity: 0.5;
+        }
+    }
+}
+
+//------------------------------------------------------

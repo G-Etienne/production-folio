@@ -1,0 +1,14 @@
+//----------------------------------------------------
+//utils sass
+@import "../utils/variables";
+
+//----------------------------------------------------
+//bases footer
+.footer {
+    position: absolute;
+    box-sizing: border-box;
+    height: 215px;
+    width: 100%;
+    bottom: 1px;
+    min-width: 280px;
+}

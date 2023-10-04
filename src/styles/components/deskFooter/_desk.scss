@@ -1,0 +1,130 @@
+//---------------------------------------------------
+//import utils
+@import "../../utils/variables";
+@import "../../utils/Mixins/mixinFooter";
+
+//---------------------------------------------------
+//style copyright
+.copyright {
+    font-weight: bold;
+    z-index: 11;
+    position: absolute;
+    bottom: -15px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    &.darkCopyright {
+        color: $fluo-color;
+        text-shadow: 0px 0px 4px transparent;
+    }
+}
+
+//---------------------------------------------------
+//styles desk
+.desk {
+    position: relative;
+    z-index: 10;
+    top: -5px;
+    height: 65%;
+    width: 60%;
+    margin: auto;
+    transform: perspective(150px) rotateX(5deg);
+    background-color: $main-color-desk;
+
+    //dark mode
+    &.darkDesk {
+        background-color: darken($main-color-desk, 20%);
+
+        &::after {
+            @include afterDesk(0.8);
+            rotate: 180deg;
+        }
+    }
+
+    &::after {
+        @include afterDesk(0.5);
+    }
+
+    //thickness of the desk
+    &__front {
+        position: relative;
+        z-index: 11;
+        top: -3px;
+        height: 9px;
+        width: 62.5%;
+        margin: auto;
+        background-color: darken($main-color-desk, 5%);
+        border-bottom: 1px black solid;
+
+        &::after {
+            @include afterDesk(0.3);
+        }
+
+        //dark mode
+        &.darkDeskFront {
+            background-color: darken($main-color-desk, 35%);
+        }
+    }
+
+    //under the desk top
+    &__underTop {
+        position: relative;
+        z-index: 10;
+        top: -3px;
+        height: 32%;
+        width: 60%;
+        background-color: darken($main-color-desk, 3%);
+        margin: auto;
+
+        &::after {
+            @include afterDesk(0.5);
+        }
+
+        //dark mode
+        &.darkUnderTop {
+            background-color: darken($main-color-desk, 35%);
+
+            &::after {
+                @include afterDesk(0.8);
+            }
+        }
+    }
+
+    &__drawer {
+        position: absolute;
+        height: 100%;
+        width: $size-width-drawer;
+        background-color: darken($main-color-desk, 3%);
+        margin-left: 33.33%;
+        border-left: 2px rgb(0, 0, 0, 0.7) solid;
+        border-right: 2px rgb(0, 0, 0, 0.7) solid;
+
+        &::after {
+            position: absolute;
+            top: 0px;
+            @include afterDesk(0.5);
+        }
+
+        //dark mode
+        &.darkDrawer {
+            background-color: darken($main-color-desk, 35%);
+            &::after {
+                @include afterDesk(0.8);
+            }
+        }
+
+        &__grip {
+            position: relative;
+            top: -18px;
+            z-index: 12;
+            height: $size-grip;
+            width: $size-grip;
+            background: linear-gradient(rgb(0, 0, 0, 0.5), grey);
+            margin: auto;
+            margin-top: 25px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px;
+        }
+    }
+}

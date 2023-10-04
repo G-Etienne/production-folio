@@ -1,0 +1,11 @@
+//--------------------------------------------------------------
+//import of the breakpoints
+@import "../map";
+
+//--------------------------------------------------------------
+//mixin to add media queries
+@mixin responsive($typeOne, $typeTwo) {
+    @media screen and (min-width: map-get($breakpoint, $typeOne)) and (max-width: map-get($breakpoint, $typeTwo)) {
+        @content;
+    }
+}

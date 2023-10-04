@@ -1,0 +1,26 @@
+//---------------------------------------------------------
+//import utils sass
+@import "../utils/variables";
+
+//---------------------------------------------------------
+//main rules for the screen
+.screen {
+    position: relative;
+    box-sizing: border-box;
+    border: 2px $border-screen solid;
+    width: 98%;
+    margin: auto;
+    top: 1%;
+    height: 75%;
+}
+
+//---------------------------------------------------------
+//white and dark theme
+.whitescreen {
+    box-shadow: 0px 0px 10px black;
+}
+
+.darkscreen {
+    border: 2px darken($border-screen, 15%) solid;
+    box-shadow: 0px 0px 25px lighten($main-back-color, 10%);
+}

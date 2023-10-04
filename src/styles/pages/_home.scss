@@ -1,0 +1,255 @@
+//--------------------------------------------------------------
+//style
+@import "../utils/Mixins/mixinPositionPages";
+@import "../utils/Mixins/mainMixin";
+@import "../utils/variables";
+@import "../utils/Keyframes/keyframesMenu";
+@import "../utils/Keyframes/keyframes";
+
+//--------------------------------------------------------------
+.homeMain {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    &__resumeContainer {
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+
+        //part asking to clic on the menu
+        &__interactifResume {
+            @include styleElementBlock(400px, 250px, 30px);
+            text-align: center;
+            box-sizing: border-box;
+            padding: 15px;
+            justify-content: space-between;
+            margin: 20px;
+            margin-left: 15%;
+            margin-bottom: 50px;
+            border-radius: 30px;
+            animation: popUp 500ms cubic-bezier(0.84, 0.02, 0.37, 1.04) both;
+
+            //dark theme
+            &.dark {
+                background: linear-gradient(
+                    43deg,
+                    darken($main-back-color, 20%),
+                    darken($fluo-color, 55%)
+                );
+
+                box-shadow: 0px 0px 7px lighten($fluo-color, 30%);
+                color: $fluo-color;
+                text-shadow: 0px 0px 20px black;
+                border: 1px $fluo-color solid;
+            }
+
+            //menu in this part
+            &__menu {
+                scale: 1.3;
+                border: 1px black solid;
+                height: 50px;
+                width: 50px;
+                min-height: 50px;
+                margin-top: 20px;
+                box-shadow: 0px 0px 7px black;
+                border-radius: 6px;
+                border: 1px rgb(94, 94, 94) solid;
+
+                background: radial-gradient(
+                    lighten($color-back-menu, 20%),
+                    darken($color-back-menu, 10%)
+                );
+
+                //dark theme
+                &.dark {
+                    box-shadow: 0px 0px 15px $fluo-color;
+                    border: 1px $fluo-color solid;
+
+                    background: radial-gradient(
+                        lighten($main-back-color, 15%),
+                        darken($main-back-color, 10%)
+                    );
+                }
+            }
+
+            //text welecom in my world
+            &__text {
+                margin-bottom: 30px;
+
+                & > h4 {
+                    font-size: 25px;
+                    margin-bottom: 0px;
+                }
+
+                & > p {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        //part of the classic resume
+        &__classicResume {
+            @include styleElementBlock(400px, 250px, 30px);
+            animation: popUp 500ms cubic-bezier(0.84, 0.02, 0.37, 1.04) both;
+            margin: 20px;
+            margin-left: 20%;
+
+            //dark theme
+            &.dark {
+                background: linear-gradient(
+                    43deg,
+                    darken($main-back-color, 20%),
+                    darken($fluo-color, 55%)
+                );
+
+                box-shadow: 0px 0px 7px lighten($fluo-color, 30%);
+                color: $fluo-color;
+                text-shadow: 0px 0px 20px black;
+                border: 1px $fluo-color solid;
+            }
+
+            //image of classics resumes
+            &__image {
+                & > img {
+                    margin-top: 20px;
+                    width: 100px;
+                    object-fit: contain;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 7px (darken($colo-cube-one, 50%));
+                }
+
+                //dark theme
+                &.dark > img {
+                    border: 1px $fluo-color solid;
+                }
+            }
+
+            &__text {
+                text-align: center;
+                font-size: 23px;
+                margin-bottom: 0px;
+
+                & > h4 {
+                    margin-bottom: 15px;
+                }
+
+                //link for the classic cv part
+                &__link {
+                    color: $color-text-clear;
+                    text-decoration: none;
+                    font-family: "Rubik", sans-serif;
+                    text-shadow: 0px 0px 7px white;
+                    font-weight: bold;
+
+                    //text in the link
+                    &__paragraphe {
+                        box-sizing: border-box;
+                        box-shadow: 0px 0px 10px black;
+                        border-radius: 50px;
+                        border: 3px darken($color-back-menu, 30%) solid;
+                        width: 200px;
+                        margin: auto;
+                        margin-bottom: 25px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 17px;
+                        padding: 15px;
+
+                        background: radial-gradient(
+                            lighten($color-back-menu, 20%),
+                            darken($color-back-menu, 10%)
+                        );
+
+                        //dark theme
+                        &.dark {
+                            border: 1px $fluo-color solid;
+                            background: darken($main-back-color, 10%);
+                            color: white;
+                            text-shadow: 0px 0px 7px black;
+                        }
+
+                        &:hover {
+                            box-shadow: 0px 0px 10px white;
+
+                            animation: scaleLinkAnim 200ms ease-in-out both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //part with the image and the text presentation
+    &__presentationContainer {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        //image of this part
+        &__image {
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+            margin: 20px;
+            margin-right: 15%;
+            border-radius: 30px;
+            height: 250px;
+            min-height: 250px;
+            width: 400px;
+            position: relative;
+            animation: popUp 500ms cubic-bezier(0.84, 0.02, 0.37, 1.04) both;
+
+            & > img {
+                padding-left: 20px;
+                height: 300px;
+                border-radius: 50%;
+                background: radial-gradient(white, transparent 60%);
+            }
+        }
+
+        //presentation text
+        &__text {
+            @include styleElementBlock(400px, 300px, 30px);
+            box-sizing: border-box;
+            margin: 20px;
+            margin-top: 0px;
+            margin-right: 20%;
+            min-height: 300px;
+            text-align: center;
+            padding: 15px;
+            line-height: 1.3;
+            font-size: 16px;
+            display: block;
+            animation: popUp 500ms cubic-bezier(0.84, 0.02, 0.37, 1.04) both;
+
+            //dark theme
+            &.dark {
+                background: linear-gradient(
+                    43deg,
+                    darken($main-back-color, 20%),
+                    darken($fluo-color, 55%)
+                );
+
+                box-shadow: 0px 0px 7px lighten($fluo-color, 30%);
+                color: $fluo-color;
+                text-shadow: 0px 0px 20px black;
+                border: 1px $fluo-color solid;
+            }
+
+            & > h4 {
+                margin-bottom: 30px;
+                margin-top: 10px;
+                font-size: 23px;
+            }
+        }
+    }
+}
+//**************************************************************************************
+//placing the page in the virtual screen
+.homeScreen {
+    @include positionPage;
+}

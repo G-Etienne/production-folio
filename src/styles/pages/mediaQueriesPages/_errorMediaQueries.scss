@@ -1,0 +1,201 @@
+//---------------------------------------------------------
+//BREAKPOINTS :
+// zero-px: 0px,
+// mobile-max: 480px,
+// small-devices-min: 481px,
+// small-devices-max: 767px,
+// small-tablet-min: 768px,
+// small-tablet-max: 991px,
+// large-tablet-and-laptop-min: 992px,
+// large-tablet-and-laptop-max: 1199px,
+// desktop-min: 1200px,
+// desktop-max: 1919px,
+// extra-large-screen-min: 1920px
+
+//------------------------------------------------------
+//utils
+@import "../../utils/Mixins/mixin-mediaqueries";
+@import "../../utils/variables";
+
+// large-tablet-and-laptop-max: 1199px,
+@media screen and (max-width: 1199px) {
+    .errorMain {
+        height: 400px;
+        & > img {
+            width: 70px;
+        }
+        & > h1 {
+            font-size: 60px;
+            margin-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        & > p {
+            font-size: 20px;
+        }
+
+        &__link {
+            margin-top: 20px;
+        }
+    }
+}
+
+// small-devices-max: 767px
+@media screen and (max-width: 767px) {
+    .errorMain {
+        & > h1 {
+            font-size: 35px;
+            margin-top: 25px;
+        }
+        & > p {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        &__link {
+            margin-top: 20px;
+            font-size: 15px;
+        }
+    }
+}
+
+// mobile-max: 480px,
+@media screen and (max-width: 480px) {
+    .errorMain {
+        width: 90%;
+        & > h1 {
+            font-size: 35px;
+            margin-top: 25px;
+        }
+        & > p {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        &__link {
+            margin-top: 20px;
+            font-size: 15px;
+        }
+    }
+}
+
+//------------------------------------------------------
+//media queries for placing the about page on the virtual screen
+.errorScreen {
+    &__headerPage {
+        height: 80px;
+    }
+
+    &__main.white {
+        height: 87%;
+    }
+
+    &__main.dark {
+        height: 87%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .errorScreen {
+        &__headerPage {
+            height: 80px;
+            width: 99.6%;
+            margin-left: 3px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .errorScreen {
+        &__headerPage {
+            width: 99.4%;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .errorScreen {
+        &__headerPage {
+            width: 99.1%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .errorScreen {
+        &__headerPage {
+            width: 98.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .errorScreen {
+        &__headerPage {
+            width: 98%;
+        }
+    }
+}
+
+@include responsive(mobile-max, small-tablet-min) {
+    .errorScreen {
+        &__headerPage {
+            height: 80px;
+        }
+
+        &__main.white {
+            height: 87%;
+        }
+
+        &__main.dark {
+            height: 87%;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .errorScreen {
+        &__headerPage {
+            height: 100px;
+        }
+
+        &__main.white {
+            height: 82%;
+        }
+
+        &__main.dark {
+            height: 82%;
+        }
+    }
+}
+@media screen and (max-height: 900px) {
+    .errorScreen {
+        height: 70%;
+
+        &__main.white {
+            height: 79%;
+        }
+
+        &__main.dark {
+            height: 79%;
+        }
+    }
+}
+@media screen and (max-height: 730px) {
+    .errorScreen {
+        &__main.white {
+            height: 75%;
+        }
+
+        &__main.dark {
+            height: 75%;
+        }
+    }
+}
+
+//------------------------------------------------------
+//rules for the place of the page in the virtual screen
+@media screen and (max-height: 700px) and (max-width: 300px) {
+    .errorScreen {
+        height: 68%;
+    }
+}

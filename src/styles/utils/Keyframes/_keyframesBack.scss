@@ -1,0 +1,294 @@
+//-----------------------------------------------------------
+//rotation of the animation in the center
+@keyframes rotateAnime {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+//-----------------------------------------------------------
+//rotation and scale of the first rod
+@keyframes rodMouve {
+    0% {
+        transform: rotate(0deg) scaleY(1);
+    }
+    25% {
+        transform: rotate(50deg) scaleY(1.5);
+    }
+    50% {
+        transform: rotate(25deg) scaleY(2);
+    }
+    75% {
+        transform: rotate(-10deg) scaleY(1.5);
+    }
+    100% {
+        transform: rotate(0deg) scaleY(1);
+    }
+}
+
+//-----------------------------------------------------------
+//rotation and scale of the last rod
+@keyframes lastRodMouve {
+    0% {
+        transform: rotate(-4deg) scaleX(0.92);
+    }
+    12% {
+        transform: rotate(-12.5deg) scaleX(0.65);
+    }
+    25% {
+        transform: rotate(-26.5deg) scaleX(0.4);
+    }
+    50% {
+        transform: rotate(0.5deg) scaleX(0.51);
+    }
+    75% {
+        transform: rotate(11.75deg) scaleX(0.85);
+    }
+    80% {
+        transform: rotate(7.8deg) scaleX(0.85);
+    }
+    100% {
+        transform: rotate(-3.5deg) scaleX(0.9);
+    }
+}
+
+//-----------------------------------------------------------
+//rotation and scale for the connected some dots
+@keyframes specialRodMouveone {
+    0% {
+        transform: rotate(180deg) scaleX(1.4);
+    }
+    12% {
+        transform: rotate(170deg) scaleX(0.81);
+    }
+    25% {
+        transform: rotate(165deg) scaleX(0.49);
+    }
+    50% {
+        transform: rotate(208deg) scaleX(0.74);
+    }
+    60% {
+        transform: rotate(208deg) scaleX(0.7);
+    }
+    80% {
+        transform: rotate(199deg) scaleX(0.93);
+    }
+    100% {
+        transform: rotate(180deg) scaleX(1.4);
+    }
+}
+
+@keyframes specialRodMouveTwo {
+    0% {
+        transform: rotate(29deg) scaleX(1.15);
+    }
+    12% {
+        transform: rotate(21deg) scaleX(1);
+    }
+    25% {
+        transform: rotate(19deg) scaleX(0.95);
+    }
+    50% {
+        transform: rotate(14deg) scaleX(1.082);
+    }
+    60% {
+        transform: rotate(16deg) scaleX(0.89);
+    }
+    80% {
+        transform: rotate(19.5deg) scaleX(0.91);
+    }
+    100% {
+        transform: rotate(28.5deg) scaleX(1.15);
+    }
+}
+@keyframes specialRodMouveThree {
+    0% {
+        transform: rotate(162deg) scaleX(1);
+    }
+    12% {
+        transform: rotate(114deg) scaleX(1.535);
+    }
+    25% {
+        transform: rotate(47deg) scaleX(1.6);
+    }
+    45% {
+        transform: rotate(94deg) scaleX(0.9);
+    }
+    50% {
+        transform: rotate(110deg) scaleX(0.9);
+    }
+    60% {
+        transform: rotate(139deg) scaleX(0.89);
+    }
+    70% {
+        transform: rotate(165deg) scaleX(0.52);
+    }
+    80% {
+        transform: rotate(177deg) scaleX(0.37);
+    }
+    100% {
+        transform: rotate(162deg) scaleX(1);
+    }
+}
+@keyframes specialRodMouveFour {
+    0% {
+        transform: rotate(-89deg) scaleX(0.65);
+    }
+    12% {
+        transform: rotate(-81deg) scaleX(0.5);
+    }
+    25% {
+        transform: rotate(-80deg) scaleX(0.5);
+    }
+    50% {
+        transform: rotate(-90deg) scaleX(0.45);
+    }
+
+    60% {
+        transform: rotate(-68deg) scaleX(0.5);
+    }
+
+    80% {
+        transform: rotate(-74deg) scaleX(0.5);
+    }
+    100% {
+        transform: rotate(-89deg) scaleX(0.65);
+    }
+}
+@keyframes specialRodMouveFive {
+    0% {
+        transform: rotate(40deg) scaleX(1.6);
+    }
+    12% {
+        transform: rotate(18deg) scaleX(1.35);
+    }
+    25% {
+        transform: rotate(-5deg) scaleX(1.35);
+    }
+
+    50% {
+        transform: rotate(15deg) scaleX(0.9);
+    }
+
+    60% {
+        transform: rotate(32deg) scaleX(0.75);
+    }
+
+    75% {
+        transform: rotate(59deg) scaleX(0.9);
+    }
+    100% {
+        transform: rotate(40deg) scaleX(1.6);
+    }
+}
+@keyframes specialRodMouveSix {
+    0% {
+        transform: rotate(17deg) scaleX(0.92);
+    }
+    12% {
+        transform: rotate(-8deg) scaleX(1.55);
+    }
+    18% {
+        transform: rotate(-16deg) scaleX(1.78);
+    }
+    25% {
+        transform: rotate(-27deg) scaleX(1.8);
+    }
+    35% {
+        transform: rotate(-20deg) scaleX(1.65);
+    }
+    50% {
+        transform: rotate(-15deg) scaleX(1.58);
+    }
+
+    60% {
+        transform: rotate(-7deg) scaleX(1.25);
+    }
+
+    75% {
+        transform: rotate(3deg) scaleX(0.69);
+    }
+    100% {
+        transform: rotate(17deg) scaleX(0.92);
+    }
+}
+
+@keyframes specialRodMouveSeven {
+    0% {
+        transform: rotate(84deg) scaleX(3.2);
+    }
+    12% {
+        transform: rotate(22deg) scaleX(2);
+    }
+    25% {
+        transform: rotate(-41deg) scaleX(0.6);
+    }
+
+    50% {
+        transform: rotate(1.5deg) scaleX(1.45);
+    }
+
+    62% {
+        transform: rotate(59deg) scaleX(1.65);
+    }
+    72% {
+        transform: rotate(105deg) scaleX(2.45);
+    }
+    75% {
+        transform: rotate(113deg) scaleX(2.82);
+    }
+    82% {
+        transform: rotate(106deg) scaleX(2.7);
+    }
+    100% {
+        transform: rotate(84deg) scaleX(3.2);
+    }
+}
+@keyframes specialRodMouveEight {
+    0% {
+        transform: rotate(-40deg) scaleX(1.75);
+    }
+
+    10% {
+        transform: rotate(-64deg) scaleX(0.95);
+    }
+    20% {
+        transform: rotate(-91deg) scaleX(0);
+    }
+    21% {
+        transform: rotate(90deg) scaleX(0);
+    }
+    25% {
+        transform: rotate(50deg) scaleX(0.22);
+    }
+    36% {
+        transform: rotate(65deg) scaleX(0);
+    }
+    37% {
+        transform: rotate(-75deg) scaleX(0);
+    }
+
+    50% {
+        transform: rotate(-98deg) scaleX(0.3);
+    }
+
+    57% {
+        transform: rotate(-59deg) scaleX(0.7);
+    }
+    65% {
+        transform: rotate(-44deg) scaleX(1.3);
+    }
+    75% {
+        transform: rotate(-30deg) scaleX(1.88);
+    }
+
+    85% {
+        transform: rotate(-32deg) scaleX(1.75);
+    }
+    100% {
+        transform: rotate(-39deg) scaleX(1.75);
+    }
+}

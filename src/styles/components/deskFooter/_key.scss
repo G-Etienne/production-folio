@@ -1,0 +1,40 @@
+//----------------------------------------------------
+//import utils
+@import "../../utils/variables";
+
+//----------------------------------------------------
+//main rules
+.key {
+    position: relative;
+    z-index: 11;
+    box-sizing: border-box;
+    height: 8px;
+    width: 8px;
+    font-size: 4px;
+    background-color: $color-key;
+    border: 1px $color-border-key solid;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 1px;
+    box-shadow: 0px 0px 1px black;
+
+    //derk theme
+    &.darkKey {
+        background-color: darken($color-key, 40%);
+        border: 1px darken($color-border-key, 15%) solid;
+        box-shadow: 0px 0px 1px $fluo-color;
+    }
+
+    //letters on the key
+    &__letter {
+        position: relative;
+        top: -2.5px;
+        text-align: center;
+
+        //derk theme
+        &.darkLetter {
+            color: $fluo-color;
+            text-shadow: 0px 0px 2px white;
+        }
+    }
+}

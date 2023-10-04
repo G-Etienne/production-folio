@@ -1,0 +1,31 @@
+//---------------------------------------------------------
+//BREAKPOINTS :
+// zero-px: 0px,
+// mobile-max: 480px,
+// small-devices-min: 481px,
+// small-devices-max: 767px,
+// small-tablet-min: 768px,
+// small-tablet-max: 991px,
+// large-tablet-and-laptop-min: 992px,
+// large-tablet-and-laptop-max: 1199px,
+// desktop-min: 1200px,
+// desktop-max: 1919px,
+// extra-large-screen-min: 1920px
+
+//------------------------------------------
+//small adaption
+@media screen and (max-width: 767px) {
+    .frenchFlag {
+        top: -10px;
+        right: 0px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .englishFlag {
+        top: -10px;
+        right: 0px;
+        width: 20px;
+        height: 20px;
+    }
+}

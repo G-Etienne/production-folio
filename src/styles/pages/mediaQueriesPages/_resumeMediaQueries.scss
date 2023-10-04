@@ -1,0 +1,449 @@
+//---------------------------------------------------------
+//BREAKPOINTS :
+// zero-px: 0px,
+// mobile-max: 480px,
+// small-devices-min: 481px,
+// small-devices-max: 767px,
+// small-tablet-min: 768px,
+// small-tablet-max: 991px,
+// large-tablet-and-laptop-min: 992px,
+// large-tablet-and-laptop-max: 1199px,
+// desktop-min: 1200px,
+// desktop-max: 1919px,
+// extra-large-screen-min: 1920px
+
+//---------------------------------------------------------
+//utils
+@import "../../utils/variables";
+@import "../../utils/Mixins/mixin-mediaqueries";
+
+//under 1199px
+@media screen and (max-width: 1199px) {
+    .resumeMain {
+        //classic resume part
+        &__resumeContainer {
+            //text part
+            &__textContainer {
+                & > h2 {
+                    font-size: 30px;
+                    margin-bottom: 0px;
+                }
+                & > p {
+                    font-size: 16px;
+                    margin-right: 30px;
+                }
+
+                //links part
+                & > div {
+                    width: 100%;
+                    flex-direction: column;
+
+                    & > a {
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+
+        //recommendation part
+        &__recommendationContainer {
+            //text part
+            &__textContainer {
+                & > h2 {
+                    font-size: 30px;
+                }
+                & > p {
+                    font-size: 16px;
+                }
+
+                //links part
+                & > div {
+                    width: 100%;
+                    flex-direction: column;
+
+                    & > a {
+                        margin: 0px;
+                        margin-top: 20px;
+                        margin-left: 70px;
+                    }
+                }
+            }
+        }
+    }
+
+    //----------------------------------------------------------------
+    //full screen rules
+    .bigScreenContainer {
+        //image displayed for the full screen mode
+        & > img {
+            width: 80%;
+            margin-top: 100px;
+        }
+    }
+}
+
+//under 991px
+@media screen and (max-width: 991px) {
+    .resumeMain {
+        //classic resume part
+        &__resumeContainer {
+            flex-direction: column;
+            align-items: center;
+
+            //illustration of the classic resume
+            &__illustration {
+                top: 0px;
+                right: 0px;
+                margin: auto;
+                width: 200px;
+
+                & > img {
+                    border-radius: 10px;
+                    margin-bottom: 20px;
+                    margin-top: 50px;
+                }
+            }
+
+            //text part
+            &__textContainer {
+                left: 0px;
+                padding-left: 10px;
+                text-align: center;
+                width: 70%;
+
+                //dark theme
+                &.dark {
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                &::after {
+                    display: none;
+                }
+
+                //text
+                & > h2 {
+                    width: 85%;
+                    margin: auto;
+                    margin-top: 20px;
+                }
+                & > p {
+                    width: 85%;
+                    margin: auto;
+                }
+
+                //links part
+                & > div {
+                    width: 85%;
+                    margin: auto;
+                    align-items: center;
+                    margin-top: 30px;
+                    & > a {
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+
+        //recommendation part
+        &__recommendationContainer {
+            align-items: center;
+            flex-direction: column;
+            top: 200px;
+
+            //illustration of the recommendation part
+            &__illustration {
+                top: 0px;
+                left: 0px;
+                margin: auto;
+                width: 200px;
+
+                & > img {
+                    border-radius: 10px;
+                    margin-bottom: 20px;
+                    margin-top: 50px;
+                }
+            }
+
+            //text
+            &__textContainer {
+                top: 0px;
+                left: 0px;
+                padding: 0px;
+                padding-bottom: 30px;
+                text-align: center;
+                margin: auto;
+                width: 70%;
+
+                & > h2 {
+                    width: 85%;
+                    margin-top: 20px;
+                }
+                & > p {
+                    width: 85%;
+                }
+
+                //links part
+                & > div {
+                    width: 85%;
+                    align-items: center;
+                    margin-top: 30px;
+                    width: 100%;
+
+                    & > a {
+                        margin: auto;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    //----------------------------------------------------------------
+    //full screen rules
+    .bigScreenContainer {
+        //cross buttom
+        &__cross {
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            height: 30px;
+            width: 30px;
+            border-radius: 5px;
+        }
+
+        //image displayed for the full screen mode
+        & > img {
+            width: 90%;
+            margin-top: 50px;
+        }
+    }
+
+    //informative message
+    .message {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+}
+
+// under 480px
+@media screen and (max-width: 480px) {
+    .resumeMain {
+        //classic resume part
+        &__resumeContainer {
+            //illustration of the classic resume
+            &__illustration {
+                width: 50%;
+            }
+
+            //text part
+            &__textContainer {
+                width: 90%;
+
+                & > h2 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                & > p {
+                    font-size: 15px;
+                }
+
+                //links part
+                & > div {
+                    & > a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        //recommendation part
+        &__recommendationContainer {
+            top: 130px;
+
+            //illustration of the recommendation part
+            &__illustration {
+                width: 50%;
+            }
+
+            //text part
+            &__textContainer {
+                width: 90%;
+                & > h2 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                & > p {
+                    font-size: 15px;
+                }
+
+                //links part
+                & > div {
+                    & > a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    //----------------------------------------------------------------
+    //full screen rules
+    .bigScreenContainer {
+        //image displayed for the full screen mode
+        & > img {
+            width: 95%;
+        }
+    }
+
+    //informative message
+    .message {
+        width: 75%;
+        font-size: 15px;
+    }
+}
+
+//------------------------------------------------------
+//media queries for placing the about page onn the virtual screen
+
+@media screen and (max-width: 1100px) {
+    .resumeScreen {
+        &__headerPage {
+            width: 99.6%;
+            margin-left: 3px;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .resumeScreen {
+        width: 97%;
+        margin-top: 1.7%;
+
+        &__headerPage {
+            width: 99.4%;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .resumeScreen {
+        margin-top: 2.8%;
+        width: 96.5%;
+        &__headerPage {
+            width: 99.1%;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .resumeScreen {
+        margin-top: 3%;
+
+        &__headerPage {
+            width: 98.5%;
+        }
+    }
+}
+
+@include responsive(mobile-max, small-tablet-min) {
+    .resumeScreen {
+        &__headerPage {
+            height: 80px;
+        }
+
+        &__main.white {
+            height: 87%;
+        }
+
+        &__main.dark {
+            height: 87%;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .resumeScreen {
+        &__headerPage {
+            height: 80px;
+            margin-bottom: 30px;
+        }
+
+        &__main.white {
+            height: 82%;
+        }
+
+        &__main.dark {
+            height: 82%;
+        }
+    }
+}
+@media screen and (max-height: 900px) {
+    .resumeScreen {
+        height: 68%;
+        margin-left: 3px;
+        margin-top: 1%;
+
+        &__main.white {
+            height: 79%;
+        }
+
+        &__main.dark {
+            height: 79%;
+        }
+    }
+}
+@media screen and (max-height: 730px) {
+    .resumeScreen {
+        height: 69%;
+        margin-top: 0.9%;
+
+        &__main.white {
+            height: 75%;
+        }
+
+        &__main.dark {
+            height: 75%;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .resumeScreen {
+        width: 95%;
+        height: 68%;
+        margin-top: 4.5%;
+
+        &__headerPage {
+            width: 98%;
+        }
+        &__main {
+            overflow-x: hidden;
+        }
+    }
+}
+
+//------------------------------------------------------
+//rules for the place of the page in the virtual screen
+//this rules are for some type of screens
+@media screen and (max-height: 700px) and (max-width: 300px) {
+    .resumeScreen {
+        height: 68%;
+    }
+}
+
+//special rules for placing screen
+@media screen and (max-height: 700px) and (max-width: 400px) {
+    .resumeScreen {
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-height: 900px) and (max-width: 450px) {
+    .resumeScreen {
+        margin-top: 3.5%;
+    }
+}

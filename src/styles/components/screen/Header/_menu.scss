@@ -1,0 +1,257 @@
+//-------------------------------------------------
+//import utils
+@import "../../../utils/variables";
+@import "../../../utils/Keyframes/keyframesMenu";
+
+//-------------------------------------------------
+//style for the menu
+.menu {
+    //logo in the center of the menu
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__topRod {
+            position: relative;
+            top: -2px;
+            width: 20px;
+            height: 3px;
+            background-color: $color-rod-menu;
+
+            //dark theme
+            &.dark {
+                background-color: $color-rod-menu-dark;
+            }
+        }
+
+        &__bottomRod {
+            position: relative;
+            top: 2px;
+            width: 20px;
+            height: 3px;
+            background-color: $color-rod-menu;
+
+            //dark theme
+            &.dark {
+                background-color: $color-rod-menu-dark;
+            }
+        }
+
+        //when the menu is open
+        &__open {
+            z-index: 222;
+            &__topRod {
+                position: relative;
+                top: 1.5px;
+                width: 20px;
+                height: 3px;
+                background-color: $color-rod-menu;
+                rotate: 45deg;
+
+                //dark theme
+                &.dark {
+                    background-color: $color-rod-menu-dark;
+                    z-index: 221;
+                }
+            }
+
+            &__bottomRod {
+                position: relative;
+                top: -1.5px;
+                width: 20px;
+                height: 3px;
+                background-color: $color-rod-menu;
+                rotate: -45deg;
+
+                //dark theme
+                &.dark {
+                    background-color: $color-rod-menu-dark;
+                    z-index: 221;
+                }
+            }
+        }
+    }
+
+    //menu button
+    &__container {
+        cursor: pointer;
+        position: relative;
+        z-index: 221;
+        height: 50px;
+        width: 50px;
+        border: 1px grey solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-radius: 6px;
+        box-shadow: 0px 0px 7px black;
+
+        background: radial-gradient(
+            lighten($color-back-menu, 20%),
+            darken($color-back-menu, 10%)
+        );
+
+        &:hover {
+            animation: scaleMenuAnim 300ms cubic-bezier(0.7, 2.05, 0.57, 0.63)
+                both;
+
+            box-shadow: 0px 0px 15px black;
+        }
+
+        //dark theme
+        &.dark {
+            border: 1px $fluo-color solid;
+            box-shadow: 0px 0px 15px $fluo-color;
+
+            background: radial-gradient(
+                lighten($main-back-color, 30%),
+                darken($main-back-color, 10%)
+            );
+
+            &:hover {
+                animation: scaleMenuAnim 100ms ease-in-out both;
+                box-shadow: 0px 0px 25px $fluo-color;
+            }
+        }
+
+        //menu button
+        &__open {
+            font-family: "Rubik", sans-serif;
+            cursor: pointer;
+            position: relative;
+            z-index: 221;
+            height: 50px;
+            width: 50px;
+            border: 1px grey solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-left: 10px;
+            margin-top: 10px;
+            border-radius: 6px;
+            animation: mouveMenu 300ms ease-in-out both;
+            box-shadow: 0px 0px 7px black;
+
+            background: radial-gradient(
+                lighten($color-back-menu, 20%),
+                darken($color-back-menu, 10%)
+            );
+
+            //dark theme
+            &.dark {
+                border: 1px $fluo-color solid;
+                box-shadow: 0px 0px 15px $fluo-color;
+
+                background: radial-gradient(
+                    lighten($main-back-color, 30%),
+                    darken($main-back-color, 10%)
+                );
+            }
+        }
+
+        //boxe who contains the links when the menu is open
+        &__links {
+            box-sizing: border-box;
+            position: absolute;
+            top: 55px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            padding: 3px;
+            margin-top: 5px;
+            margin-left: 130px;
+            border: 4px darken($color-back-menu, 30%) solid;
+            max-height: 400px;
+            width: 250px;
+            flex-wrap: wrap;
+            animation: Apear 400ms 100ms ease-in-out both;
+
+            background: radial-gradient(
+                lighten($color-back-menu, 20%),
+                darken($color-back-menu, 10%)
+            );
+
+            //dark theme
+            &.dark {
+                border: 2px $fluo-color solid;
+                animation: Apear 400ms 100ms ease-in-out both;
+
+                background: radial-gradient(
+                    lighten($main-back-color, 15%),
+                    darken($main-back-color, 10%)
+                );
+            }
+        }
+        //for rules on all links
+        &__link {
+            margin-top: 15px;
+            &:hover {
+                animation: scaleMenuAnim 300ms
+                    cubic-bezier(0.7, 2.05, 0.57, 0.63) both;
+            }
+
+            //block with the links logos
+            &__block {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30px;
+                width: 30px;
+                margin: auto;
+                border-radius: 50%;
+                box-shadow: 0px 0px 7px grey;
+                border: 1px grey solid;
+                color: $color-back-menu;
+
+                background: linear-gradient(
+                    43deg,
+                    $colo-cube-one,
+                    $colo-cube-two
+                );
+
+                //dark theme
+                &.dark {
+                    border: 1px $fluo-color solid;
+                    box-shadow: 0px 0px 15px $fluo-color;
+                    color: $fluo-color;
+
+                    background: linear-gradient(
+                        43deg,
+                        darken($main-back-color, 10%),
+                        darken($fluo-color, 40%)
+                    );
+                }
+            }
+
+            //texte of the links
+            &__text {
+                text-decoration: none;
+                color: rgb(46, 46, 46);
+                margin-top: 5px;
+                animation: Apear 400ms 100ms ease-in-out both;
+                font-weight: bold;
+                text-shadow: 0px 0px 5px white;
+
+                //dark theme
+                &.dark {
+                    color: lighten($fluo-color, 10%);
+                    text-shadow: 0px 0px 5px $main-back-color;
+                }
+            }
+        }
+
+        //rules for the menu links
+        &__linkAll {
+            text-decoration: none;
+        }
+    }
+}

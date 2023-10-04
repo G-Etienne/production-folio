@@ -1,0 +1,311 @@
+//---------------------------------------------------------
+//BREAKPOINTS :
+// zero-px: 0px,
+// mobile-max: 480px,
+// small-devices-min: 481px,
+// small-devices-max: 767px,
+// small-tablet-min: 768px,
+// small-tablet-max: 991px,
+// large-tablet-and-laptop-min: 992px,
+// large-tablet-and-laptop-max: 1199px,
+// desktop-min: 1200px,
+// desktop-max: 1919px,
+// extra-large-screen-min: 1920px
+
+//---------------------------------------------------------
+//utils
+@import "../../utils/variables";
+@import "../../utils/Mixins/mixin-mediaqueries";
+
+//------------------------------------------------------
+//between 767px and 1199px
+@include responsive(small-devices-max, large-tablet-and-laptop-max) {
+    .homeMain {
+        width: 70%;
+        margin: auto;
+        height: 1100px;
+        flex-direction: column-reverse;
+        position: relative;
+        top: 0px;
+
+        //part of resumes presentation
+        &__resumeContainer {
+            position: relative;
+            width: 100%;
+            height: 50%;
+
+            &__interactifResume {
+                margin: auto;
+                margin-top: 30px;
+            }
+
+            &__classicResume {
+                margin: auto;
+                margin-top: 30px;
+            }
+        }
+
+        //part of etienne presentation
+        &__presentationContainer {
+            width: 100%;
+            height: 100%;
+
+            &__image {
+                margin: auto;
+                & > img {
+                    height: 150px;
+                    margin-bottom: 0px;
+                    position: relative;
+                    top: 50px;
+                }
+            }
+
+            &__text {
+                margin: auto;
+                margin-top: 0px;
+            }
+        }
+
+        //part to show the animation at the end of the scrool rod
+        &__divMobileAnimShow {
+            height: 1000px;
+            width: 70%;
+            position: absolute;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .homeMain {
+        width: 100%;
+        margin: auto;
+        height: 1100px;
+        flex-direction: column-reverse;
+        position: relative;
+        top: 180px;
+
+        //part of the resumes presentation
+        &__resumeContainer {
+            width: 100%;
+            height: 70%;
+            margin: auto;
+
+            &__interactifResume {
+                text-align: center;
+                width: 80%;
+                margin: auto;
+                margin-top: 30px;
+
+                &__text {
+                    margin-bottom: 0px;
+                }
+            }
+
+            &__classicResume {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                width: 80%;
+                margin: auto;
+                margin-top: 30px;
+
+                &__image {
+                    margin-top: 20px;
+                }
+
+                &__text {
+                    position: relative;
+                    top: -10px;
+                }
+            }
+        }
+
+        //part of the etienne presentation
+        &__presentationContainer {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__image {
+                width: 80%;
+                margin: auto;
+                margin-bottom: 30px;
+
+                & > img {
+                    height: 150px;
+                    margin-bottom: 0px;
+                    position: relative;
+                    top: 50px;
+                    margin: auto;
+                }
+            }
+
+            &__text {
+                width: 80%;
+                height: 100%;
+                margin: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+        }
+
+        //part to she the animation (star)
+        &__divMobileAnimShow {
+            height: 1000px;
+            width: 70%;
+            position: absolute;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .homeMain {
+        position: relative;
+        top: 150px;
+
+        //part of the etienne presentation
+        &__presentationContainer {
+            &__text {
+                height: 480px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                & > p {
+                    font-size: 17px;
+                }
+
+                & > h4 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .homeMain {
+        position: relative;
+        top: 200px;
+
+        //part of the resumes presentation
+        &__resumeContainer {
+            &__interactifResume {
+                &__text {
+                    & > p {
+                        font-size: 15px;
+                    }
+
+                    & > h4 {
+                        font-size: 20px;
+                    }
+                }
+            }
+            &__classicResume {
+                &__text {
+                    font-size: 20px;
+
+                    &__link__paragraphe {
+                        padding: 7px;
+                        font-size: 15px;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+        //part of the etienne presentation
+        &__presentationContainer {
+            &__text {
+                & > h4 {
+                    font-size: 20px;
+                }
+
+                & > p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+//------------------------------------------------------
+//rules for the place of the pages
+.homeScreen {
+    &__headerPage {
+        height: 80px;
+    }
+
+    &__main.white {
+        height: 87%;
+    }
+
+    &__main.dark {
+        height: 87%;
+    }
+}
+
+@include responsive(mobile-max, small-tablet-min) {
+    .homeScreen {
+        &__headerPage {
+            height: 80px;
+        }
+
+        &__main.white {
+            height: 87%;
+        }
+
+        &__main.dark {
+            height: 87%;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .homeScreen {
+        &__headerPage {
+            height: 100px;
+        }
+
+        &__main.white {
+            height: 82%;
+        }
+
+        &__main.dark {
+            height: 82%;
+        }
+    }
+}
+@media screen and (max-height: 900px) {
+    .homeScreen {
+        height: 70%;
+
+        &__main.white {
+            height: 80%;
+        }
+
+        &__main.dark {
+            height: 80%;
+        }
+    }
+}
+@media screen and (max-height: 730px) {
+    .homeScreen {
+        &__main.white {
+            height: 75%;
+        }
+
+        &__main.dark {
+            height: 75%;
+        }
+    }
+}
+
+//------------------------------------------------------
+//rules for the place of the page in the virtual screen
+@media screen and (max-height: 700px) and (max-width: 300px) {
+    .homeScreen {
+        height: 68%;
+    }
+}

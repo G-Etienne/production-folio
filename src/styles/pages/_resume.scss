@@ -1,0 +1,422 @@
+//------------------------------------------------------------
+//utils
+@import "../utils//variables";
+@import "../utils/Mixins/mixinPositionPages";
+@import "../utils/Keyframes/keyframes";
+//------------------------------------------------------------
+//main part of the page
+
+.resumeMain {
+    width: 100%;
+
+    //resume part
+    &__resumeContainer {
+        margin: auto;
+        height: 600px;
+        min-height: 600px;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+
+        //illustration of the resume
+        &__illustration {
+            width: 350px;
+            margin-left: 100px;
+            position: relative;
+            z-index: 201;
+            top: 20px;
+
+            //dark theme
+            &.dark {
+                & > img {
+                    border: 1px black solid;
+                    box-shadow: 0px 0px 3px $fluo-color;
+                }
+            }
+
+            //image of the resume
+            & > img {
+                cursor: pointer;
+                width: 100%;
+                border-radius: 30px;
+                box-shadow: 0px 0px 5px black;
+
+                &:hover {
+                    animation: scaleLinkAnim 300ms ease-in-out both;
+                    box-shadow: 0px 0px 10px black;
+                }
+            }
+        }
+
+        //textes of the resume part
+        &__textContainer {
+            position: relative;
+            z-index: 200;
+            left: -150px;
+            width: 40%;
+            height: 400px;
+            background: linear-gradient(43deg, #ff4500, #ffcc00);
+            border-radius: 30px;
+            padding-left: 200px;
+            box-shadow: 0px 0px 5px black;
+            text-shadow: 0px 0px 3px white;
+            font-weight: bold;
+
+            //dar theme
+            &.dark {
+                box-shadow: 0px 0px 5px $fluo-color;
+                border: 1px $fluo-color solid;
+                color: $fluo-color;
+                text-shadow: none;
+
+                background: linear-gradient(
+                    43deg,
+                    darken($main-back-color, 20%),
+                    darken($fluo-color, 55%)
+                );
+
+                //links part
+                & > div {
+                    & > a {
+                        color: $fluo-color;
+                        text-shadow: none;
+                        border: 1px $fluo-color solid;
+                        box-shadow: 0px 0px 3px $fluo-color;
+
+                        background: linear-gradient(
+                            43deg,
+                            darken($main-back-color, 20%),
+                            darken($fluo-color, 55%)
+                        );
+
+                        &:hover {
+                            animation: scaleLinkAnim 300ms ease-in-out both;
+                            box-shadow: 0px 0px 10px $fluo-color;
+                        }
+                    }
+                }
+
+                //rod at the bottom of the text container
+                &::after {
+                    position: absolute;
+                    bottom: -0px;
+                    left: -50px;
+                    display: block;
+                    content: " ";
+                    width: 75%;
+                    border-bottom: 10px $fluo-color solid;
+                }
+            }
+
+            //rod at the bottom of the text container
+            &::after {
+                position: absolute;
+                bottom: -0px;
+                left: -50px;
+                display: block;
+                content: " ";
+                width: 75%;
+                border-bottom: 10px black solid;
+            }
+
+            //title of the text part
+            & > h2 {
+                font-size: 40px;
+                font-family: "Source Sans 3", sans-serif;
+            }
+
+            //text
+            & > p {
+                font-size: 20px;
+                font-family: "Source Sans 3", sans-serif;
+            }
+
+            //links part
+            & > div {
+                display: flex;
+                & > a {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: "Source Sans 3", sans-serif;
+                    text-decoration: none;
+                    color: black;
+                    text-shadow: 0px 0px 3px white;
+                    margin: 20px;
+                    margin-left: 0px;
+                    width: 150px;
+                    text-align: center;
+                    padding: 10px;
+                    border-radius: 15px;
+                    box-shadow: 0px 0px 3px black;
+                    margin-top: 50px;
+                    border: 1px rgb(94, 94, 94) solid;
+
+                    background: radial-gradient(
+                        lighten(#eaeaea, 20%),
+                        darken(#eaeaea, 10%)
+                    );
+
+                    &:hover {
+                        animation: scaleLinkAnim 300ms ease-in-out both;
+                        box-shadow: 0px 0px 10px white;
+                    }
+                }
+            }
+        }
+    }
+
+    //recommendation Letter part
+    &__recommendationContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: auto;
+        height: 500px;
+        width: 100%;
+        position: relative;
+        top: 0px;
+
+        //image of the recommendation part
+        &__illustration {
+            width: 350px;
+            margin-right: 100px;
+            position: relative;
+            z-index: 201;
+            left: -40px;
+            top: -70px;
+
+            //dark theme
+            &.dark {
+                //image of the recommendation part
+                & > img {
+                    border: 1px black solid;
+                    box-shadow: 0px 0px 3px $fluo-color;
+                }
+            }
+
+            //image of the recommendation part
+            & > img {
+                cursor: pointer;
+                width: 100%;
+                border-radius: 30px;
+                box-shadow: 0px 0px 5px black;
+
+                &:hover {
+                    animation: scaleLinkAnim 300ms ease-in-out both;
+                    box-shadow: 0px 0px 10px black;
+                }
+            }
+        }
+
+        //textes of the recommendation part
+        &__textContainer {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 200;
+            top: -50px;
+            left: 100px;
+            width: 40%;
+            height: 500px;
+            background: linear-gradient(43deg, #ff4500, #ffcc00);
+            border-radius: 30px;
+            padding-right: 100px;
+            box-shadow: 0px 0px 5px black;
+            text-shadow: 0px 0px 3px white;
+
+            //dark theme
+            &.dark {
+                box-shadow: 0px 0px 5px $fluo-color;
+                border: 1px $fluo-color solid;
+                color: $fluo-color;
+                text-shadow: none;
+
+                background: linear-gradient(
+                    43deg,
+                    darken($main-back-color, 20%),
+                    darken($fluo-color, 55%)
+                );
+
+                //links part
+                & > div {
+                    & > a {
+                        color: $fluo-color;
+                        text-shadow: none;
+                        border: 1px $fluo-color solid;
+                        box-shadow: 0px 0px 3px $fluo-color;
+
+                        background: linear-gradient(
+                            43deg,
+                            darken($main-back-color, 20%),
+                            darken($fluo-color, 55%)
+                        );
+
+                        &:hover {
+                            animation: scaleLinkAnim 300ms ease-in-out both;
+                            box-shadow: 0px 0px 10px $fluo-color;
+                        }
+                    }
+                }
+            }
+
+            //title
+            & > h2 {
+                font-size: 40px;
+                width: 70%;
+                font-family: "Source Sans 3", sans-serif;
+                margin-bottom: 0px;
+            }
+
+            //text
+            & > p {
+                font-size: 20px;
+                width: 70%;
+                font-family: "Source Sans 3", sans-serif;
+                margin-bottom: 0px;
+            }
+
+            //links part
+            & > div {
+                width: 70%;
+                display: flex;
+
+                & > a {
+                    cursor: pointer;
+                    font-family: "Source Sans 3", sans-serif;
+                    text-decoration: none;
+                    color: black;
+                    text-shadow: 0px 0px 3px white;
+                    margin: 20px;
+                    margin-left: 0px;
+                    width: 150px;
+                    text-align: center;
+                    padding: 10px;
+                    border-radius: 15px;
+                    box-shadow: 0px 0px 3px black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 30px;
+                    position: relative;
+                    z-index: 205;
+                    border: 1px rgb(94, 94, 94) solid;
+
+                    background: radial-gradient(
+                        lighten(#eaeaea, 20%),
+                        darken(#eaeaea, 10%)
+                    );
+
+                    &:hover {
+                        animation: scaleLinkAnim 300ms ease-in-out both;
+                        box-shadow: 0px 0px 10px white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//----------------------------------------------------------------
+//full screen rules
+.bigScreenContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #eaeaea;
+    top: 0px;
+    box-sizing: border-box;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    padding-bottom: 100px;
+
+    //dark theme
+    &.dark {
+        background-color: darken($main-back-color, 10%);
+    }
+
+    //cross buttom
+    &__cross {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        height: 50px;
+        width: 50px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px black;
+        border: 1px black solid;
+        background: linear-gradient(43deg, #ff4500, #ffcc00);
+        cursor: pointer;
+
+        &:hover {
+            animation: scaleLinkAnim 150ms ease-in-out both;
+            box-shadow: none;
+        }
+
+        //dark theme
+        &.dark {
+            box-shadow: 0px 0px 15px $fluo-color;
+            border: 1px $fluo-color solid;
+            color: $fluo-color;
+
+            background: radial-gradient(
+                lighten($main-back-color, 15%),
+                darken($main-back-color, 10%)
+            );
+        }
+    }
+
+    //image displayed for the full screen mode
+    & > img {
+        width: 50%;
+        margin-top: 100px;
+    }
+}
+
+//advertissement message
+.message {
+    font-size: 30px;
+    &.dark {
+        color: $fluo-color;
+    }
+}
+
+//**************************************************************************************
+//placing the page in the virtual screen
+.resumeScreen {
+    >img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    @include positionPage;
+    height: 72%;
+    width: 97.5%;
+    margin-top: 1%;
+    margin-left: 4px;
+
+    //dark theme
+    &.dark {
+        background-image: url("../../assets/Resume/back-resume-dark.jpg");
+        background-size: cover;
+    }
+
+    &__main {
+        position: relative;
+        top: -20px;
+    }
+}

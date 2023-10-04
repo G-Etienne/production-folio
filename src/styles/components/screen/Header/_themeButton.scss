@@ -1,0 +1,64 @@
+//-----------------------------------------------
+//utils
+@import "../../../utils/variables";
+@import "../../../utils/Keyframes/keyframesThemeLangue";
+
+//-----------------------------------------------
+//main rules theme
+.themeButton {
+    position: relative;
+    z-index: 250;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 0px;
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+        .moon {
+            animation: switchTwo 200ms 200ms ease-in-out both;
+        }
+
+        .sun {
+            animation: switchOne 200ms ease-in-out both;
+        }
+    }
+}
+
+//-----------------------------------------------
+//moon for dark them style
+.moon {
+    position: absolute;
+    border: 2px solid $fluo-color;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transform: rotateY(90deg);
+    cursor: pointer;
+
+    //dark theme switch the appearance
+    &.darkButton {
+        border: 2px rgb(182, 182, 182) solid;
+    }
+}
+
+//-----------------------------------------------
+//sun for dark them style
+.sun {
+    position: absolute;
+    background-size: cover;
+    border: 2px rgb(182, 182, 182) solid;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    //dark theme switch the appearance
+    &.darkButton {
+        border: 2px solid $fluo-color;
+    }
+}
+//-----------------------------------------------

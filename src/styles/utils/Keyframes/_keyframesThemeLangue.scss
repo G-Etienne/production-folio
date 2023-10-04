@@ -1,0 +1,19 @@
+//--------------------------------------------------
+//hover animation for proposing change themes or languages
+@keyframes switchOne {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(90deg);
+    }
+}
+
+@keyframes switchTwo {
+    0% {
+        transform: rotateY(90deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}

@@ -1,0 +1,430 @@
+//---------------------------------------------------------
+//BREAKPOINTS :
+// zero-px: 0px,
+// mobile-max: 480px,
+// small-devices-min: 481px,
+// small-devices-max: 767px,
+// small-tablet-min: 768px,
+// small-tablet-max: 991px,
+// large-tablet-and-laptop-min: 992px,
+// large-tablet-and-laptop-max: 1199px,
+// desktop-min: 1200px,
+// desktop-max: 1919px,
+// extra-large-screen-min: 1920px
+
+//---------------------------------------------------------
+//utils
+@import "../../utils/variables";
+@import "../../utils/Mixins/mixin-mediaqueries";
+
+//------------------------------------------------------
+//media queries
+
+// large-tablet-and-laptop-max: 1199px,
+@media screen and (max-width: 1199px) {
+    .contactMain {
+        //title of the page
+        &__bigTitle {
+            font-size: 30px;
+            margin-bottom: 0px;
+        }
+
+        //the localisation
+        &__localisation {
+            font-size: 20px;
+        }
+
+        //all contacts blocks
+        &__contacts {
+            //all titles
+            &__title {
+                font-size: 25px;
+            }
+
+            //all icones
+            &__icone {
+                font-size: 45px;
+
+                //linkedin part
+                &.linkedin {
+                    height: 45px;
+                    width: 45px;
+                }
+            }
+
+            //text with the phone number
+            &__text {
+                font-family: "Source Sans 3", sans-serif;
+                font-size: 18px;
+            }
+
+            //buttons contact
+            &__button {
+                padding: 10px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+// small-devices-max: 767px,
+@media screen and (max-width: 767px) {
+    //place of the screen
+    .contactScreen {
+        //image in the back
+        &__backImage {
+            height: 18%;
+        }
+
+        //main part
+        &__main {
+            margin-top: 10%;
+            max-height: 70%;
+        }
+    }
+
+    //rules of the main part
+    .contactMain {
+        //big title on the page
+        &__bigTitle {
+            font-size: 25px;
+            margin-top: 25px;
+            position: relative;
+        }
+
+        //contacts container
+        &__container {
+            margin-top: 27%;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        //all blocks contact
+        &__contacts {
+            box-sizing: border-box;
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            padding-top: 45px;
+
+            //special contact block email
+            &.email {
+                margin-top: 160px;
+            }
+
+            //special contact block phone
+            &.phone {
+                border: none;
+                border-top: 2px black solid;
+                border-bottom: 2px black solid;
+                padding-bottom: 50px;
+
+                &.dark {
+                    border: none;
+                    border-top: 2px $fluo-color solid;
+                    border-bottom: 2px $fluo-color solid;
+                }
+            }
+
+            //special contact block linkedin
+            &.linkedin {
+                position: relative;
+                top: -50px;
+                padding-bottom: 100px;
+            }
+        }
+    }
+}
+
+// mobile-max: 480px,
+@media screen and (max-width: 480px) {
+    //rule for the placing the screen
+    .contactScreen {
+        &__main {
+            margin-top: 18%;
+        }
+    }
+
+    //main part
+    .contactMain {
+        //main title on the page
+        &__bigTitle {
+            position: relative;
+            top: -40px;
+            font-size: 20px;
+        }
+
+        //localisation
+        &__localisation {
+            position: relative;
+            top: -40px;
+            font-size: 16px;
+        }
+
+        //all blocks contacts
+        &__contacts {
+            //icones
+            &__icone {
+                font-size: 30px;
+                &.linkedin {
+                    font-size: 30px;
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+
+            //titles
+            &__title {
+                font-size: 22px;
+            }
+
+            //email block
+            &.email {
+                margin-top: 300px;
+            }
+
+            //linkedin block
+            &.linkedin {
+                position: relative;
+                top: -50px;
+                padding-bottom: 100px;
+            }
+        }
+    }
+}
+
+//  380px,
+@media screen and (max-width: 380px) {
+    //rules for placing the screen
+    .contactScreen {
+        &__main {
+            margin-top: 10%;
+        }
+    }
+
+    //main part
+    .contactMain {
+        //container with all the contact block
+        &__container {
+            margin-top: 0px;
+        }
+
+        //all the contacts
+        &__contacts {
+            width: 90%;
+        }
+    }
+}
+
+//------------------------------------------------------
+//media queries for placing the about page onn the virtual screen
+
+@media screen and (max-width: 1100px) {
+    .contactScreen {
+        &__headerPage {
+            width: 99.6%;
+            margin-left: 3px;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .contactScreen {
+        width: 97%;
+        margin-top: 1.7%;
+
+        &__headerPage {
+            width: 99.4%;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contactScreen {
+        margin-top: 2.8%;
+        width: 96.5%;
+        &__headerPage {
+            width: 99.1%;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .contactScreen {
+        margin-top: 3%;
+
+        &__headerPage {
+            width: 98.5%;
+        }
+    }
+}
+
+@include responsive(mobile-max, small-tablet-min) {
+    .contactScreen {
+        &__headerPage {
+            height: 80px;
+        }
+
+        &__main.white {
+            height: 87%;
+        }
+
+        &__main.dark {
+            height: 87%;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .contactScreen {
+        &__headerPage {
+            height: 80px;
+        }
+
+        &__main.white {
+            height: 82%;
+        }
+
+        &__main.dark {
+            height: 82%;
+        }
+    }
+}
+@media screen and (max-height: 900px) {
+    .contactScreen {
+        height: 68%;
+        margin-left: 3px;
+        margin-top: 1%;
+
+        &__main.white {
+            height: 79%;
+        }
+
+        &__main.dark {
+            height: 79%;
+        }
+    }
+}
+@media screen and (max-height: 730px) {
+    .contactScreen {
+        height: 69%;
+        margin-top: 0.9%;
+
+        &__main.white {
+            height: 75%;
+        }
+
+        &__main.dark {
+            height: 75%;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .contactScreen {
+        width: 95%;
+        height: 68%;
+        margin-top: 4.5%;
+
+        &__headerPage {
+            width: 98%;
+        }
+        &__main {
+            overflow-x: hidden;
+        }
+    }
+}
+
+//------------------------------------------------------
+//rules for the place of the page in the virtual screen
+//this rules are for some type of screens
+@media screen and (max-height: 700px) and (max-width: 300px) {
+    .contactScreen {
+        height: 68%;
+    }
+}
+
+//special rules for placing screen
+@media screen and (max-height: 700px) and (max-width: 400px) {
+    .contactScreen {
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width: 550px) and (max-height: 750px) {
+    .contactMain {
+        &__bigTitle {
+            &.special {
+                position: relative;
+                top: -30px;
+            }
+        }
+        &__localisation {
+            &.special {
+                position: relative;
+                top: -30px;
+            }
+        }
+        &__container {
+            margin-top: 210px;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) and (max-height: 800px) {
+    .contactMain {
+        &__bigTitle {
+            &.special {
+                position: relative;
+                top: -60px;
+            }
+        }
+        &__localisation {
+            &.special {
+                position: relative;
+                top: -60px;
+            }
+        }
+        &__container {
+            position: relative;
+            top: -50px;
+        }
+    }
+}
+
+@media screen and (max-width: 380px) and (max-height: 750px) {
+    .contactMain {
+        &__bigTitle {
+            &.special {
+                position: relative;
+                top: -30px;
+            }
+        }
+        &__localisation {
+            &.special {
+                position: relative;
+                top: -30px;
+            }
+        }
+        &__container {
+            position: relative;
+            top: -100px;
+        }
+    }
+}
+
+@media screen and (max-height: 900px) and (max-width: 450px) {
+    .contactScreen {
+        margin-top: 3.5%;
+    }
+}
+
+@media screen and (max-height: 620px) and (max-width: 1100px) {
+    .contactMain {
+        margin-bottom: 50px;
+        &__bigTitle {
+            &.special {
+                position: relative;
+                top: -50px;
+            }
+        }
+    }
+}

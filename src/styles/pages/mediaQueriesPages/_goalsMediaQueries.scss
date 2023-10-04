@@ -1,0 +1,569 @@
+//------------------------------------------------------
+//utils
+@import "../../utils/Mixins/goalMixin";
+@import "../../utils/Mixins/mixin-mediaqueries";
+@import "../../utils/variables";
+
+//------------------------------------------------------
+//media queries
+// large-tablet-and-laptop-max: 1199px,
+@media screen and (max-width: 1199px) {
+    .goalMain {
+        //block with the goals
+        &__goalContainer {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            margin-top: 500px;
+            align-items: center;
+        }
+
+        //first goal
+        &__firstGoal {
+            width: 900px;
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: 70px;
+
+            //text for this goal
+            &__textGoal {
+                transform-origin: top center;
+                left: 75px;
+                height: 95%;
+                border-radius: 20px;
+                width: 80%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+        }
+
+        //second goal
+        &__secondGoal {
+            width: 900px;
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: 70px;
+
+            //text for this goal
+            &__textGoal {
+                transform-origin: top center;
+                left: 0px;
+                left: 75px;
+                border-radius: 20px;
+                width: 80%;
+                height: 95%;
+            }
+        }
+
+        //third goal
+        &__thirdGoal {
+            @include styleElementObjectiv;
+            width: 900px;
+            margin: 0px;
+            padding: 0px;
+
+            //text for this goal
+            &__textGoal {
+                transform-origin: top center;
+                left: 0px;
+                left: 75px;
+                border-radius: 20px;
+                width: 80%;
+                height: 95%;
+            }
+        }
+    }
+}
+
+/// large-tablet-and-laptop-min: 992px,
+@media screen and (max-width: 992px) {
+    .goalMain {
+        //container of the goals
+        &__goalContainer {
+            margin-top: 400px;
+        }
+
+        //first goal
+        &__firstGoal {
+            width: 600px;
+
+            //text for this goal
+            &__textGoal {
+                left: 45px;
+                height: 85%;
+            }
+        }
+
+        //second goal
+        &__secondGoal {
+            width: 600px;
+
+            //text for this goal
+            &__textGoal {
+                left: 45px;
+                height: 85%;
+            }
+        }
+
+        //third goal
+        &__thirdGoal {
+            width: 600px;
+
+            //text for this goal
+            &__textGoal {
+                left: 45px;
+                height: 85%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+// small-devices-max: 767px,
+@media screen and (max-width: 767px) {
+    .goalMain {
+        //container of the goal
+        &__goalContainer {
+            width: 100%;
+            margin-top: 370px;
+        }
+
+        //first goal
+        &__firstGoal {
+            width: 100%;
+            margin-bottom: 30px;
+
+            //text for this goal
+            &__textGoal {
+                left: 8%;
+                height: 85%;
+
+                //title of the text
+                & > h3 {
+                    font-size: 20px;
+                    margin-bottom: 0px;
+                }
+
+                //text
+                & > p {
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        //second goal
+        &__secondGoal {
+            width: 100%;
+            margin-bottom: 30px;
+
+            //text for this goal
+            &__textGoal {
+                left: 8%;
+                height: 85%;
+
+                //title
+                & > h3 {
+                    font-size: 20px;
+                    width: 80%;
+                    margin: auto;
+                    margin-top: 35px;
+                }
+
+                //text
+                & > p {
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        //third goal
+        &__thirdGoal {
+            width: 100%;
+            margin-bottom: 30px;
+
+            //text for this goal
+            &__textGoal {
+                left: 8%;
+                height: 85%;
+
+                //title
+                & > h3 {
+                    font-size: 20px;
+                    margin-bottom: 0px;
+                }
+
+                //text
+                & > p {
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+// mobile-max: 480px,
+@media screen and (max-width: 480px) {
+    .goalMain {
+        //container of the goals
+        &__goalContainer {
+            position: absolute;
+            width: 84%;
+            margin: auto;
+            margin-top: 380px;
+            margin-left: 8%;
+        }
+
+        //first goal
+        &__firstGoal {
+            margin-bottom: 50px;
+
+            //text for this goal
+            &__textGoal {
+                left: 5%;
+                height: 85%;
+
+                //title
+                & > h3 {
+                    font-size: 16px;
+                    margin-bottom: 0px;
+                }
+
+                //text
+                & > p {
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        //second goal
+        &__secondGoal {
+            margin-bottom: 50px;
+
+            //text for this goal
+            &__textGoal {
+                left: 5%;
+                height: 85%;
+
+                //title
+                & > h3 {
+                    margin-top: 45px;
+                    font-size: 16px;
+                    margin-bottom: 0px;
+                }
+
+                //text
+                & > p {
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        //third goal
+        &__thirdGoal {
+            //text for this goal
+            &__textGoal {
+                left: 5%;
+                height: 85%;
+
+                //title
+                & > h3 {
+                    font-size: 16px;
+                    margin-bottom: 0px;
+                }
+
+                //text
+                & > p {
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+//  380px,
+@media screen and (max-width: 380px) {
+    .goalMain {
+        //container of the goals
+        &__goalContainer {
+            position: relative;
+            width: 100%;
+            margin: auto;
+            margin-top: 380px;
+        }
+
+        //title of the goals page
+        &__goalTitle {
+            font-size: 30px;
+        }
+
+        //first goal
+        &__firstGoal {
+            margin-bottom: 50px;
+            margin-top: 30px;
+            height: 300px;
+
+            //visible block of this goal
+            &__storeFront {
+                & > h2 {
+                    font-size: 20px;
+                }
+            }
+
+            //text for this goal
+            &__textGoal {
+                left: 15%;
+                height: 320px;
+                width: 210px;
+                box-sizing: border-box;
+
+                //title
+                & > h3 {
+                    font-size: 14px;
+                    margin: auto;
+                    margin-bottom: 0px;
+                    width: 80%;
+                    margin-top: 50px;
+                }
+
+                //title
+                & > p {
+                    font-size: 11px;
+                    margin-top: 5px;
+                }
+
+                //hidding the cross for the title place
+                & > div {
+                    display: none;
+                }
+            }
+        }
+
+        //second goal
+        &__secondGoal {
+            margin-bottom: 60px;
+
+            //visible part of this goal
+            &__storeFront {
+                //title of the visible part
+                & > h2 {
+                    font-size: 20px;
+                }
+            }
+
+            //text for this goal
+            &__textGoal {
+                left: 15%;
+                height: 320px;
+                width: 210px;
+                box-sizing: border-box;
+
+                //title of the text
+                & > h3 {
+                    font-size: 14px;
+                    margin: auto;
+                    margin-bottom: 0px;
+                    width: 80%;
+                    margin-top: 50px;
+                }
+
+                //text
+                & > p {
+                    font-size: 11px;
+                    margin-top: 5px;
+                }
+
+                //hidding the cross for the title place
+                & > div {
+                    display: none;
+                }
+            }
+        }
+
+        //third goal
+        &__thirdGoal {
+            //visible part of this goal
+            &__storeFront {
+                //title of the visible part
+                & > h2 {
+                    font-size: 20px;
+                }
+            }
+
+            //text for this goal
+            &__textGoal {
+                left: 15%;
+                height: 320px;
+                width: 210px;
+                box-sizing: border-box;
+
+                //title
+                & > h3 {
+                    font-size: 14px;
+                    margin: auto;
+                    margin-bottom: 0px;
+                    width: 80%;
+                    margin-top: 50px;
+                }
+
+                //text
+                & > p {
+                    font-size: 11px;
+                    margin-top: 5px;
+                }
+
+                //hidding the cross for the title place
+                & > div {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+//------------------------------------------------------
+//media queries for placing the about page onn the virtual screen
+
+@media screen and (max-width: 1100px) {
+    .goalScreen {
+        &__headerPage {
+            height: 80px;
+            width: 99.6%;
+            margin-left: 3px;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .goalScreen {
+        width: 97%;
+        margin-top: 1.7%;
+
+        &__headerPage {
+            width: 99.4%;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .goalScreen {
+        margin-top: 2.8%;
+        width: 96.5%;
+        &__headerPage {
+            width: 99.1%;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .goalScreen {
+        margin-top: 3%;
+
+        &__headerPage {
+            width: 98.5%;
+        }
+    }
+}
+
+@include responsive(mobile-max, small-tablet-min) {
+    .goalScreen {
+        &__headerPage {
+            height: 80px;
+        }
+
+        &__main.white {
+            height: 87%;
+        }
+
+        &__main.dark {
+            height: 87%;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .fakeBlockBottom {
+        bottom: -300px;
+    }
+
+    .goalScreen {
+        &__headerPage {
+            height: 80px;
+        }
+
+        &__main.white {
+            height: 82%;
+        }
+
+        &__main.dark {
+            height: 82%;
+        }
+    }
+}
+@media screen and (max-height: 900px) {
+    .goalScreen {
+        height: 68%;
+        margin-left: 3px;
+        margin-top: 1%;
+
+        &__main.white {
+            height: 79%;
+        }
+
+        &__main.dark {
+            height: 79%;
+        }
+    }
+}
+@media screen and (max-height: 730px) {
+    .goalScreen {
+        height: 69%;
+        margin-top: 0.9%;
+
+        &__main.white {
+            height: 75%;
+        }
+
+        &__main.dark {
+            height: 75%;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .goalScreen {
+        width: 95%;
+        height: 68%;
+        margin-top: 4.5%;
+
+        &__headerPage {
+            width: 98%;
+        }
+        &__main {
+            overflow-x: hidden;
+        }
+    }
+}
+
+//------------------------------------------------------
+//rules for the place of the page in the virtual screen
+@media screen and (max-height: 700px) and (max-width: 300px) {
+    .goalScreen {
+        height: 68%;
+    }
+}
+
+//special rules for placing screen
+@media screen and (max-height: 700px) and (max-width: 400px) {
+    .goalScreen {
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-height: 900px) and (max-width: 450px) {
+    .goalScreen {
+        margin-top: 3.5%;
+    }
+}

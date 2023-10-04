@@ -1,0 +1,15 @@
+//----------------------------------------------------------
+//mixin for the style of an element like on in the home page
+@mixin styleElementBlock($with, $height, $radius) {
+    border-radius: $radius;
+    height: $height;
+    width: $with;
+    background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
+    box-shadow: 0px 0px 7px (darken($colo-cube-one, 30%));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 0px 10px black;
+}

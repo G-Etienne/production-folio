@@ -1,0 +1,41 @@
+//------------------------------------------------------
+//import utils
+@import "../../utils/variables";
+@import "../../utils/Mixins/mixinFooter";
+
+//------------------------------------------------------
+//main rules keyboard
+.keyboard {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    position: absolute;
+    height: 50px;
+    width: 250px;
+    top: 50px;
+    left: 18%;
+    background-color: $color-keyboard;
+    box-shadow: 0px 0px 5px black;
+    padding-left: 5px;
+
+    //shadow effect
+    &::after {
+        @include afterBase;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: linear-gradient(rgb(0, 0, 0, 0.2), transparent);
+    }
+
+    //thickness ok the keyboard
+    &__front {
+        position: absolute;
+        width: 251px;
+        height: 6px;
+        transform: rotateX(-45deg);
+        top: 98px;
+        left: 18%;
+        background-color: darken($color-keyboard, 10%);
+        box-shadow: inset 0px 0px 3px black;
+    }
+}

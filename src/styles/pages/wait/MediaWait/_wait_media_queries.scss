@@ -1,0 +1,37 @@
+//---------------------------------------------------------
+//BREAKPOINTS :
+// zero-px: 0px,
+// mobile-max: 480px,
+// small-devices-min: 481px,
+// small-devices-max: 767px,
+// small-tablet-min: 768px,
+// small-tablet-max: 991px,
+// large-tablet-and-laptop-min: 992px,
+// large-tablet-and-laptop-max: 1199px,
+// desktop-min: 1200px,
+// desktop-max: 1919px,
+// extra-large-screen-min: 1920px
+
+//---------------------------------------------------------
+@media screen and (max-width: 767px) {
+    .waitContainer {
+        &__content {
+            //image in the content block
+            &__image {
+                height: 200px;
+                width: 200px;
+            }
+
+            //title
+            & > h1 {
+                font-size: 25px;
+            }
+
+            //text
+            & > p {
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

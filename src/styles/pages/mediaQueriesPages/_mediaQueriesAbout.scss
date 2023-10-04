@@ -1,0 +1,517 @@
+//---------------------------------------------------------
+//BREAKPOINTS :
+// zero-px: 0px,
+// mobile-max: 480px,
+// small-devices-min: 481px,
+// small-devices-max: 767px,
+// small-tablet-min: 768px,
+// small-tablet-max: 991px,
+// large-tablet-and-laptop-min: 992px,
+// large-tablet-and-laptop-max: 1199px,
+// desktop-min: 1200px,
+// desktop-max: 1919px,
+// extra-large-screen-min: 1920px
+
+//---------------------------------------------------------
+//utils
+@import "../../utils/variables";
+@import "../../utils/Mixins/mixin-mediaqueries";
+
+//------------------------------------------------------
+//media queries
+
+//big screen
+@media screen and (max-width: 1600px) {
+    //main part of the about page
+    .aboutMain {
+        //container at the top of the page
+        &__containerTop {
+            //menu of the page
+            &__menu {
+                margin-right: 30px;
+                position: relative;
+                top: -100px;
+
+                //links of the menu
+                & > a {
+                    font-size: 25px;
+                }
+            }
+
+            //big title
+            &__title {
+                font-size: 100px;
+            }
+
+            //image in the page
+            &__image {
+                width: 500px;
+                height: 450px;
+            }
+        }
+    }
+}
+
+// large-tablet-and-laptop-max: 1199px,
+@media screen and (max-width: 1199px) {
+    //main part
+    .aboutMain {
+        //top og the page
+        &__containerTop {
+            justify-content: space-between;
+
+            &__menu {
+                margin-right: 30px;
+                position: relative;
+                top: -100px;
+
+                & > a {
+                    font-size: 25px;
+                    text-shadow: 0px 0px 7px darken($main-color-about, 50%);
+                }
+            }
+
+            //big title in the top
+            &__title {
+                font-size: 100px;
+                height: 480px;
+                width: 40%;
+            }
+        }
+    }
+}
+
+/// large-tablet-and-laptop-min: 992px,
+@media screen and (max-width: 992px) {
+    //main part
+    .aboutMain {
+        //container at the top
+        &__containerTop {
+            &__menu {
+                margin-right: 30px;
+                position: relative;
+                top: -100px;
+
+                & > a {
+                    font-size: 20px;
+                    margin-bottom: 40px;
+                    text-shadow: 0px 0px 7px darken($main-color-about, 50%);
+                }
+            }
+
+            &__title {
+                margin-right: 10%;
+            }
+        }
+
+        //part who etienne is
+        &__containerWhoIAm {
+            &__title {
+                &.white {
+                    font-size: 60px;
+                    padding-right: 5%;
+                }
+
+                &.dark {
+                    font-size: 60px;
+                }
+            }
+
+            &__textPart__text {
+                font-size: 18px;
+            }
+        }
+
+        //containner who explain the web part
+        &__containerWeb {
+            &__title {
+                &.white {
+                    font-size: 60px;
+                    padding-right: 5%;
+                }
+
+                &.dark {
+                    font-size: 60px;
+                }
+            }
+
+            &__textPart__text {
+                font-size: 18px;
+            }
+        }
+
+        //containner who explain what i do before web
+        &__containerBottom {
+            &__title {
+                &.white {
+                    font-size: 60px;
+                    padding-right: 5%;
+                }
+
+                &.dark {
+                    font-size: 60px;
+                }
+            }
+
+            &__textPart__text {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// small-devices-max: 767px,
+@media screen and (max-width: 767px) {
+    // main part
+    .aboutMain {
+        //part at the top of the page
+        &__containerTop {
+            &__menu {
+                box-sizing: border-box;
+                height: 70px;
+                flex-direction: row;
+                align-items: center;
+                width: 90%;
+                position: fixed;
+                z-index: 103;
+                top: 90px;
+                background-color: $main-color-about;
+                margin: 0px;
+                padding-left: 15px;
+                border-right: 2px solid darken($main-color-about, 50%);
+                border-bottom: 2px solid darken($main-color-about, 50%);
+                box-shadow: 3px 3px 10px darken($main-color-about, 50%);
+
+                & > a {
+                    font-size: 15px;
+                    padding-right: 15px;
+                    width: 33%;
+                    margin: 0px;
+                    text-shadow: 0px 0px 10px darken($main-color-about, 50%);
+                }
+
+                //dark theme
+                &.dark {
+                    background-color: darken($main-back-color, 20%);
+                    border-right: 1px solid $fluo-color;
+                    border-bottom: 1px solid $fluo-color;
+                    box-shadow: 1px 1px 7px lighten($main-back-color, 50%);
+                }
+            }
+
+            &__title {
+                width: 100%;
+                height: 320px;
+                font-size: 80px;
+                padding-top: 100px;
+                padding-bottom: 0px;
+                padding-left: 30px;
+            }
+
+            &__image {
+                width: 90%;
+                left: 9px;
+                object-fit: cover;
+                margin-top: 68px;
+            }
+        }
+
+        //part who explain who etienne is
+        &__containerWhoIAm {
+            height: 500px;
+
+            &__title {
+                &.white {
+                    font-size: 45px;
+                }
+
+                &.dark {
+                    font-size: 45px;
+                }
+            }
+
+            &__textPart__text {
+                font-size: 14px;
+                padding-bottom: 30px;
+                line-height: 1.5;
+            }
+        }
+
+        //containner who explain the web part
+        &__containerWeb {
+            height: 500px;
+
+            &__title {
+                &.white {
+                    font-size: 45px;
+                }
+
+                &.dark {
+                    font-size: 45px;
+                }
+            }
+
+            &__textPart__text {
+                font-size: 14px;
+                padding-bottom: 30px;
+                line-height: 1.5;
+            }
+        }
+
+        //containner who explain what i do before web
+        &__containerBottom {
+            height: 500px;
+
+            &__title {
+                &.white {
+                    font-size: 45px;
+                }
+
+                &.dark {
+                    font-size: 45px;
+                }
+            }
+
+            &__textPart__text {
+                font-size: 14px;
+                padding-bottom: 30px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+// mobile-max: 480px,
+@media screen and (max-width: 480px) {
+    //main part
+    .aboutMain {
+        //part at the top of the page
+        &__containerTop {
+            &__menu {
+                top: 110px;
+
+                & > a {
+                    font-size: 12px;
+                }
+            }
+
+            &__title {
+                width: 100%;
+                height: 320px;
+                font-size: 80px;
+                padding-top: 100px;
+                padding-bottom: 0px;
+            }
+        }
+
+        //part who explain who etienne is
+        &__containerWhoIAm {
+            &__title {
+                &.white {
+                    font-size: 30px;
+                }
+
+                &.dark {
+                    font-size: 30px;
+                }
+            }
+
+            &__textPart__text {
+                font-size: 11px;
+                padding-bottom: 60px;
+            }
+        }
+        //containner who explain the web part
+        &__containerWeb {
+            &__title {
+                &.white {
+                    font-size: 30px;
+                }
+
+                &.dark {
+                    font-size: 30px;
+                }
+            }
+
+            &__textPart__text {
+                font-size: 11px;
+                padding-bottom: 60px;
+            }
+        }
+
+        //containner who explain what i do before web
+        &__containerBottom {
+            &__title {
+                &.white {
+                    font-size: 30px;
+                }
+
+                &.dark {
+                    font-size: 30px;
+                }
+            }
+
+            &__textPart__text {
+                font-size: 11px;
+                padding-bottom: 60px;
+            }
+        }
+    }
+}
+
+//  380px,
+@media screen and (max-width: 380px) {
+    //main part
+    .aboutMain {
+        //part at the top of the page
+        &__containerTop {
+            &__menu {
+                top: 110px;
+                & > a {
+                    font-size: 12px;
+                }
+            }
+
+            &__title {
+                font-size: 50px;
+                height: 200px;
+            }
+
+            &__image {
+                height: 300px;
+            }
+        }
+
+        //content containers
+        &__containerWhoIAm {
+            height: 600px;
+        }
+        &__containerWeb {
+            height: 600px;
+        }
+        &__containerBottom {
+            height: 600px;
+        }
+    }
+}
+
+//------------------------------------------------------
+//media queries for placing the about page onn the virtual screen
+.aboutScreen {
+    &__headerPage {
+        height: 80px;
+    }
+
+    &__main.white {
+        height: 87%;
+    }
+
+    &__main.dark {
+        height: 87%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .aboutScreen {
+        &__headerPage {
+            height: 80px;
+            width: 99.6%;
+            margin-left: 3px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .aboutScreen {
+        &__headerPage {
+            width: 99.4%;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .aboutScreen {
+        &__headerPage {
+            width: 99.1%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .aboutScreen {
+        &__headerPage {
+            width: 98.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .aboutScreen {
+        &__headerPage {
+            width: 98%;
+        }
+    }
+}
+
+@include responsive(mobile-max, small-tablet-min) {
+    .aboutScreen {
+        &__headerPage {
+            height: 80px;
+        }
+
+        &__main.white {
+            height: 87%;
+        }
+
+        &__main.dark {
+            height: 87%;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .aboutScreen {
+        &__headerPage {
+            height: 100px;
+        }
+
+        &__main.white {
+            height: 82%;
+        }
+
+        &__main.dark {
+            height: 82%;
+        }
+    }
+}
+@media screen and (max-height: 900px) {
+    .aboutScreen {
+        height: 70%;
+
+        &__main.white {
+            height: 79%;
+        }
+
+        &__main.dark {
+            height: 79%;
+        }
+    }
+}
+@media screen and (max-height: 730px) {
+    .aboutScreen {
+        &__main.white {
+            height: 75%;
+        }
+
+        &__main.dark {
+            height: 75%;
+        }
+    }
+}
+
+//------------------------------------------------------
+//rules for the place of the page in the virtual screen
+@media screen and (max-height: 700px) and (max-width: 300px) {
+    .aboutScreen {
+        height: 68%;
+    }
+}

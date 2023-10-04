@@ -1,0 +1,615 @@
+//---------------------------------------------------------
+//BREAKPOINTS :
+// zero-px: 0px,
+// mobile-max: 480px,
+// small-devices-min: 481px,
+// small-devices-max: 767px,
+// small-tablet-min: 768px,
+// small-tablet-max: 991px,
+// large-tablet-and-laptop-min: 992px,
+// large-tablet-and-laptop-max: 1199px,
+// desktop-min: 1200px,
+// desktop-max: 1919px,
+// extra-large-screen-min: 1920px
+
+//------------------------------------------------------
+//utils
+@import "../../utils/Mixins/mixin-mediaqueries";
+@import "../../utils/map";
+@import "../../utils/variables";
+
+//------------------------------------------------------
+//media queries
+
+// large-tablet-and-laptop-max: 1199px,
+@media screen and (max-width: 1199px) {
+    //main part
+    .trainingsMain {
+        //web part
+        &__web {
+            //images
+            &__imageOne {
+                width: 35%;
+                top: 80px;
+                left: 10%;
+            }
+
+            &__imageTwo {
+                left: 5%;
+                width: 15%;
+            }
+
+            //square like a border
+            &__decorativSquare {
+                height: 25px;
+                bottom: -25px;
+                left: -25px;
+                width: 50%;
+            }
+
+            //text part
+            &__textContainer {
+                border-left: 25px $color-main-trainings solid;
+                margin-right: 10%;
+
+                & > h2 {
+                    font-size: 28px;
+                }
+
+                & > h4 {
+                    font-size: 16px;
+                }
+
+                &__center {
+                    font-size: 15px;
+                }
+
+                & > p {
+                    font-size: 15px;
+                }
+
+                //dark theme
+                &.dark {
+                    border-left: 25px $fluo-color solid;
+                }
+            }
+        }
+
+        //carpenter part
+        &__carpenter {
+            //textpart
+            &__textContainer {
+                margin-left: 10%;
+
+                & > h2 {
+                    font-size: 25px;
+                }
+
+                & > h4 {
+                    font-size: 16px;
+                }
+
+                &__experience {
+                    font-size: 15px;
+                }
+
+                & > p {
+                    font-size: 15px;
+                }
+            }
+
+            //image part
+            &__image {
+                top: 20px;
+                & > img {
+                    width: 33%;
+                }
+            }
+        }
+    }
+}
+
+/// large-tablet-and-laptop-min: 992px,
+@media screen and (max-width: 992px) {
+    //main part
+    .trainingsMain {
+        //web part
+        &__web {
+            //image part
+            &__imageOne {
+                width: 25%;
+                top: 110px;
+                left: 72%;
+                z-index: 111;
+            }
+
+            &__imageTwo {
+                left: 65%;
+                top: 80px;
+                width: 12%;
+                box-shadow: 0px 0px 4px darken($color-main-trainings, 20%);
+            }
+
+            //square like a border
+            &__decorativSquare {
+                height: 25px;
+                bottom: -25px;
+                left: -25px;
+                width: 50%;
+            }
+
+            //text part
+            &__textContainer {
+                border-left: 25px $color-main-trainings solid;
+                margin-left: 10%;
+                width: 70%;
+
+                & > h2 {
+                    font-size: 23px;
+                }
+
+                & > h4 {
+                    font-size: 14px;
+                }
+
+                &__center {
+                    font-size: 12px;
+                }
+
+                & > p {
+                    font-size: 12px;
+                }
+
+                //dark theme
+                &.dark {
+                    border-left: 25px $fluo-color solid;
+                }
+            }
+
+            //decorativ big bubulle
+            &__decorativOne {
+                display: none;
+            }
+        }
+
+        //carpenter part
+        &__carpenter {
+            //text part
+            &__textContainer {
+                width: 70%;
+                right: 5%;
+                margin-top: 30px;
+
+                & > h2 {
+                    font-size: 23px;
+                }
+
+                & > h4 {
+                    font-size: 14px;
+                }
+
+                &__experience {
+                    font-size: 12px;
+                }
+
+                & > p {
+                    font-size: 12px;
+                }
+            }
+
+            //image part
+            &__image {
+                margin-bottom: 0px;
+
+                & > img {
+                    display: block;
+                    position: relative;
+                    z-index: 112;
+                    left: -50%;
+                    top: -100px;
+                    width: 22%;
+                }
+            }
+
+            //square like a border
+            &__decorativSquare {
+                width: 50%;
+            }
+        }
+    }
+}
+
+// small-devices-max: 767px,
+@media screen and (max-width: 767px) {
+    // main part
+    .trainingsMain {
+        //web part
+        &__web {
+            //image part
+            &__imageOne {
+                width: 20%;
+                left: 78%;
+            }
+
+            &__imageTwo {
+                top: 110px;
+                left: 68%;
+            }
+
+            //square like a border
+            &__decorativSquare {
+                height: 20px;
+                bottom: -20px;
+                left: -20px;
+                width: 45%;
+            }
+
+            //text part
+            &__textContainer {
+                border-left: 20px $color-main-trainings solid;
+                width: 95%;
+                margin: auto;
+
+                & > h2 {
+                    font-size: 20px;
+                    width: 70%;
+                }
+
+                & > h4 {
+                    font-size: 12px;
+                }
+
+                //dark theme
+                &.dark {
+                    border-left: 20px $fluo-color solid;
+                }
+            }
+
+            //mediume decorativ bubulle
+            &__decorativTwo {
+                height: 60px;
+                width: 60px;
+                right: 10px;
+            }
+
+            //small decorativ bubulle
+            &__decorativThree {
+                height: 40px;
+                width: 40px;
+                right: 70px;
+                bottom: 5px;
+            }
+
+            //very small decorativ bubulle
+            &__decorativFour {
+                height: 30px;
+                width: 30px;
+                right: 130px;
+                bottom: -10px;
+            }
+        }
+
+        //carpenter part
+        &__carpenter {
+            //text part
+            &__textContainer {
+                width: 90%;
+                margin: auto;
+                border-right: 15px $color-main-trainings solid;
+
+                & > h2 {
+                    font-size: 20px;
+                    width: 70%;
+                }
+
+                & > h4 {
+                    font-size: 12px;
+                }
+
+                //dark theme
+                &.dark {
+                    border-right: 15px $fluo-color solid;
+                }
+            }
+
+            //image part
+            &__image {
+                & > img {
+                    top: -80px;
+                    left: -60%;
+                }
+            }
+
+            //square like a border
+            &__decorativSquare {
+                height: 15px;
+                bottom: -15px;
+                right: -15px;
+                width: 45%;
+            }
+        }
+    }
+}
+
+// mobile-max: 480px,
+@media screen and (max-width: 480px) {
+    //main part
+    .trainingsMain {
+        //web part
+        &__web {
+            //image part
+            &__imageOne {
+                width: 40%;
+                top: 7%;
+                left: 45%;
+
+                //dark theme
+                &.dark {
+                    box-shadow: none;
+                }
+            }
+
+            &__imageTwo {
+                width: 30%;
+                top: 9%;
+                left: 20%;
+            }
+
+            //square like a border
+            &__decorativSquare {
+                display: none;
+            }
+
+            //text part
+            &__textContainer {
+                border: 4px $color-main-trainings solid;
+                box-shadow: 0px 0px 5px darken($color-main-trainings, 20%);
+                border-radius: 20px;
+                padding: 15px;
+                padding-top: 60px;
+
+                & > h2 {
+                    width: 100%;
+                }
+
+                & > h4 {
+                    width: 100%;
+                }
+
+                &__center {
+                    width: 100%;
+                }
+
+                & > p {
+                    width: 100%;
+                }
+
+                //dark theme
+                &.dark {
+                    border: 4px $fluo-color solid;
+                    box-shadow: 0px 0px 5px $fluo-color;
+                }
+            }
+
+            //decorativ bublles
+            &__decorativTwo {
+                display: none;
+            }
+
+            &__decorativThree {
+                display: none;
+            }
+
+            &__decorativFour {
+                display: none;
+            }
+        }
+
+        //carpenter part
+        &__carpenter {
+            //text part
+            &__textContainer {
+                border: 4px $color-main-trainings solid;
+                box-shadow: 0px 0px 5px darken($color-main-trainings, 20%);
+                border-radius: 20px;
+                padding: 15px;
+                padding-top: 60px;
+                margin-top: 40px;
+                text-align: start;
+
+                & > h2 {
+                    width: 100%;
+                }
+
+                & > h4 {
+                    width: 100%;
+                }
+
+                &__experience {
+                    width: 100%;
+                }
+
+                & > p {
+                    width: 100%;
+                }
+
+                //dark theme
+                &.dark {
+                    border: 4px $fluo-color solid;
+                    box-shadow: 0px 0px 5px $fluo-color;
+                }
+            }
+
+            //image part
+            &__image {
+                top: -150px;
+                padding-top: 7%;
+
+                & > img {
+                    left: 0px;
+                    top: 0px;
+                    width: 45%;
+                    margin: auto;
+                    bottom: 50%;
+                }
+
+                //dark theme
+                &.dark {
+                    & > img {
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            //square like a border
+            &__decorativSquare {
+                display: none;
+            }
+        }
+    }
+}
+
+//  380px,
+@media screen and (max-width: 380px) {
+    //main part
+    .trainingsMain {
+        //carpenter part
+        &__carpenter {
+            margin-top: 40px;
+
+            //image part
+            &__image {
+                top: -100px;
+            }
+        }
+    }
+}
+
+//------------------------------------------------------
+//media queries for placing the about page onn the virtual screen
+.trainingsScreen {
+    &__headerPage {
+        height: 80px;
+    }
+
+    &__main.white {
+        height: 87%;
+    }
+
+    &__main.dark {
+        height: 87%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .trainingsScreen {
+        margin-top: 1.6%;
+        width: 97.3%;
+        &__headerPage {
+            height: 80px;
+            width: 99.6%;
+            margin-left: 3px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .trainingsScreen {
+        margin-top: 1.8%;
+        width: 97%;
+        &__headerPage {
+            width: 99.4%;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .trainingsScreen {
+        &__headerPage {
+            width: 99.1%;
+        }
+    }
+}
+
+@include responsive(mobile-max, small-tablet-min) {
+    .trainingsScreen {
+        &__headerPage {
+            height: 80px;
+        }
+
+        &__main.white {
+            height: 87%;
+        }
+
+        &__main.dark {
+            height: 87%;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .trainingsScreen {
+        &__headerPage {
+            height: 100px;
+        }
+
+        &__main.white {
+            height: 82%;
+        }
+
+        &__main.dark {
+            height: 82%;
+        }
+    }
+}
+@media screen and (max-height: 900px) {
+    .trainingsScreen {
+        height: 68%;
+
+        &__main.white {
+            height: 79%;
+        }
+
+        &__main.dark {
+            height: 79%;
+        }
+    }
+}
+@media screen and (max-height: 730px) {
+    .trainingsScreen {
+        &__main.white {
+            height: 75%;
+        }
+
+        &__main.dark {
+            height: 75%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .trainingsScreen {
+        height: 66.8%;
+        margin-top: 3%;
+        width: 96.5%;
+        &__headerPage {
+            width: 98.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .trainingsScreen {
+        margin-top: 3.5%;
+        width: 95.8%;
+        &__headerPage {
+            width: 98%;
+        }
+    }
+}
+//------------------------------------------------------
+//rules for the place of the page in the virtual screen
+@media screen and (max-height: 700px) and (max-width: 300px) {
+    .trainingsScreen {
+        height: 68%;
+    }
+}

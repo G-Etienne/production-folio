@@ -1,0 +1,209 @@
+//-----------------------------------------------------------
+//import utils
+@import "../../utils/variables";
+@import "../../utils/Mixins/mixinBack";
+@import "../../utils/Keyframes/keyframesBack";
+
+//-----------------------------------------------------------
+//image to cover the screen with a hole in the center
+.backScreenImage {
+    position: absolute;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+//-----------------------------------------------------------
+//block image behind the animation
+.backAnim {
+    @include backAnim();
+
+    &__container {
+        scale: 1;
+        animation: rotateAnime 80000ms linear infinite;
+    }
+}
+
+.backImage {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+//-----------------------------------------------------------
+//animation
+.dot {
+    position: relative;
+    &__ancor {
+        &__one {
+            rotate: 20deg;
+            transform: rotateY(180deg);
+        }
+
+        &__two {
+            rotate: -40deg;
+        }
+
+        &__three {
+            rotate: 100deg;
+            transform: rotateY(180deg);
+        }
+    }
+
+    &__one {
+        @include dotAnimback();
+
+        &::after {
+            @include afterBase;
+            position: relative;
+            top: -4px;
+            border-radius: 50%;
+
+            background: radial-gradient(
+                lighten($main-screen-back-color, 50%),
+                darken($main-screen-back-color, 15%)
+            );
+        }
+
+        &__bis {
+            @include dotAnimback();
+            rotate: 180deg;
+
+            &::after {
+                @include afterBase;
+                position: relative;
+                top: -4px;
+                border-radius: 50%;
+
+                background: radial-gradient(
+                    lighten($main-screen-back-color, 50%),
+                    darken($main-screen-back-color, 15%)
+                );
+            }
+        }
+    }
+
+    &__two {
+        @include dotAnimbackTwo();
+
+        &::after {
+            @include afterBase;
+            position: relative;
+            top: -1px;
+            border-radius: 50%;
+
+            background: radial-gradient(
+                lighten($main-screen-back-color, 50%),
+                darken($main-screen-back-color, 15%)
+            );
+        }
+    }
+
+    &__three {
+        @include dotAnimbackTwo();
+
+        &::after {
+            @include afterBase;
+            position: relative;
+            top: -1px;
+            border-radius: 50%;
+
+            background: radial-gradient(
+                lighten($main-screen-back-color, 50%),
+                darken($main-screen-back-color, 15%)
+            );
+        }
+    }
+}
+
+.rod {
+    &__one {
+        transform-origin: left;
+        @include rodAnimback(100px);
+        animation: rodMouve 20000ms linear infinite;
+    }
+
+    &__two {
+        transform-origin: left;
+        rotate: 70deg;
+        @include rodAnimback(80px);
+        animation: rodMouve 20000ms linear infinite;
+    }
+
+    &__three {
+        transform-origin: left;
+        rotate: 145deg;
+        @include rodAnimback(164px);
+        animation: lastRodMouve 20000ms linear infinite;
+    }
+}
+
+.specialRod {
+    &__one {
+        position: absolute;
+        transform-origin: left;
+        @include rodAnimback(164px);
+        rotate: 20deg;
+        left: 0px;
+        top: 0px;
+        animation: specialRodMouveone 20000ms linear infinite;
+    }
+
+    &__two {
+        position: absolute;
+        transform-origin: left;
+        @include rodAnimback(164px);
+        rotate: 20deg;
+        animation: specialRodMouveTwo 20000ms linear infinite;
+    }
+
+    &__three {
+        position: absolute;
+        transform-origin: left;
+        @include rodAnimback(164px);
+        rotate: 20deg;
+        animation: specialRodMouveThree 20000ms linear infinite;
+    }
+
+    &__four {
+        position: absolute;
+        transform-origin: left;
+        @include rodAnimback(164px);
+        rotate: 20deg;
+        animation: specialRodMouveFour 20000ms linear infinite;
+    }
+
+    &__five {
+        position: absolute;
+        transform-origin: left;
+        @include rodAnimback(164px);
+        rotate: 20deg;
+        animation: specialRodMouveFive 20000ms linear infinite;
+    }
+
+    &__six {
+        position: absolute;
+        transform-origin: left;
+        @include rodAnimback(164px);
+        rotate: 20deg;
+        animation: specialRodMouveSix 20000ms linear infinite;
+    }
+
+    &__seven {
+        position: absolute;
+        transform-origin: left;
+        @include rodAnimback(164px);
+        rotate: 20deg;
+        animation: specialRodMouveSeven 20000ms linear infinite;
+    }
+
+    &__eight {
+        position: absolute;
+        transform-origin: left;
+        @include rodAnimback(164px);
+        rotate: 20deg;
+        animation: specialRodMouveEight 20000ms linear infinite;
+    }
+}

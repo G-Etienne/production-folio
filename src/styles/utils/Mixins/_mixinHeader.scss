@@ -1,0 +1,30 @@
+//--------------------------------------------------
+//utils
+@import "../../utils/variables";
+
+//--------------------------------------------------
+//3D cube styles
+@mixin cubeStyleRotateX($degreeRotate) {
+    background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
+    transform: rotateX($degreeRotate) translateZ($axeZ-Cube);
+    border: 1px black solid;
+
+    &.dark {
+        background: linear-gradient(43deg, $main-back-color, $fluo-color);
+        box-sizing: border-box;
+        border: 1px $fluo-color solid;
+    }
+}
+
+@mixin cubeStyleRotateY($degreeRotate) {
+    background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
+    transform: rotateY($degreeRotate) translateZ($axeZ-Cube);
+    border: 1px black solid;
+
+    &.dark {
+        background: linear-gradient(43deg, $main-back-color, $fluo-color);
+        box-sizing: border-box;
+        border: 1px $fluo-color solid;
+    }
+}
+//--------------------------------------------------

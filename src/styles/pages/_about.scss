@@ -1,0 +1,187 @@
+//--------------------------------------------------------
+//utils
+@import "../utils/variables";
+@import "../utils/Mixins/mixinPositionPages";
+@import "../utils/Mixins/mixinAbout";
+@import "../utils/Keyframes/keyframes";
+
+//--------------------------------------------------------
+//rules for the header
+.headerAbout {
+    position: relative;
+    z-index: 101;
+    height: 100%;
+    width: 99.5%;
+    background-color: $secondary-color-about;
+    margin: auto;
+    margin-top: 12px;
+    border-bottom: 4px solid darken($main-color-about, 50%);
+
+    //dark theme
+    &.dark {
+        background-color: darken($main-back-color, 10%);
+        border-bottom: 1px $fluo-color solid;
+    }
+}
+
+//main part of the about page
+.aboutMain {
+    width: 100%;
+    background: $main-color-about;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    //dark theme
+    &.dark {
+        background-color: darken($main-back-color, 20%);
+    }
+
+    //global style for the titles
+    & h2 {
+        font-family: "Roboto Mono", monospace;
+        font-size: 70px;
+    }
+
+    //part with the picture, the big title and the menu
+    &__containerTop {
+        display: flex;
+
+        &__menu {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 25%;
+            height: 100%;
+            margin-top: 200px;
+
+            //links in the menu
+            & > a {
+                text-align: center;
+                display: block;
+                margin-left: 20%;
+                text-decoration: none;
+                color: lighten($secondary-color-about, 10%);
+                font-size: 30px;
+                font-family: "Roboto Mono", monospace;
+                margin-bottom: 30px;
+                text-shadow: 0px 0px 3px darken($secondary-color-about, 50%);
+
+                &:hover {
+                    animation: scaleLinkAnim 300ms ease-in-out both;
+                    text-shadow: 0px 0px 10px
+                        darken($secondary-color-about, 50%);
+                }
+            }
+
+            //dark theme
+            &.dark {
+                & > a {
+                    color: $fluo-color;
+
+                    &:hover {
+                        text-shadow: 0px 0px 10px $fluo-color;
+                    }
+                }
+            }
+        }
+
+        //big title
+        &__title {
+            z-index: 102;
+            font-family: "Roboto Mono", monospace;
+            font-size: 150px;
+            margin-top: 30px;
+            color: lighten($secondary-color-about, 10%);
+            text-shadow: 0px 0px 3px darken($secondary-color-about, 50%);
+
+            &.dark {
+                color: $fluo-color;
+            }
+        }
+
+        //image
+        &__image {
+            height: 500px;
+            width: 700px;
+            position: absolute;
+            right: 4px;
+            opacity: 0.8;
+        }
+    }
+
+    //containner who explain who i am
+    &__containerWhoIAm {
+        display: flex;
+        height: 500px;
+        width: 100%;
+
+        &__title {
+            @include styleTitleAbout;
+        }
+
+        &__textPart {
+            @include styleTextAbout;
+        }
+    }
+
+    //containner who explain the web part
+    &__containerWeb {
+        display: flex;
+        height: 500px;
+        width: 100%;
+        flex-direction: row-reverse;
+
+        &__title {
+            @include styleTitleAbout;
+        }
+
+        &__textPart {
+            @include styleTextAbout;
+        }
+    }
+
+    //containner who explain what i do before web
+    &__containerBottom {
+        height: 500px;
+        width: 100%;
+        display: flex;
+
+        &__title {
+            @include styleTitleAbout;
+        }
+
+        &__textPart {
+            @include styleTextAbout;
+        }
+    }
+}
+
+//part for the disign of the bottom of the page
+.aboutFakeFooter {
+    height: 100px;
+    width: 100%;
+    background-color: $main-color-about;
+
+    //dark theme
+    &.dark {
+        background-color: darken($main-back-color, 20%);
+    }
+}
+
+//**************************************************************************************
+//placing the page in the virtual screen
+.aboutScreen {
+    @include positionPage;
+    height: 72.5%;
+
+    //change the apparence of the scrool rod
+    &__main {
+        &::-webkit-scrollbar-track {
+            background: $secondary-color-about;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: darken($main-color-about, 30%);
+        }
+    }
+}

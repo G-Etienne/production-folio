@@ -1,0 +1,58 @@
+//--------------------------------------------------------
+//import utils
+@import "../../../utils/Keyframes/keyframes";
+@import "../../../utils/Mixins/mixinHeader";
+
+//--------------------------------------------------------
+//container of the cube animation
+.cubeContainer {
+    position: absolute;
+    z-index: 20;
+    height: 50px;
+    width: 50px;
+}
+
+//block with the cube
+.cube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: SpinCube 15000ms infinite linear;
+
+    //rules for all the cube faces
+    &__face {
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    //face one by one
+    & .top {
+        @include cubeStyleRotateX(90deg);
+    }
+
+    & .bottom {
+        @include cubeStyleRotateX(-90deg);
+    }
+
+    & .right {
+        @include cubeStyleRotateY(90deg);
+    }
+
+    & .left {
+        @include cubeStyleRotateY(-90deg);
+    }
+
+    & .front {
+        @include cubeStyleRotateX(0deg);
+    }
+
+    & .back {
+        @include cubeStyleRotateX(-180deg);
+    }
+}

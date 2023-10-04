@@ -1,0 +1,53 @@
+//---------------------------------------------------------
+//utils sass
+@import "../utils/variables";
+//---------------------------------------------------------
+//strong normalization for the trainings page
+.trainingsMain__web__textContainer > p > strong {
+    font-weight: normal;
+}
+//---------------------------------------------------------
+//min width of the app
+#root {
+    min-width: 280px;
+}
+
+//---------------------------------------------------------
+//interaction for the dark and white theme
+.button {
+    z-index: 216;
+    position: absolute;
+}
+
+//---------------------------------------------------------
+//container of the application
+.mainBack {
+    height: 100vh;
+}
+//---------------------------------------------------------
+//polices
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Permanent Marker", cursive;
+}
+p {
+    font-family: "Rubik", sans-serif;
+}
+//---------------------------------------------------------
+//bases for the white and dark theme
+
+//white theme
+.whitemain {
+    background-color: lighten($main-back-color, 10%);
+    box-shadow: inset 0px 0px 500px darken($main-back-color, 15%);
+}
+
+//dark theme
+.darkmain {
+    background-color: darken($main-back-color, 70%);
+    box-shadow: inset 0px 0px 500px darken($main-back-color, 85%);
+}

@@ -1,0 +1,130 @@
+//-------------------------------------------------------
+//utils
+@import "../utils/Keyframes/keyframes";
+@import "../utils/Mixins/mixinPositionPages";
+@import "../utils/Mixins/mainMixin";
+@import "../utils/variables";
+
+//-------------------------------------------------------
+.errorMain {
+    //blocj in the center of the page
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
+    box-shadow: 0px 0px 7px (darken($colo-cube-one, 30%));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 0px 10px black;
+    animation: popUp 500ms cubic-bezier(0.84, 0.02, 0.37, 1.04) both;
+
+    //image error caractère
+    & > img {
+        width: 100px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    //title error 404
+    & > h1 {
+        position: relative;
+        top: -30px;
+        font-size: 80px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    //text under the title
+    &__text {
+        position: relative;
+        top: -50px;
+        text-align: center;
+        font-size: 25px;
+        text-shadow: 0px 0px 5px black;
+        margin-top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        //dark theme
+        &.dark {
+            text-shadow: 0px 0px 10px darken($main-back-color, 25%);
+        }
+    }
+
+    //link to the home page
+    &__link {
+        box-sizing: border-box;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 50px;
+        border: 3px darken($color-back-menu, 30%) solid;
+        width: 200px;
+        margin: auto;
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+        padding: 15px;
+        text-decoration: none;
+        font-family: "Rubik", sans-serif;
+        color: black;
+        font-weight: bold;
+        text-shadow: 0px 0px 5px white;
+        position: relative;
+        top: -50px;
+
+        background: radial-gradient(
+            lighten($color-back-menu, 20%),
+            darken($color-back-menu, 10%)
+        );
+
+        //dark theme
+        &.dark {
+            border: 1px $fluo-color solid;
+            background: darken($main-back-color, 10%);
+            color: white;
+            text-shadow: 0px 0px 7px black;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 10px white;
+
+            animation: scaleLinkAnim 200ms ease-in-out both;
+        }
+    }
+
+    //dark theme
+    &.dark {
+        box-shadow: 0px 0px 15px $fluo-color;
+        border: 1px $fluo-color solid;
+        color: $fluo-color;
+
+        background: radial-gradient(
+            lighten($main-back-color, 15%),
+            darken($main-back-color, 10%)
+        );
+    }
+}
+
+//**************************************************************************************
+//placing the page in the virtual screen
+.errorScreen {
+    @include positionPage;
+    height: 72.5%;
+
+    //change the apparence of the scrool rod
+    &__main {
+        &::-webkit-scrollbar-track {
+            background: $secondary-color-about;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: darken($main-color-about, 30%);
+        }
+    }
+}

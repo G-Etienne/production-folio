@@ -1,0 +1,183 @@
+//---------------------------------------------------------
+//uitls
+@import "../Keyframes/goalKeyframe";
+@import "../variables";
+
+@mixin styleElementObjectiv {
+    //rules for objectives blocks
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+
+    //visible part of this block
+    &__storeFront {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        z-index: 200;
+        height: 70%;
+        width: 60%;
+        border-radius: 20px;
+        min-height: 320px;
+        min-width: 230px;
+
+        &:hover {
+            box-shadow: 0px 0px 20px darken($color-main-goals, 30%);
+            cursor: pointer;
+        }
+
+        //dark theme
+        &.dark {
+            border: 2px $fluo-color solid;
+            color: $fluo-color;
+
+            &:hover {
+                box-shadow: 0px 0px 20px $fluo-color;
+            }
+
+            //fake button part
+            & > div {
+                background: black;
+                text-shadow: none;
+                border: 1px $fluo-color solid;
+
+                &:hover {
+                    box-shadow: 0px 0px 5px $fluo-color;
+                }
+            }
+        }
+
+        //title in a objectiv block
+        & > h2 {
+            margin: auto;
+            margin-top: 20px;
+            width: 90%;
+            font-size: 25px;
+            color: $color-secondary-goals;
+            text-shadow: 0px 0px 5px black;
+
+            //dark theme
+            &.dark {
+                color: $fluo-color;
+            }
+        }
+
+        //fake button
+        & > div {
+            height: 50px;
+            width: 70%;
+            margin: auto;
+            background: radial-gradient(white, lighten($color-main-goals, 35%));
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 35px;
+            text-shadow: 0px 0px 5px white;
+            box-shadow: 0px 0px 20px darken($color-main-goals, 20%);
+            padding: 15px;
+            box-sizing: border-box;
+
+            &:hover {
+                box-shadow: 0px 0px 5px white;
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    //hide text about the objectiv
+    &__textGoal {
+        border-left: none;
+        box-shadow: 0px 0px 5px darken($color-main-goals, 40%);
+        text-shadow: 0px 0px 5px white;
+        position: absolute;
+        height: 80%;
+        width: 90%;
+        border-radius: 20px;
+        padding: 15px;
+        transform-origin: center;
+        transform: scaleX(0);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 15px;
+
+
+        //image behind the text
+        & > img{
+            position:absolute;
+            height: 100%;
+            width: 100%;
+            left: 0px;
+            border-radius: 20px;
+            z-index: 10;
+        }
+
+        //dark theme
+        &.dark {
+            box-shadow: 0px 0px 5px $fluo-color;
+
+            //cross for closed the text
+            & > div {
+                background-color: black;
+                color: $fluo-color;
+            }
+        }
+
+        //title of the text
+        & > h3 {
+            font-family: "Roboto Mono", monospace;
+            font-size: 25px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            z-index: 12;
+
+        }
+
+        //text
+        & > p {
+            text-align: center;
+            font-family: "Roboto Mono", monospace;
+            font-size: 15px;
+            padding: 10px;
+            margin-bottom: 50px;
+            z-index: 12;
+
+        }
+
+        //cross for closed the text part
+        & > div {
+            box-sizing: border-box;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            text-align: center;
+            padding-top: 2px;
+            width: 25px;
+            height: 25px;
+            border-radius: 2px;
+            background-color: $color-secondary-goals;
+            color: $color-main-goals;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 12;
+
+
+            &:hover {
+                box-shadow: 0px 0px 5px darken($color-main-goals, 40%);
+            }
+        }
+
+        //animation when a block is opening
+        &.open {
+            animation: showTextObjectiv 300ms ease-in-out both;
+        }
+    }
+}

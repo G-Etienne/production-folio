@@ -1,0 +1,22 @@
+//keyframe for animation openning text hide in the objectiv page
+@keyframes showTextObjectiv {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+//animation for the links in the objectives page
+@keyframes hoverObjectiv {
+    0% {
+        transform-origin: center;
+        transform: scale(1);
+    }
+    100% {
+        transform-origin: center;
+
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,69 @@
+//-----------------------------------------------
+//utils
+@import "../../../utils/variables";
+@import "../../../utils/Keyframes/keyframesThemeLangue";
+
+//-----------------------------------------------
+//main rules langue
+.langueButton {
+    position: relative;
+    z-index: 250;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-top: 0px;
+    width: 40px;
+    height: 40px;
+
+    //effect
+    &:hover {
+        .englishFlag.frenchButton {
+            animation: switchTwo 200ms 200ms ease-in-out both;
+        }
+
+        .frenchFlag.frenchButton {
+            animation: switchOne 200ms ease-in-out both;
+        }
+
+        .englishFlag.englishButton {
+            animation: switchTwo 200ms 200ms ease-in-out both;
+        }
+
+        .frenchFlag.englishButton {
+            animation: switchOne 200ms ease-in-out both;
+        }
+    }
+}
+
+//-----------------------------------------------
+//english and french style
+.englishFlag {
+    border: 2px red solid;
+    position: absolute;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transform: rotateY(90deg);
+    cursor: pointer;
+
+    &.englishButton {
+        border: 2px blue solid;
+    }
+}
+
+.frenchFlag {
+    border: 2px blue solid;
+    position: absolute;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transform: rotateY(0deg);
+    cursor: pointer;
+
+    &.englishButton {
+        border: 2px red solid;
+    }
+}

@@ -1,0 +1,30 @@
+//---------------------------------------------------------
+//BREAKPOINTS :
+// zero-px: 0px,
+// mobile-max: 480px,
+// small-devices-min: 481px,
+// small-devices-max: 767px,
+// small-tablet-min: 768px,
+// small-tablet-max: 991px,
+// large-tablet-and-laptop-min: 992px,
+// large-tablet-and-laptop-max: 1199px,
+// desktop-min: 1200px,
+// desktop-max: 1919px,
+// extra-large-screen-min: 1920px
+
+//---------------------------------------------------
+//utils
+@import "../../../utils/Mixins/mixin-mediaqueries";
+
+//---------------------------------------------------
+//media for the touches of the keyboard
+@include responsive(zero-px, small-tablet-min) {
+    .key {
+        height: 6px;
+        width: 7;
+        font-size: 3px;
+        margin-left: 3px;
+        margin-right: 0px;
+        margin-top: 1.5px;
+    }
+}

@@ -1,0 +1,49 @@
+//---------------------------------------------------------
+//BREAKPOINTS :
+// zero-px: 0px,
+// mobile-max: 480px,
+// small-devices-min: 481px,
+// small-devices-max: 767px,
+// small-tablet-min: 768px,
+// small-tablet-max: 991px,
+// large-tablet-and-laptop-min: 992px,
+// large-tablet-and-laptop-max: 1199px,
+// desktop-min: 1200px,
+// desktop-max: 1919px,
+// extra-large-screen-min: 1920px
+
+//------------------------------------------------------
+//utils
+@import "../../utils/map";
+@import "../../utils/Mixins/mixin-mediaqueries";
+
+//------------------------------------------------------
+@include responsive(small-tablet-min, large-tablet-and-laptop-max) {
+    .header {
+        &__title {
+            font-size: 50px;
+            top: -20px;
+            left: 0px;
+        }
+    }
+}
+
+@include responsive(small-tablet-min, small-tablet-max) {
+    .header {
+        &__title {
+            font-size: 40px;
+            top: -15px;
+            left: 0px;
+        }
+    }
+}
+
+@include responsive(zero-px, small-devices-max) {
+    .header {
+        &__title {
+            font-size: 30px;
+            left: 0px;
+            top: -5px;
+        }
+    }
+}

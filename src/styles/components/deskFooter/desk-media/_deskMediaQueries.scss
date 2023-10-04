@@ -1,0 +1,146 @@
+//---------------------------------------------------------
+//BREAKPOINTS :
+// zero-px: 0px,
+// mobile-max: 480px,
+// small-devices-min: 481px,
+// small-devices-max: 767px,
+// small-tablet-min: 768px,
+// small-tablet-max: 991px,
+// large-tablet-and-laptop-min: 992px,
+// large-tablet-and-laptop-max: 1199px,
+// desktop-min: 1200px,
+// desktop-max: 1919px,
+// extra-large-screen-min: 1920px
+
+//------------------------------------------------
+//import utils
+@import "../../../utils/map";
+@import "../../../utils/Mixins/mixin-mediaqueries";
+
+//------------------------------------------------
+@include responsive(large-tablet-and-laptop-min, large-tablet-and-laptop-max) {
+    .desk {
+        width: 80%;
+
+        &__underTop {
+            width: 80%;
+        }
+
+        &__front {
+            width: 83%;
+        }
+    }
+}
+
+@include responsive(small-tablet-min, small-tablet-max) {
+    .copyright {
+        font-size: 14px;
+    }
+    .desk {
+        width: 80%;
+
+        &__front {
+            width: 89%;
+        }
+
+        &__underTop {
+            width: 80%;
+        }
+        &__front {
+            width: 83%;
+        }
+    }
+}
+
+@include responsive(zero-px, small-devices-max) {
+    .copyright {
+        font-size: 12px;
+        bottom: -8px;
+    }
+
+    .desk {
+        width: 96%;
+
+        &__underTop {
+            width: 95%;
+        }
+
+        &__front {
+            width: 99.5%;
+        }
+        &__drawer__grip {
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .copyright {
+        font-size: 12px;
+        bottom: -10px;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .desk__drawer__grip {
+        display: none;
+    }
+}
+
+//----------------------------------------------------------
+//media queries special with height
+
+@media screen and (max-height: 900px) and (max_width: 992px) {
+    .desk {
+        &__front {
+            width: 23%;
+        }
+    }
+}
+@media screen and (max-height: 650px) {
+    .copyright {
+        margin-bottom: 13px;
+        font-size: 14;
+    }
+
+    .desk {
+        &__front {
+            top: -4px;
+            height: 7px;
+            width: 82.5%;
+        }
+
+        &__underTop {
+            top: -4px;
+        }
+
+        &__drawer__grip {
+            scale: 0;
+        }
+    }
+}
+
+@media screen and (max-height: 650px) and (max-width: 1199px) {
+    .desk {
+        &__front {
+            width: 82.5%;
+        }
+    }
+}
+
+@media screen and (max-height: 650px) and (min-width: 1199px) {
+    .desk {
+        &__front {
+            width: 62%;
+        }
+    }
+}
+
+@media screen and (max-height: 650px) and (max-width: 767px) {
+    .desk {
+        &__front {
+            width: 99%;
+        }
+    }
+}

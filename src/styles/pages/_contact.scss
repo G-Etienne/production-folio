@@ -1,0 +1,185 @@
+//--------------------------------------------------------
+//utils
+@import "../utils/variables";
+@import "../utils/Mixins/mixinPositionPages";
+@import "../utils/Keyframes/keyframes";
+//---------------------------------------------------------
+//main rules
+.contactMain {
+    height: 80%;
+    width: 100%;
+
+    //dark theme
+    &.dark {
+        color: $fluo-color;
+    }
+
+    //title of the page
+    &__bigTitle {
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
+        margin-top: 40px;
+        font-family: "Source Sans 3", sans-serif;
+    }
+
+    //the localisation
+    &__localisation {
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        font-family: "Source Sans 3", sans-serif;
+    }
+
+    //container with the differents way to contact
+    &__container {
+        position: relative;
+        height: 70%;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    //all contacts blocks
+    &__contacts {
+        height: 100%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        //phone part
+        &.phone {
+            border-left: 3px black solid;
+            border-right: 3px black solid;
+
+            //dark theme
+            &.dark {
+                border-left: 3px $fluo-color solid;
+                border-right: 3px $fluo-color solid;
+            }
+        }
+
+        //all titles
+        &__title {
+            font-family: "Source Sans 3", sans-serif;
+            font-size: 30px;
+        }
+
+        //all icones
+        &__icone {
+            font-family: "Source Sans 3", sans-serif;
+            font-size: 55px;
+
+            //linkedin part
+            &.linkedin {
+                background-color: black;
+                color: lighten($color-back-contact, 5%);
+                padding: 5px;
+                height: 55px;
+                width: 55px;
+                text-align: center;
+                border-radius: 10px;
+                &.dark {
+                    background-color: $fluo-color;
+                    color: black;
+                }
+            }
+        }
+
+        //text with the phone number
+        &__text {
+            text-align: center;
+            font-family: "Source Sans 3", sans-serif;
+            font-size: 20px;
+        }
+
+        //buttons contact
+        &__button {
+            box-sizing: border-box;
+            border-radius: 50px;
+            border: 3px darken(#ededed, 30%) solid;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+            padding: 15px;
+            text-decoration: none;
+            text-align: center;
+            font-family: "Source Sans 3", sans-serif;
+            color: black;
+
+            background: radial-gradient(
+                lighten(#ededed, 20%),
+                darken(#ededed, 10%)
+            );
+
+            //dark theme
+            &.dark {
+                border: 3px $fluo-color solid;
+                background: darken($main-back-color, 10%);
+                color: white;
+                text-shadow: 0px 0px 7px black;
+            }
+
+            &:hover {
+                box-shadow: 0px 0px 10px white;
+                animation: scaleLinkAnim 200ms ease-in-out both;
+            }
+        }
+    }
+}
+
+//---------------------------------------------------------
+//special rules for screen contact
+//style for the back of the screen
+.contactScreen {
+    //color in the back of the screen
+    background: linear-gradient(white, lighten($color-back-contact, 5%) 30%);
+
+    //image in the back of the screen
+    &__backImage {
+        width: 100%;
+        height: 20%;
+        background-image: url("../../assets/Contact/back-image-contact.jpg");
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        opacity: 0.6;
+
+        //dark theme
+        &.dark {
+            background-image: url("../../assets/Contact/back-image-contact-dark.jpg");
+            background-size: cover;
+        }
+    }
+
+    //dark theme
+    &.dark {
+        background: black;
+    }
+}
+
+//**************************************************************************************
+//placing the page in the virtual screen
+.contactScreen {
+    @include positionPage;
+    height: 73.5%;
+    width: 97.5%;
+    margin-top: 1%;
+    margin-left: 4px;
+
+    //change the apparence of the scrool rod
+    &__main {
+        &::-webkit-scrollbar-track {
+            background: #e6d4b1;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: darken($color-back-contact, 30%);
+        }
+    }
+}

@@ -1,0 +1,28 @@
+//--------------------------------------------
+//mixin for the shadow after basic
+@mixin afterBase() {
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+//--------------------------------------------
+//mixin for the shadow of the desk elements
+@mixin afterDesk($opacity) {
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(0, 0, 0, $opacity), transparent);
+}
+
+//--------------------------------------------
+//mixin for the shadow of the light elements
+@mixin afterLight($radius) {
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: $radius;
+}
