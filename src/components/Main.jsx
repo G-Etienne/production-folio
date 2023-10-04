@@ -10,7 +10,8 @@ import Footer from "./Footer";
 
 //---------------------------------------------------------
 // //style
- import "../styles/css/style.css";
+// import "../styles/bases/_bases.scss";
+
 //---------------------------------------------------------
 function Main() {
     const { theme } = useContext(ThemeContext);
