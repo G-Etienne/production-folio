@@ -2671,7 +2671,7 @@ p {
   }
 }
 .footer {
-  position: fixed;
+  position: absolute;
   box-sizing: border-box;
   height: 215px;
   width: 100%;
