@@ -709,6 +709,7 @@ template {
 
 #root {
   min-width: 280px;
+  padding-bottom: 0px;
 }
 
 .button {
@@ -2676,6 +2677,7 @@ p {
   height: 215px;
   width: 100%;
   bottom: 0px;
+  margin-bottom: 0px;
   min-width: 280px;
 }
 
@@ -2715,7 +2717,7 @@ p {
   width: 98%;
   margin: auto;
   top: 1%;
-  height: 70%;
+  height: 75%;
 }
 
 .whitescreen {
