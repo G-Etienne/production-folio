@@ -23,6 +23,12 @@
 //container of the application
 .mainBack {
     height: 100vh;
+
+    & > div{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
 }
 
 

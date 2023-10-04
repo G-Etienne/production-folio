@@ -719,6 +719,11 @@ template {
 .mainBack {
   height: 100vh;
 }
+.mainBack > div {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
 
 h1,
 h2,
@@ -2715,7 +2720,7 @@ p {
   border: 2px rgb(178, 178, 178) solid;
   width: 98%;
   margin: auto;
-  top: 1%;
+  top: 0px;
   height: 75%;
 }
 
