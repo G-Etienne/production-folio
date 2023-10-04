@@ -761,7 +761,6 @@ p {
 .desk {
   position: relative;
   z-index: 10;
-  top: -5px;
   height: 65%;
   width: 60%;
   margin: auto;
