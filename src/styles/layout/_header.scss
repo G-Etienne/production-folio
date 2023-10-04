@@ -10,6 +10,8 @@
     position: relative;
     height: 15%;
     width: 100%;
+    z-index: 520;
+
 
     //h1 etienne ginet
     &__title {
@@ -17,7 +19,6 @@
         position: relative;
         top: -40px;
         left: -10px;
-        z-index: 220;
         font-size: 65px;
         color: $color-text-clear;
         font-family: "Permanent Marker", cursive;
