@@ -5,13 +5,12 @@
 
 //------------------------------------------------------
 //components in the footer
-import Desk from "./desk/Desk";
+//import Desk from "./desk/Desk";
 //------------------------------------------------------
 function Footer() {
     return (
         <>
             <footer className="footer">
-                <Desk />
             </footer>
         </>
     );

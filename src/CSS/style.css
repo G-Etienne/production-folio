@@ -2678,6 +2678,7 @@ p {
   bottom: 2px;
   width: 100%;
   min-width: 280px;
+  border: 2px white solid;
 }
 
 .header {
