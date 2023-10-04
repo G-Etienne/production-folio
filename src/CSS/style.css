@@ -2678,7 +2678,6 @@ p {
   bottom: 2px;
   width: 100%;
   min-width: 280px;
-  border: 2px white solid;
 }
 
 .header {
@@ -2732,11 +2731,13 @@ p {
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .footer {
     height: 185px;
+    bottom: 0px;
   }
 }
 @media screen and (max-height: 900px) and (max_width: 992px) {
   .footer {
     height: 180px;
+    bottom: 0px;
   }
 }
 @media screen and (max-height: 650px) {

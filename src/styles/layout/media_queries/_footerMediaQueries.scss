@@ -21,6 +21,7 @@
 @include responsive(zero-px, small-devices-max) {
     .footer {
         height: 185px;
+        bottom: 0px;
     }
 }
 
@@ -29,6 +30,7 @@
 @media screen and (max-height: 900px) and (max_width: 992px) {
     .footer {
         height: 180px;
+        bottom: 0px;
     }
 }
 
