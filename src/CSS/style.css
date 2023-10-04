@@ -2718,7 +2718,7 @@ p {
   border: 2px rgb(178, 178, 178) solid;
   width: 98%;
   margin: auto;
-  top: 1%;
+  margin-top: 1%;
   height: 75%;
 }
 
