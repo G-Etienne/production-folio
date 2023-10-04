@@ -23,6 +23,9 @@
 //container of the application
 .mainBack {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
 }
 
 

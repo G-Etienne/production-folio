@@ -718,6 +718,9 @@ template {
 
 .mainBack {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
 }
 
 h1,
@@ -2675,6 +2678,7 @@ p {
   position: relative;
   box-sizing: border-box;
   height: 215px;
+  bottom: 2px;
   width: 100%;
   min-width: 280px;
 }
