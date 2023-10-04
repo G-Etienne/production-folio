@@ -814,6 +814,7 @@ p {
   width: 60%;
   background-color: #a85024;
   margin: auto;
+  margin-bottom: 0px;
 }
 .desk__underTop::after {
   content: " ";
@@ -2677,6 +2678,7 @@ p {
   bottom: 2px;
   width: 100%;
   min-width: 280px;
+  border: 2px white solid;
 }
 
 .header {

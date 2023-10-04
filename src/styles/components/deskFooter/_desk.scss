@@ -76,6 +76,7 @@
         width: 60%;
         background-color: darken($main-color-desk, 3%);
         margin: auto;
+        margin-bottom: 0px;
 
         &::after {
             @include afterDesk(0.5);
