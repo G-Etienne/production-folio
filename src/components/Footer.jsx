@@ -10,9 +10,9 @@ import Desk from "./desk/Desk";
 function Footer() {
     return (
         <>
-            <div className="footer">
+            <footer className="footer">
                 <Desk />
-            </div>
+            </footer>
         </>
     );
 }
