@@ -46,7 +46,6 @@ function Roads() {
                         <Route path="/resume" element={<Resume />} />
                         <Route path="/graphics" element={<WaitGraphic />} />
                     </Routes>
-                    <Footer />
                 </LangueProvider>
             </ThemeProvider>
         </BrowserRouter>

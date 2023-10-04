@@ -2674,6 +2674,7 @@ p {
   position: absolute;
   box-sizing: border-box;
   height: 215px;
+  bottom: 2px;
   width: 100%;
   min-width: 280px;
 }

@@ -6,6 +6,7 @@ import { ThemeContext } from "../contexts/ThemeContext";
 //---------------------------------------------------------
 //import of the components
 import Screen from "./screen/Screen";
+import Footer from "./Footer";
 
 //---------------------------------------------------------
 // //style
@@ -19,6 +20,7 @@ function Main() {
         <div className={`mainBack ${theme + "main"}`}>
             {/* virtual screen in the site */}
             <Screen></Screen>
+            <Footer></Footer>
         </div>
     );
 }
