@@ -10,7 +10,7 @@
     position: relative;
     height: 15%;
     width: 100%;
-    z-index: 520;
+    z-index: 320;
 
 
     //h1 etienne ginet
@@ -23,6 +23,7 @@
         color: $color-text-clear;
         font-family: "Permanent Marker", cursive;
         text-shadow: 0px 0px 10px white;
+        z-index: 320;
 
         &:hover {
             animation: scaleLinkAnim 300ms ease-in-out both;

@@ -6,6 +6,8 @@
 //-------------------------------------------------
 //style for the menu
 .menu {
+    position: relative;
+    z-index: 320;
     //logo in the center of the menu
     &__logo {
         display: flex;
