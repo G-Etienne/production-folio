@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/production-folio/',
   router: {
-    base: '/',
+    base: '/production-folio/',
   },
   plugins: [react()]
 })
