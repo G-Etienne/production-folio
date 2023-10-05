@@ -748,7 +748,7 @@ p {
 
 @media screen and (max-width: 767px) {
   .mainBack {
-    height: 95vh;
+    height: 99vh;
   }
 }
 .copyright {
@@ -5268,10 +5268,11 @@ p {
     width: 99.4%;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
   .contactScreen {
     margin-top: 2.8%;
     width: 96.5%;
+    height: 60vh;
   }
   .contactScreen__headerPage {
     width: 99.1%;
@@ -6823,10 +6824,11 @@ p {
     width: 99.4%;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
   .resumeScreen {
     margin-top: 2.8%;
     width: 96.5%;
+    height: 60vh;
   }
   .resumeScreen__headerPage {
     width: 99.1%;

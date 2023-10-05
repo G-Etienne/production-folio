@@ -331,10 +331,11 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
     .resumeScreen {
         margin-top: 2.8%;
         width: 96.5%;
+        height: 60vh;
         &__headerPage {
             width: 99.1%;
         }
