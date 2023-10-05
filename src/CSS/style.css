@@ -2783,7 +2783,7 @@ p {
 }
 @media screen and (max-width: 767px) {
   .screen {
-    height: 69vh;
+    height: 65vh;
   }
 }
 @keyframes linkDeskAnim {
@@ -5989,7 +5989,7 @@ p {
   .goalScreen {
     margin-top: 2.8%;
     width: 96.5%;
-    height: 65vh;
+    height: 62vh;
   }
   .goalScreen__headerPage {
     width: 99.1%;
