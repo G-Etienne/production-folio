@@ -199,24 +199,12 @@
         bottom: 0px;
         left: -1px;
 
-        &::after {
-            @include afterLight(2px);
-
-            background: linear-gradient(rgb(30, 30, 30), transparent);
-        }
 
         //dark mode
         &.darkBaseMiddle {
             background-color: lighten(rgb(109, 108, 108), 10%);
 
-            &::after {
-                @include afterLight(2px);
-
-                background: linear-gradient(
-                    lighten(rgb(30, 30, 30), 30%),
-                    grey
-                );
-            }
+            
         }
     }
 
@@ -237,14 +225,7 @@
             background-color: lighten(rgb(109, 108, 108), 10%);
             box-shadow: 0px 0px 6px lighten(black, 15%);
 
-            &::after {
-                @include afterLight(50%);
-
-                background: linear-gradient(
-                    lighten(grey, 25%),
-                    lighten(rgb(30, 30, 30), 25%)
-                );
-            }
+           
         }
     }
 }
