@@ -1,3 +1,4 @@
+# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
 on:
@@ -38,11 +39,6 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Set the content type of 404.html
-        uses: actions/set-content-type@v1
-        with:
-          file: './404.html'
-          mime-type: 'text/html'
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
@@ -50,6 +46,10 @@ jobs:
         with:
           # Upload dist repository
           path: './dist'
+      - name: Deploy 404.html
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './404.html'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
