@@ -32,13 +32,7 @@ function Light() {
                 {/* base of the light */}
                 <div className={`light__baseTop ${theme + "BaseTop"}`}></div>
 
-                <div
-                    className={`light__baseMiddle ${theme + "BaseMiddle"}`}
-                ></div>
-
-                <div
-                    className={`light__baseBottom ${theme + "BaseBottom"}`}
-                ></div>
+                
             </div>
         </>
     );

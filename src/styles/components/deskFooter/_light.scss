@@ -166,6 +166,7 @@
         transform: perspective(150px) rotateX(65deg);
         position: absolute;
         bottom: -8px;
+        box-shadow: 0px 0px 3px black;
 
         &::after {
             @include afterLight(50%);
@@ -183,66 +184,6 @@
                 background: radial-gradient(
                     lighten(grey, 20%),
                     lighten(rgb(42, 41, 41), 20%)
-                );
-            }
-        }
-    }
-
-    //style for the thickness of the base
-    &__baseMiddle {
-        height: 10px;
-        z-index: 31;
-        width: 37px;
-        background-color: rgb(109, 108, 108);
-        border-radius: 2px;
-        position: absolute;
-        bottom: 0px;
-        left: -1px;
-
-        &::after {
-            @include afterLight(2px);
-
-            background: linear-gradient(rgb(30, 30, 30), transparent);
-        }
-
-        //dark mode
-        &.darkBaseMiddle {
-            background-color: lighten(rgb(109, 108, 108), 10%);
-
-            &::after {
-                @include afterLight(2px);
-
-                background: linear-gradient(
-                    lighten(rgb(30, 30, 30), 30%),
-                    grey
-                );
-            }
-        }
-    }
-
-    //style for the bottom of the base
-    &__baseBottom {
-        height: 35px;
-        width: 35px;
-        border-radius: 50%;
-        background-color: rgb(110, 110, 110);
-        transform: perspective(150px) rotateX(65deg);
-        position: absolute;
-        z-index: 30;
-        bottom: -15px;
-        box-shadow: 0px 0px 6px black;
-
-        //dark mode
-        &.darkBaseBottom {
-            background-color: lighten(rgb(109, 108, 108), 10%);
-            box-shadow: 0px 0px 6px lighten(black, 15%);
-
-            &::after {
-                @include afterLight(50%);
-
-                background: linear-gradient(
-                    lighten(grey, 25%),
-                    lighten(rgb(30, 30, 30), 25%)
                 );
             }
         }

@@ -1051,6 +1051,7 @@ p {
   transform: perspective(150px) rotateX(65deg);
   position: absolute;
   bottom: -8px;
+  box-shadow: 0px 0px 3px black;
 }
 .light__baseTop::after {
   content: " ";
@@ -1070,58 +1071,6 @@ p {
   width: 100%;
   border-radius: 50%;
   background: radial-gradient(#b3b3b3, #5e5b5b);
-}
-.light__baseMiddle {
-  height: 10px;
-  z-index: 31;
-  width: 37px;
-  background-color: rgb(109, 108, 108);
-  border-radius: 2px;
-  position: absolute;
-  bottom: 0px;
-  left: -1px;
-}
-.light__baseMiddle::after {
-  content: " ";
-  display: block;
-  height: 100%;
-  width: 100%;
-  border-radius: 2px;
-  background: linear-gradient(rgb(30, 30, 30), transparent);
-}
-.light__baseMiddle.darkBaseMiddle {
-  background-color: #878585;
-}
-.light__baseMiddle.darkBaseMiddle::after {
-  content: " ";
-  display: block;
-  height: 100%;
-  width: 100%;
-  border-radius: 2px;
-  background: linear-gradient(#6b6b6b, grey);
-}
-.light__baseBottom {
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
-  background-color: rgb(110, 110, 110);
-  transform: perspective(150px) rotateX(65deg);
-  position: absolute;
-  z-index: 30;
-  bottom: -15px;
-  box-shadow: 0px 0px 6px black;
-}
-.light__baseBottom.darkBaseBottom {
-  background-color: #878585;
-  box-shadow: 0px 0px 6px #262626;
-}
-.light__baseBottom.darkBaseBottom::after {
-  content: " ";
-  display: block;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  background: linear-gradient(silver, #5e5e5e);
 }
 
 @keyframes linkDeskAnim {
