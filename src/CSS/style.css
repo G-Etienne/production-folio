@@ -3041,7 +3041,7 @@ p {
 
 .aboutScreen {
   z-index: 100;
-  height: 74%;
+  height: 78%;
   width: 98%;
   position: absolute;
   top: 0px;
@@ -3258,7 +3258,7 @@ p {
 
 .contactScreen {
   z-index: 100;
-  height: 74%;
+  height: 78%;
   width: 98%;
   position: absolute;
   top: 0px;
@@ -3441,7 +3441,7 @@ p {
 
 .errorScreen {
   z-index: 100;
-  height: 74%;
+  height: 78%;
   width: 98%;
   position: absolute;
   top: 0px;
@@ -4029,7 +4029,7 @@ p {
 
 .goalScreen {
   z-index: 100;
-  height: 74%;
+  height: 78%;
   width: 98%;
   position: absolute;
   top: 0px;
@@ -4367,7 +4367,7 @@ p {
 
 .homeScreen {
   z-index: 100;
-  height: 74%;
+  height: 78%;
   width: 98%;
   position: absolute;
   top: 0px;
@@ -4744,7 +4744,7 @@ p {
 
 .resumeScreen {
   z-index: 100;
-  height: 74%;
+  height: 78%;
   width: 98%;
   position: absolute;
   top: 0px;
@@ -5048,7 +5048,7 @@ p {
 
 .trainingsScreen {
   z-index: 100;
-  height: 74%;
+  height: 78%;
   width: 98%;
   position: absolute;
   top: 0px;
@@ -6588,7 +6588,7 @@ p {
     height: 70%;
   }
   .homeScreen__main.white {
-    height: 87%;
+    height: 80%;
   }
   .homeScreen__main.dark {
     height: 80%;
