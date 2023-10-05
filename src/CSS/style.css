@@ -746,6 +746,11 @@ p {
   box-shadow: inset 0px 0px 500px black;
 }
 
+@media screen and (max-width: 767px) {
+  .mainBack {
+    height: 85vh;
+  }
+}
 .copyright {
   font-weight: bold;
   z-index: 11;
@@ -2783,7 +2788,7 @@ p {
 }
 @media screen and (max-width: 767px) {
   .screen {
-    height: 60vh;
+    height: 65vh;
   }
 }
 @keyframes linkDeskAnim {
