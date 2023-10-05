@@ -947,6 +947,7 @@ p {
   top: -15px;
   height: 80px;
   width: 35px;
+  scale: 0.7;
 }
 .light__head {
   box-sizing: border-box;
@@ -2727,7 +2728,7 @@ p {
   width: 98%;
   margin: auto;
   margin-top: 1%;
-  height: 75vh;
+  height: 75%;
 }
 
 .whitescreen {
@@ -2777,7 +2778,7 @@ p {
 }
 @media screen and (max-height: 900px) {
   .screen {
-    height: 70vh;
+    height: 65vh;
   }
 }
 @keyframes linkDeskAnim {
