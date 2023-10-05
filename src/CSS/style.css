@@ -1004,7 +1004,7 @@ p {
 }
 .light__on__bottom.darkHead {
   position: absolute;
-  z-index: 11;
+  z-index: 9;
   top: 35px;
   left: -18px;
   height: 72px;
@@ -1096,7 +1096,7 @@ p {
   display: block;
   height: 100%;
   width: 100%;
-  border-radius: 0px;
+  border-radius: 2px;
   background: linear-gradient(#6b6b6b, grey);
 }
 .light__baseBottom {
@@ -4686,12 +4686,12 @@ p {
 
 .bigScreenContainer {
   position: absolute;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: #eaeaea;
   top: 0px;
   box-sizing: border-box;
-  z-index: 1000;
+  z-index: 500;
   display: flex;
   flex-direction: column;
   align-items: center;

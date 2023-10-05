@@ -97,7 +97,7 @@
         &__bottom {
             &.darkHead {
                 position: absolute;
-                z-index: 11;
+                z-index: 9;
                 top: 35px;
                 left: -18px;
                 height: 72px;
@@ -209,7 +209,7 @@
             background-color: lighten(rgb(109, 108, 108), 10%);
 
             &::after {
-                @include afterLight(0px);
+                @include afterLight(2px);
 
                 background: linear-gradient(
                     lighten(rgb(30, 30, 30), 30%),
