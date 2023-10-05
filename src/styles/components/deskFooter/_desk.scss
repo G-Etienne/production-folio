@@ -18,6 +18,10 @@
         color: $fluo-color;
         text-shadow: 0px 0px 4px transparent;
     }
+
+    & > strong {
+        font-weight: bold;
+    }
 }
 
 //---------------------------------------------------

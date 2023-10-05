@@ -4,14 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/production-folio/',
-  router: {
-    base: '/',
-  },
   plugins: [react()],
-  server: {
-    addMimeTypes : [
-      'text/css',
-      'text/html',
-    ]
-  }
 })
