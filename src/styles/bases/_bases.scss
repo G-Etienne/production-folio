@@ -56,8 +56,3 @@ p {
     background-color: darken($main-back-color, 70%);
     box-shadow: inset 0px 0px 500px darken($main-back-color, 85%);
 }
-@media screen and (max-width: 767px) {
-    .mainBack {
-        height: 99vh;
-    }
-}
