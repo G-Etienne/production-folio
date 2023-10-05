@@ -2227,6 +2227,7 @@ p {
 }
 .menu__logo__topRod {
   position: relative;
+  z-index: 223;
   top: -2px;
   width: 20px;
   height: 3px;
@@ -2237,6 +2238,7 @@ p {
 }
 .menu__logo__bottomRod {
   position: relative;
+  z-index: 223;
   top: 2px;
   width: 20px;
   height: 3px;
@@ -2857,6 +2859,7 @@ p {
   display: flex;
 }
 .aboutMain__containerTop__menu {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;

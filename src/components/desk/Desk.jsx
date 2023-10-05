@@ -28,7 +28,7 @@ function Desk() {
             <Light />
 
             {/* desk top */}
-            <div className={`desk ${theme + "Desk"}`}>
+            <div className={`desk ${theme + "Desk"}`}>                
                 <Keyboard />
                 <Mouse />
             </div>

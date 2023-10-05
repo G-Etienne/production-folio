@@ -20,6 +20,7 @@
 
         &__topRod {
             position: relative;
+            z-index: 223;
             top: -2px;
             width: 20px;
             height: 3px;
@@ -33,6 +34,7 @@
 
         &__bottomRod {
             position: relative;
+            z-index: 223;
             top: 2px;
             width: 20px;
             height: 3px;
