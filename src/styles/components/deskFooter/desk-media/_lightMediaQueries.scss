@@ -29,7 +29,7 @@
 @include responsive(small-tablet-min, small-tablet-max) {
     .light {
         right: 13%;
-        scale: 0.7;
+        scale: 0.65;
     }
 }
 
@@ -37,7 +37,7 @@
 @include responsive(small-devices-min, small-devices-max) {
     .light {
         right: 8%;
-        scale: 0.7;
+        scale: 0.65;
     }
 }
 
@@ -45,7 +45,7 @@
 @media screen and (min-width: 360px) and (max-width: 480px) {
     .light {
         right: 8%;
-        scale: 0.7;
+        scale: 0.65;
     }
 }
 
