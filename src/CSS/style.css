@@ -748,7 +748,7 @@ p {
 
 @media screen and (max-width: 767px) {
   .mainBack {
-    height: 85vh;
+    height: 95vh;
   }
 }
 .copyright {
@@ -2788,7 +2788,7 @@ p {
 }
 @media screen and (max-width: 767px) {
   .screen {
-    height: 65vh;
+    height: 69vh;
   }
 }
 @keyframes linkDeskAnim {
@@ -5993,7 +5993,7 @@ p {
   .goalScreen {
     margin-top: 2.8%;
     width: 96.5%;
-    height: 62vh;
+    height: 60vh;
   }
   .goalScreen__headerPage {
     width: 99.1%;
