@@ -16,6 +16,12 @@
 //media queries special height
 @media screen and (max-height: 900px) {
     .screen {
-        height: 65vh;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .screen{
+        height: 60vh;
     }
 }
