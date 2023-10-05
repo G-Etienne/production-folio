@@ -40,6 +40,7 @@ function Back() {
                 src={backScreen}
                 alt="imagne for the back of the screen"
                 className={`backScreenImage ${theme}`}
+                rel="preload"
             ></img>
 
             {/* animation */}

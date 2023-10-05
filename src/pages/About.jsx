@@ -71,6 +71,7 @@ function Home() {
                                 src={aboutImage}
                                 alt="image for illustrate the about page"
                                 className={`aboutMain__containerTop__image ${theme}`}
+                                rel="preload"
                             ></img>
                         </div>
 
@@ -220,6 +221,7 @@ function Home() {
                                 src={aboutImage}
                                 alt="image for illustrate the about page"
                                 className={`aboutMain__containerTop__image ${theme}`}
+                                rel="preload"
                             ></img>
                         </div>
 

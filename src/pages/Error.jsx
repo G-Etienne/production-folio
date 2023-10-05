@@ -36,6 +36,7 @@ function Error() {
                             <img
                                 src={perso}
                                 alt="image du perso pour illustration de la page."
+                                rel="preload"
                             />
 
                             <h1>ERREUR 404</h1>
@@ -74,6 +75,7 @@ function Error() {
                             <img
                                 src={perso}
                                 alt="image du perso pour illustration de la page."
+                                rel="preload"
                             />
 
                             <h1>ERROR 404</h1>

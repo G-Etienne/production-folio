@@ -36,7 +36,7 @@ function Trainings() {
                 {/* page trainings */}
                 <div className={`trainingsScreen ${theme}`}>
                     {/* image for the back of the screen */}
-                    <img src={backImage} alt="image for the back of the screen" />
+                    <img src={backImage} alt="image for the back of the screen" rel="preload"/>
 
                     {/* header trainings */}
                     <div className="trainingsScreen__headerPage"></div>
@@ -52,11 +52,13 @@ function Trainings() {
                                     className={`trainingsMain__web__imageOne ${theme}`}
                                     src={laptop}
                                     alt="laptop web trainings"
+                                    rel="preload"
                                 />
                                 <img
                                     className={`trainingsMain__web__imageTwo ${theme}`}
                                     src={laptopIllustration}
                                     alt="illustration web trainings"
+                                    rel="preload"
                                 />
 
                                 {/* decorativ bublle */}
@@ -164,6 +166,7 @@ function Trainings() {
                                     <img
                                         src={carpenterIllustration}
                                         alt="image for illustring the carpenter part."
+                                        rel="preload"
                                     />
                                 </div>
                             </div>
@@ -181,7 +184,7 @@ function Trainings() {
                 {/* page trainings */}
                 <div className={`trainingsScreen ${theme}`}>
                     {/* image for the back of the screen */}
-                    <img src={backImage} alt="image for the back of the screen" />
+                    <img src={backImage} alt="image for the back of the screen" rel="preload"/>
 
                     {/* header trainings */}
                     <div className="trainingsScreen__headerPage"></div>
@@ -197,11 +200,13 @@ function Trainings() {
                                     className={`trainingsMain__web__imageOne ${theme}`}
                                     src={laptop}
                                     alt="laptop web trainings"
+                                    rel="preload"
                                 />
                                 <img
                                     className={`trainingsMain__web__imageTwo ${theme}`}
                                     src={laptopIllustration}
                                     alt="illustration web trainings"
+                                    rel="preload"
                                 />
 
                                 {/* decorativ bublle */}
@@ -305,6 +310,7 @@ function Trainings() {
                                     <img
                                         src={carpenterIllustration}
                                         alt="image for illustring the carpenter part."
+                                        rel="preload"
                                     />
                                 </div>
                             </div>

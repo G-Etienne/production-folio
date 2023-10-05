@@ -5,7 +5,6 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 //---------------------------------------------------------
 //Routes components
 import About from "../pages/About";
-import Footer from "../components/Footer";
 import Main from "../components/MainPage";
 import Home from "../pages/Home";
 import Error from "../pages/Error";

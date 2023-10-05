@@ -61,7 +61,7 @@ function Resume() {
                 // part for placing the on the virtual screen
                 <div className={`resumeScreen ${theme}`}>
                     {/* image for the back of the screen */}
-                    <img src={backImage} alt="image for the back of the screen" />
+                    <img src={backImage} alt="image for the back of the screen" rel="preload"/>
                     {/* header resume */}
                     <div className="resumeScreen__headerPage"></div>
 
@@ -83,6 +83,7 @@ function Resume() {
                                         }
                                         src={resumeImage}
                                         alt="illustration for the resume"
+                                        rel="preload"
                                     ></img>
                                 </div>
 
@@ -139,6 +140,7 @@ function Resume() {
                                         }
                                         src={recommendationImage}
                                         alt="illustration for the resume"
+                                        rel="preload"
                                     ></img>
                                 </div>
 
@@ -204,10 +206,12 @@ function Resume() {
                         <img
                             src={ResumePartOne}
                             alt="first page of my resume"
+                            rel="preload"
                         />
                         <img
                             src={ResumePartTwo}
                             alt="second page of my resume"
+                            rel="preload"
                         />
                     </div>
                 </>
@@ -231,6 +235,7 @@ function Resume() {
                         <img
                             src={RecommendationPart}
                             alt="recommendation letter"
+                            rel="preload"
                         />
                     </div>
                 </>
@@ -250,7 +255,7 @@ function Resume() {
                 <div className={`resumeScreen ${theme}`}>
 
                     {/* image for the back of the screen */}
-                    <img src={backImage} alt="image for the back of the screen" />
+                    <img src={backImage} alt="image for the back of the screen" rel="preload"/>
 
                     {/* header resume */}
                     <div className="resumeScreen__headerPage"></div>
@@ -273,6 +278,7 @@ function Resume() {
                                         }
                                         src={resumeImage}
                                         alt="illustration for the resume"
+                                        rel="preload"
                                     ></img>
                                 </div>
 
@@ -329,6 +335,7 @@ function Resume() {
                                         }
                                         src={recommendationImage}
                                         alt="illustration for the resume"
+                                        rel="preload"
                                     ></img>
                                 </div>
 
@@ -397,10 +404,12 @@ function Resume() {
                         <img
                             src={ResumePartOne}
                             alt="first page of my resume"
+                            rel="preload"
                         />
                         <img
                             src={ResumePartTwo}
                             alt="second page of my resume"
+                            rel="preload"
                         />
                     </div>
                 </>
@@ -428,6 +437,7 @@ function Resume() {
                         <img
                             src={RecommendationPart}
                             alt="recommendation letter"
+                            rel="preload"
                         />
                     </div>
                 </>

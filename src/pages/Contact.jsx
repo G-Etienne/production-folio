@@ -41,7 +41,7 @@ function Contact() {
                 <div className="contactScreen__headerPage"></div>
 
                 {/* image in the back of the screen */}
-                <img src={backImage} className="contactScreen__backImage"></img>
+                <img src={backImage} className="contactScreen__backImage" rel="preload"></img>
 
                 {/* main part contact */}
                 <div className={`contactScreen__main ${theme}`}>
@@ -161,7 +161,7 @@ function Contact() {
                 <div className="contactScreen__headerPage"></div>
 
                 {/* image in the back of the screen */}
-                <img src={backImage} className="contactScreen__backImage"></img>
+                <img src={backImage} className="contactScreen__backImage" rel="preload"></img>
 
                 {/* main part contact */}
                 <div className={`contactScreen__main ${theme}`}>

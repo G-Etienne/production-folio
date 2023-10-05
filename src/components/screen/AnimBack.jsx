@@ -40,6 +40,7 @@ function AnimBack() {
                     className="backImage"
                     src={backScreen}
                     alt="image for the back of the animation"
+                    rel="preload"
                 />
 
                 {/* animation */}
