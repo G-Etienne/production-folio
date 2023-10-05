@@ -952,7 +952,7 @@ p {
 .light__head {
   box-sizing: border-box;
   position: relative;
-  z-index: 16;
+  z-index: 37;
   height: 100px;
   width: 30px;
   top: -57px;
@@ -970,7 +970,7 @@ p {
   position: relative;
   top: -6px;
   margin: auto;
-  z-index: 17;
+  z-index: 36;
   height: 22px;
   width: 22px;
   background-color: rgb(72, 72, 72);
@@ -984,7 +984,7 @@ p {
 }
 .light__on.darkHead {
   position: absolute;
-  z-index: 15;
+  z-index: 36;
   top: -45px;
   left: -2px;
   height: 150px;
@@ -994,7 +994,7 @@ p {
 }
 .light__on__top.darkHead {
   position: absolute;
-  z-index: 15;
+  z-index: 35;
   top: -69px;
   left: 8px;
   height: 150px;
@@ -1005,7 +1005,7 @@ p {
 }
 .light__on__bottom.darkHead {
   position: absolute;
-  z-index: 9;
+  z-index: 34;
   top: 35px;
   left: -18px;
   height: 72px;
@@ -1017,7 +1017,7 @@ p {
 }
 .light__arm {
   position: relative;
-  z-index: 14;
+  z-index: 34;
   height: 50px;
   width: 5px;
   top: -100px;
@@ -1031,7 +1031,7 @@ p {
 .light__arm__Shadow {
   position: relative;
   top: -108px;
-  z-index: 13;
+  z-index: 33;
   left: 20px;
   height: 8px;
   width: 4px;
@@ -1043,7 +1043,7 @@ p {
   background: transparent;
 }
 .light__baseTop {
-  z-index: 12;
+  z-index: 32;
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -1073,7 +1073,7 @@ p {
 }
 .light__baseMiddle {
   height: 10px;
-  z-index: 11;
+  z-index: 31;
   width: 37px;
   background-color: rgb(109, 108, 108);
   border-radius: 2px;
@@ -1107,7 +1107,7 @@ p {
   background-color: rgb(110, 110, 110);
   transform: perspective(150px) rotateX(65deg);
   position: absolute;
-  z-index: 10;
+  z-index: 30;
   bottom: -15px;
   box-shadow: 0px 0px 6px black;
 }
