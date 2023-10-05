@@ -944,7 +944,7 @@ p {
   position: absolute;
   z-index: 150;
   right: 22%;
-  top: -15px;
+  top: -10px;
   height: 80px;
   width: 35px;
   scale: 0.7;
@@ -5267,7 +5267,7 @@ p {
   .contactScreen {
     margin-top: 2.8%;
     width: 96.5%;
-    height: 60vh;
+    height: 62vh;
   }
   .contactScreen__headerPage {
     width: 99.1%;
@@ -6823,7 +6823,7 @@ p {
   .resumeScreen {
     margin-top: 2.8%;
     width: 96.5%;
-    height: 60vh;
+    height: 62vh;
   }
   .resumeScreen__headerPage {
     width: 99.1%;
