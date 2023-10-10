@@ -36,7 +36,7 @@ function Trainings() {
                 {/* page trainings */}
                 <div className={`trainingsScreen ${theme}`}>
                     {/* image for the back of the screen */}
-                    <img src={backImage} alt="image for the back of the screen" rel="preload"/>
+                    <img src={backImage} alt="image for the back of the screen" rel="preload" loading="lazy"/>
 
                     {/* header trainings */}
                     <div className="trainingsScreen__headerPage"></div>
@@ -53,12 +53,14 @@ function Trainings() {
                                     src={laptop}
                                     alt="laptop web trainings"
                                     rel="preload"
+                                    loading="lazy"
                                 />
                                 <img
                                     className={`trainingsMain__web__imageTwo ${theme}`}
                                     src={laptopIllustration}
                                     alt="illustration web trainings"
                                     rel="preload"
+                                    loading="lazy"
                                 />
 
                                 {/* decorativ bublle */}
@@ -167,6 +169,7 @@ function Trainings() {
                                         src={carpenterIllustration}
                                         alt="image for illustring the carpenter part."
                                         rel="preload"
+                                        loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -184,7 +187,7 @@ function Trainings() {
                 {/* page trainings */}
                 <div className={`trainingsScreen ${theme}`}>
                     {/* image for the back of the screen */}
-                    <img src={backImage} alt="image for the back of the screen" rel="preload"/>
+                    <img src={backImage} alt="image for the back of the screen" rel="preload" loading="lazy"/>
 
                     {/* header trainings */}
                     <div className="trainingsScreen__headerPage"></div>
@@ -201,12 +204,14 @@ function Trainings() {
                                     src={laptop}
                                     alt="laptop web trainings"
                                     rel="preload"
+                                    loading="lazy"
                                 />
                                 <img
                                     className={`trainingsMain__web__imageTwo ${theme}`}
                                     src={laptopIllustration}
                                     alt="illustration web trainings"
                                     rel="preload"
+                                    loading="lazy"
                                 />
 
                                 {/* decorativ bublle */}
@@ -311,6 +316,7 @@ function Trainings() {
                                         src={carpenterIllustration}
                                         alt="image for illustring the carpenter part."
                                         rel="preload"
+                                        loading="lazy"
                                     />
                                 </div>
                             </div>

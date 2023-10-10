@@ -38,6 +38,7 @@ function AnimBack() {
                 {/* image behind the animation */}
                 <img
                     className="backImage"
+                    loading="lazy"
                     src={backScreen}
                     alt="image for the back of the animation"
                     rel="preload"

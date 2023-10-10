@@ -72,6 +72,7 @@ function Home() {
                                         src={resumeLogo}
                                         alt="image who ilustrate the classic cv element."
                                         rel="preload"
+                                        loading="lazy"
                                     />
                                 </div>
 
@@ -110,6 +111,7 @@ function Home() {
                                     src={persoHome}
                                     alt="image du perso de la page d'accueil."
                                     rel="preload"
+                                    loading="lazy"
                                 />
                             </div>
 
@@ -185,6 +187,7 @@ function Home() {
                                         src={resumeLogo}
                                         alt="image who ilustrate the classic cv element."
                                         rel="preload"
+                                        loading="lazy"
                                     />
                                 </div>
 
@@ -223,6 +226,7 @@ function Home() {
                                     src={persoHome}
                                     alt="image du perso de la page d'accueil."
                                     rel="preload"
+                                    loading="lazy"
                                 />
                             </div>
 

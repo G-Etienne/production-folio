@@ -35,12 +35,13 @@ function Back() {
 
     return (
         <>
-            {/* image of the back of the animation */}
+            {/* image of the front of the screen */}
             <img
                 src={backScreen}
                 alt="imagne for the back of the screen"
                 className={`backScreenImage ${theme}`}
                 rel="preload"
+                loading="lazy"
             ></img>
 
             {/* animation */}

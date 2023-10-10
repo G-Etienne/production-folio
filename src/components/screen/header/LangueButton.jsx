@@ -34,12 +34,14 @@ function LangueButton() {
             <div className="langueButton" onClick={toggleLangue}>
                 {/* flags */}
                 <img
+                    loading="lazy"
                     src={firstFlag}
                     alt="french flag image illustraion"
                     className={`frenchFlag ${langue + "Button"}`}
                 ></img>
 
                 <img
+                    loading="lazy"
                     src={secondFlag}
                     alt="english flag image illustraion"
                     className={`englishFlag ${langue + "Button"}`}

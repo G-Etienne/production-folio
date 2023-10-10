@@ -72,6 +72,7 @@ function Home() {
                                 alt="image for illustrate the about page"
                                 className={`aboutMain__containerTop__image ${theme}`}
                                 rel="preload"
+                                loading="lazy"
                             ></img>
                         </div>
 
@@ -222,6 +223,7 @@ function Home() {
                                 alt="image for illustrate the about page"
                                 className={`aboutMain__containerTop__image ${theme}`}
                                 rel="preload"
+                                loading="lazy"
                             ></img>
                         </div>
 

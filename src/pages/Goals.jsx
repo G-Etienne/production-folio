@@ -53,7 +53,7 @@ function Goals() {
                 {/* page goals */}
                 <div className={`goalScreen ${theme}`}>
                     {/* background image */}
-                    <img src={backImage} alt="image of the back of the screen" rel="preload"/>
+                    <img src={backImage} alt="image of the back of the screen" rel="preload" loading="lazy"/>
                     {/* header goals */}
                     <div className="goalScreen__headerPage">
                         <div className={`headerGoal ${theme}`}></div>
@@ -78,13 +78,14 @@ function Goals() {
                                         className={`goalMain__firstGoal__storeFront ${theme} ${openOne}`}
                                     >
                                         {/* background image */}
-                                        <img className="backStoreFront" src={backStoreFrontImage} alt="back of the storefront" rel="preload"/>
+                                        <img className="backStoreFront" loading="lazy" src={backStoreFrontImage} alt="back of the storefront" rel="preload"/>
 
                                         <img
                                             className={`goalMain__goalContainer__image ${theme}`}
                                             src={Learning}
                                             alt="truc"
                                             rel="preload"
+                                            loading="lazy"
                                         />
 
                                         <h2
@@ -111,7 +112,7 @@ function Goals() {
                                             <FontAwesomeIcon icon={faXmark} />
                                         </div>
 
-                                        <img src={backImage} alt="image for the abck of the text goal" rel="preload"/>
+                                        <img src={backImage} alt="image for the abck of the text goal" rel="preload" loading="lazy"/>
 
                                         <h3>Progression constante</h3>
 
@@ -149,7 +150,7 @@ function Goals() {
                                         className={`goalMain__secondGoal__storeFront ${theme} ${openTwo}`}
                                     >
                                         {/* background image */}
-                                        <img className="backStoreFront" src={backStoreFrontImage} alt="back of the storefront" rel="preload"/>
+                                        <img className="backStoreFront" loading="lazy" src={backStoreFrontImage} alt="back of the storefront" rel="preload"/>
 
 
                                         <img
@@ -157,6 +158,7 @@ function Goals() {
                                             src={Team}
                                             alt="truc"
                                             rel="preload"
+                                            loading="lazy"
                                         />
 
                                         <h2
@@ -182,7 +184,7 @@ function Goals() {
                                             <FontAwesomeIcon icon={faXmark} />
                                         </div>
 
-                                        <img src={backImage} alt="image for the abck of the text goal" rel="preload"/>
+                                        <img src={backImage} loading="lazy" alt="image for the abck of the text goal" rel="preload"/>
 
                                         <h3>Avançons ensemble</h3>
 
@@ -219,7 +221,7 @@ function Goals() {
                                         className={`goalMain__thirdGoal__storeFront ${theme} ${openThree}`}
                                     >
                                         {/* background image */}
-                                        <img className="backStoreFront" src={backStoreFrontImage} alt="back of the storefront" rel="preload"/>
+                                        <img className="backStoreFront" loading="lazy" src={backStoreFrontImage} alt="back of the storefront" rel="preload"/>
 
 
                                         <img
@@ -227,6 +229,7 @@ function Goals() {
                                             src={Evolution}
                                             alt="truc"
                                             rel="preload"
+                                            loading="lazy"
                                         />
 
                                         <h2
@@ -252,7 +255,7 @@ function Goals() {
                                             <FontAwesomeIcon icon={faXmark} />
                                         </div>
 
-                                        <img src={backImage} alt="image for the abck of the text goal" rel="preload"/>
+                                        <img src={backImage} loading="lazy" alt="image for the abck of the text goal" rel="preload"/>
 
                                         <h3>Avancer dans ma carrière</h3>
 
@@ -290,7 +293,7 @@ function Goals() {
                 {/* page goals */}
                 <div className={`goalScreen ${theme}`}>
                     {/* background image */}
-                    <img src={backImage} alt="image of the back of the screen" rel="preload"/>
+                    <img src={backImage} alt="image of the back of the screen" rel="preload" loading="lazy"/>
                     {/* header goals */}
                     <div className="goalScreen__headerPage">
                         <div className={`headerGoal ${theme}`}></div>
@@ -317,13 +320,14 @@ function Goals() {
                                     >
 
                                         {/* background image */}
-                                        <img className="backStoreFront" src={backStoreFrontImage} alt="back of the storefront" rel="preload"/>
+                                        <img className="backStoreFront" loading="lazy" src={backStoreFrontImage} alt="back of the storefront" rel="preload"/>
 
                                         <img
                                             className={`goalMain__goalContainer__image ${theme}`}
                                             src={Learning}
                                             alt="truc"
                                             rel="preload"
+                                            loading="lazy"
                                         />
 
                                         <h2
@@ -350,7 +354,7 @@ function Goals() {
                                             <FontAwesomeIcon icon={faXmark} />
                                         </div>
 
-                                        <img src={backImage} alt="image for the abck of the text goal" rel="preload"/>
+                                        <img src={backImage} alt="image for the abck of the text goal" loading="lazy" rel="preload"/>
 
                                         <h3>Constant progression</h3>
 
@@ -386,7 +390,7 @@ function Goals() {
                                         className={`goalMain__secondGoal__storeFront ${theme} ${openTwo}`}
                                     >
                                         {/* background image */}
-                                        <img className="backStoreFront" src={backStoreFrontImage} alt="back of the storefront" rel="preload"/>
+                                        <img className="backStoreFront" loading="lazy" src={backStoreFrontImage} alt="back of the storefront" rel="preload"/>
 
 
                                         <img
@@ -394,6 +398,7 @@ function Goals() {
                                             src={Team}
                                             alt="back"
                                             rel="preload"
+                                            loading="lazy"
                                         />
 
                                         <h2
@@ -419,7 +424,7 @@ function Goals() {
                                             <FontAwesomeIcon icon={faXmark} />
                                         </div>
 
-                                        <img src={backImage} alt="image for the abck of the text goal" rel="preload"/>
+                                        <img src={backImage} loading="lazy" alt="image for the abck of the text goal" rel="preload"/>
 
                                         <h3>Let&apos;s advance together</h3>
 
@@ -451,7 +456,7 @@ function Goals() {
                                         className={`goalMain__thirdGoal__storeFront ${theme} ${openThree}`}
                                     >
                                         {/* background image */}
-                                        <img className="backStoreFront" src={backStoreFrontImage} alt="back of the storefront" rel="preload"/>
+                                        <img className="backStoreFront"  loading="lazy" src={backStoreFrontImage} alt="back of the storefront" rel="preload"/>
 
 
                                         <img
@@ -459,6 +464,7 @@ function Goals() {
                                             src={Evolution}
                                             alt="truc"
                                             rel="preload"
+                                            loading="lazy"
                                         />
 
                                         <h2
@@ -484,7 +490,7 @@ function Goals() {
                                             <FontAwesomeIcon icon={faXmark} />
                                         </div>
 
-                                        <img src={backImage} alt="image for the abck of the text goal" rel="preload"/>
+                                        <img src={backImage} loading="lazy" alt="image for the abck of the text goal" rel="preload"/>
 
                                         <h3>Advance in my career</h3>
 

@@ -34,11 +34,13 @@ function ThemeButton() {
             <div className="themeButton" onClick={toggleTheme}>
                 <img
                     src={firstTheme}
+                    loading="lazy"
                     alt="french flag image illustraion"
                     className={`moon ${theme + "Button"}`}
                 ></img>
                 <img
                     src={secondTheme}
+                    loading="lazy"
                     alt="french flag image illustraion"
                     className={`sun ${theme + "Button"}`}
                 ></img>

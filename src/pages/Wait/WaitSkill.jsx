@@ -40,7 +40,7 @@ function WaitSkill() {
             //background of the page
             <div className={`waitBack ${theme}`}>
                 {/* image in the back of this page */}
-                <img src={image} alt="image for the back of the wait page" rel="preload"/>
+                <img src={image} alt="image for the back of the wait page" rel="preload" loading="lazy"/>
                 {/* container with the page elements */}
                 <div className={`waitContainer ${theme}`}>
                     {/* container in the center */}
@@ -53,6 +53,7 @@ function WaitSkill() {
                             src={imageWaitCenter}
                             className={`waitContainer__content__image ${theme}`}
                             rel="preload"
+                            loading="lazy"
                         ></img>
 
                         {/* text under the image */}
@@ -83,7 +84,7 @@ function WaitSkill() {
             //background of the page
             <div className={`waitBack ${theme}`}>
                 {/* image in the back of this page */}
-                <img src={image} alt="image for the back of the wait page" rel="preload"/>
+                <img src={image} alt="image for the back of the wait page" rel="preload" loading="lazy"/>
                 {/* container with the page elements */}
                 <div className={`waitContainer ${theme}`}>
                     {/* container in the center */}
@@ -97,6 +98,7 @@ function WaitSkill() {
                             src={imageWaitCenter}
                             className={`waitContainer__content__image ${theme}`}
                             rel="preload"
+                            loading="lazy"
                         ></img>
 
                         {/* text under the image */}
