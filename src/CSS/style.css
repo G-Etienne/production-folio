@@ -2743,7 +2743,7 @@ p {
 }
 @media screen and (max-width: 767px) and (max-height: 800px) {
   .screen {
-    height: 65vh;
+    height: 66.5vh;
   }
 }
 @keyframes linkDeskAnim {
