@@ -3,6 +3,24 @@
 @import "../utils/variables";
 
 //---------------------------------------------------------
+//temporary rules
+
+.footer.projects,
+.footer.skills,
+.footer.graphics {
+    display: none;
+}
+
+.footer.resume,
+.footer.goals,
+.footer.about,
+.footer.contact,
+.footer.home,
+.footer.trainings {
+    display: block;
+}
+
+//---------------------------------------------------------
 //hidding animation and screen for the other pages than home
 .resume,
 .projects,

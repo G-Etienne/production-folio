@@ -175,16 +175,16 @@
                 position: absolute;
                 z-index: 103;
                 top: 0px;
+                left: 3px;
                 background-color: $main-color-about;
                 margin: 0px;
                 padding-left: 15px;
-                border-right: 2px solid darken($main-color-about, 50%);
-                border-bottom: 2px solid darken($main-color-about, 50%);
-                box-shadow: 3px 3px 10px darken($main-color-about, 50%);
-
+                border-right: 4px solid darken($main-color-about, 50%);
+                border-bottom: 4px solid darken($main-color-about, 50%);
                 & > a {
                     font-size: 15px;
                     padding-right: 15px;
+                    padding-top: 10px;
                     width: 33%;
                     margin: 0px;
                     text-shadow: 0px 0px 10px darken($main-color-about, 50%);
@@ -288,10 +288,10 @@
         //part at the top of the page
         &__containerTop {
             &__menu {
-                width: 97%;
+                width: 99%;
                 border-right: none;
-                box-shadow: 0px 3px 10px darken($main-color-about, 50%);
                 & > a {
+                    padding-top: 15px;
                     font-size: 12px;
                 }
             }
@@ -367,8 +367,9 @@
         //part at the top of the page
         &__containerTop {
             &__menu {
+                width: 98.5%;
                 & > a {
-                    font-size: 12px;
+                    font-size: 10px;
                 }
             }
 
@@ -414,9 +415,13 @@
 @media screen and (max-width: 1100px) {
     .aboutScreen {
         &__headerPage {
-            height: 80px;
-            width: 99.6%;
-            margin-left: 3px;
+            height: 90px;
+        }
+        &.white {
+            margin-left: -2px;
+        }
+        &.dark {
+            margin-left: -2px;
         }
     }
 }
@@ -424,7 +429,7 @@
 @media screen and (max-width: 900px) {
     .aboutScreen {
         &__headerPage {
-            width: 99.4%;
+            width: 100%;
         }
     }
 }
@@ -432,7 +437,7 @@
 @media screen and (max-width: 700px) {
     .aboutScreen {
         &__headerPage {
-            width: 99.1%;
+            width: 100%;
         }
     }
 }
@@ -440,7 +445,7 @@
 @media screen and (max-width: 500px) {
     .aboutScreen {
         &__headerPage {
-            width: 98.5%;
+            width: 100%;
         }
     }
 }
@@ -448,7 +453,7 @@
 @media screen and (max-width: 320px) {
     .aboutScreen {
         &__headerPage {
-            width: 98%;
+            width: 100%;
         }
     }
 }

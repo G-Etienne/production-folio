@@ -349,6 +349,10 @@
         &__headerPage {
             width: 98.5%;
         }
+
+        & > img {
+            margin-left: -1px;
+        }
     }
 }
 
@@ -380,6 +384,10 @@
 
         &__main.dark {
             height: 82%;
+        }
+
+        & > img {
+            margin-left: -2px;
         }
     }
 }

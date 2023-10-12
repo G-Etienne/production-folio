@@ -143,6 +143,13 @@
         &__main {
             margin-top: 18%;
         }
+
+        &.white {
+            margin-left: 1px;
+        }
+        &.dark {
+            margin-left: 1px;
+        }
     }
 
     //main part
@@ -324,6 +331,12 @@
         width: 95%;
         height: 68%;
         margin-top: 4.5%;
+        &.white {
+            margin-left: 3px;
+        }
+        &.dark {
+            margin-left: 3px;
+        }
 
         &__headerPage {
             width: 98%;

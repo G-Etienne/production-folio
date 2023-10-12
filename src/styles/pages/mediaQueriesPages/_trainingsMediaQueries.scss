@@ -528,6 +528,10 @@
         &__headerPage {
             width: 99.1%;
         }
+
+        & > img {
+            margin-left: -2px;
+        }
     }
 }
 

@@ -7,11 +7,10 @@
 .header {
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: absolute;
     height: 15%;
     width: 100%;
     z-index: 320;
-
 
     //h1 etienne ginet
     &__title {

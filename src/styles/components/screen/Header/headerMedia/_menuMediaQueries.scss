@@ -23,13 +23,13 @@
     .menu {
         &__container {
             scale: 0.8;
-            margin-top: 5px;
-            margin-left: 5px;
+            margin-top: 15px;
+            margin-left: 20px;
 
             &__open {
                 scale: 0.8;
-                margin-top: 5px;
-                margin-left: 5px;
+                margin-top: 15px;
+                margin-left: 20px;
             }
         }
     }
@@ -39,13 +39,13 @@
     .menu {
         &__container {
             scale: 0.6;
-            margin-top: 0px;
-            margin-left: 0px;
+            margin-top: 10px;
+            margin-left: 10px;
 
             &__open {
                 scale: 0.6;
-                margin-top: 0px;
-                margin-left: 0px;
+                margin-top: 10px;
+                margin-left: 15px;
             }
             &__links {
                 top: 145px;
@@ -59,13 +59,13 @@
     .menu {
         &__container {
             scale: 0.6;
-            top: -10px;
-            left: -10px;
+            margin-top: 5px;
+            margin-left: 10px;
 
             &__open {
                 scale: 0.6;
-                top: -10px;
-                left: -10px;
+                margin-top: 5px;
+                margin-left: 10px;
             }
             &__links {
                 top: 145px;
