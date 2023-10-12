@@ -396,24 +396,13 @@
 
 //**************************************************************************************
 //placing the page in the virtual screen
-.resumeScreen {
-    >img{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-    }
 
+.resumeScreen {
     @include positionPage;
     height: 72%;
     width: 97.5%;
     margin-top: 1%;
     margin-left: 4px;
-
-    //dark theme
-    &.dark {
-        background-image: url("../../assets/Resume/back-resume-dark.jpg");
-        background-size: cover;
-    }
 
     &__main {
         position: relative;

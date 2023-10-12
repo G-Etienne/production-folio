@@ -43,10 +43,10 @@ function Resume() {
         useState("little");
 
     let backImage = backImageClear;
-    
-    if(theme === "white"){
+
+    if (theme === "white") {
         backImage = backImageClear;
-    }else if (theme === "dark"){
+    } else if (theme === "dark") {
         backImage = backImageDark;
     }
 
@@ -61,7 +61,13 @@ function Resume() {
                 // part for placing the on the virtual screen
                 <div className={`resumeScreen ${theme}`}>
                     {/* image for the back of the screen */}
-                    <img src={backImage} alt="image for the back of the screen" rel="preload" loading="lazy"/>
+                    <img
+                        className={`backImageScreen ${theme}`}
+                        src={backImage}
+                        alt="image for the back of the screen"
+                        rel="preload"
+                        loading="lazy"
+                    />
                     {/* header resume */}
                     <div className="resumeScreen__headerPage"></div>
 
@@ -257,9 +263,14 @@ function Resume() {
             return (
                 // part for placing the on the virtual screen
                 <div className={`resumeScreen ${theme}`}>
-
                     {/* image for the back of the screen */}
-                    <img src={backImage} alt="image for the back of the screen" rel="preload" loading="lazy"/>
+                    <img
+                        src={backImage}
+                        className={`backImageScreen ${theme}`}
+                        alt="image for the back of the screen"
+                        rel="preload"
+                        loading="lazy"
+                    />
 
                     {/* header resume */}
                     <div className="resumeScreen__headerPage"></div>

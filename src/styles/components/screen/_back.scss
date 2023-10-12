@@ -6,12 +6,24 @@
 
 //-----------------------------------------------------------
 //image to cover the screen with a hole in the center
-.backScreenImage {
+.backScreenImageHome {
     position: absolute;
     z-index: 20;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    top: -5px;
+
+    //adding border for the screen effect
+    &.white {
+        border: 2px $border-screen solid;
+        box-shadow: 0px 0px 10px black;
+    }
+
+    &.dark {
+        border: 2px darken($border-screen, 25%) solid;
+        box-shadow: 0px 0px 25px lighten($main-back-color, 10%);
+    }
 }
 
 //-----------------------------------------------------------

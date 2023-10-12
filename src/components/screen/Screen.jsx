@@ -18,7 +18,7 @@ function Screen() {
 
     return (
         <>
-            <div className={`screen ${theme + "screen"}`}>
+            <div className={`screen ${theme + "screen"} `}>
                 <Back />
                 <Header />
             </div>

@@ -2,6 +2,7 @@
 //import for the dark and white mode context
 import { useContext } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
+import { useLocation } from "react-router-dom";
 
 //--------------------------------------------------
 // //style
@@ -23,6 +24,12 @@ function Back() {
     }
     const { theme } = useContext(ThemeContext);
 
+    //page
+    const location = useLocation();
+    const page = location.pathname.slice(
+        location.pathname.lastIndexOf("/") + 1,
+    );
+
     //current theme
     let backScreen = backScreenClear;
 
@@ -34,19 +41,19 @@ function Back() {
     }
 
     return (
-        <>
+        <div className={`${page} ${theme}`}>
             {/* image of the front of the screen */}
             <img
                 src={backScreen}
                 alt="imagne for the back of the screen"
-                className={`backScreenImage ${theme}`}
+                className={`backScreenImageHome ${theme}`}
                 rel="preload"
                 loading="lazy"
             ></img>
 
             {/* animation */}
             <AnimBack />
-        </>
+        </div>
     );
 }
 

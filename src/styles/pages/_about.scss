@@ -10,11 +10,11 @@
 .headerAbout {
     position: relative;
     z-index: 101;
-    height: 100%;
-    width: 99.5%;
+    height: 120%;
+    width: 100%;
     background-color: $secondary-color-about;
     margin: auto;
-    margin-top: 12px;
+    margin-top: 0px;
     border-bottom: 4px solid darken($main-color-about, 50%);
 
     //dark theme
@@ -28,8 +28,8 @@
 .aboutMain {
     width: 100%;
     background: $main-color-about;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 0px;
+    margin-right: 0px;
 
     //dark theme
     &.dark {
@@ -172,7 +172,21 @@
 //placing the page in the virtual screen
 .aboutScreen {
     @include positionPage;
+    margin-top: 0.8%;
     height: 72.5%;
+
+    //adding border and shadow to the screen
+    &.white {
+        border: 2px $border-screen solid;
+        box-shadow: 0px 0px 10px black;
+        background-color: $main-color-about;
+    }
+
+    &.dark {
+        border: 2px darken($border-screen, 25%) solid;
+        box-shadow: 0px 0px 25px lighten($main-back-color, 10%);
+        background-color: black;
+    }
 
     //change the apparence of the scrool rod
     &__main {

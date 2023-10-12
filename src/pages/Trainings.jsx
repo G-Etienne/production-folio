@@ -22,10 +22,10 @@ function Trainings() {
     const { langue } = useContext(LangueContext);
 
     let backImage = backImageClear;
-    
-    if(theme === "white"){
+
+    if (theme === "white") {
         backImage = backImageClear;
-    }else if (theme === "dark"){
+    } else if (theme === "dark") {
         backImage = backImageDark;
     }
 
@@ -36,7 +36,13 @@ function Trainings() {
                 {/* page trainings */}
                 <div className={`trainingsScreen ${theme}`}>
                     {/* image for the back of the screen */}
-                    <img src={backImage} alt="image for the back of the screen" rel="preload" loading="lazy"/>
+                    <img
+                        className={`backImageScreen ${theme}`}
+                        src={backImage}
+                        alt="image for the back of the screen"
+                        rel="preload"
+                        loading="lazy"
+                    />
 
                     {/* header trainings */}
                     <div className="trainingsScreen__headerPage"></div>
@@ -187,7 +193,13 @@ function Trainings() {
                 {/* page trainings */}
                 <div className={`trainingsScreen ${theme}`}>
                     {/* image for the back of the screen */}
-                    <img src={backImage} alt="image for the back of the screen" rel="preload" loading="lazy"/>
+                    <img
+                        className={`backImageScreen ${theme}`}
+                        src={backImage}
+                        alt="image for the back of the screen"
+                        rel="preload"
+                        loading="lazy"
+                    />
 
                     {/* header trainings */}
                     <div className="trainingsScreen__headerPage"></div>

@@ -34,7 +34,7 @@ function Home() {
     if (langue === "french") {
         return (
             // part for placing the on the virtual screen
-            <div className="aboutScreen">
+            <div className={`aboutScreen ${theme}`}>
                 {/* header about */}
                 <div className="aboutScreen__headerPage">
                     <div className={`headerAbout ${theme}`}></div>
@@ -189,7 +189,7 @@ function Home() {
     if (langue === "english") {
         return (
             // part for placing the on the virtual screen
-            <div className="aboutScreen">
+            <div className={`aboutScreen ${theme} `}>
                 {/* header about */}
                 <div className="aboutScreen__headerPage">
                     <div className={`headerAbout ${theme}`}></div>
