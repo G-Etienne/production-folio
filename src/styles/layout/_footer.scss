@@ -5,11 +5,11 @@
 //----------------------------------------------------
 //bases footer
 .footer {
-    position: absolute;
+    position: relative;
     z-index: 10;
     box-sizing: border-box;
     height: 215px;
-    bottom: 2px;
+    bottom: 0px;
     width: 100%;
     min-width: 280px;
 }
