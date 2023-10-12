@@ -325,11 +325,11 @@
 //----------------------------------------------------------------
 //full screen rules
 .bigScreenContainer {
-    position: absolute;
+    position: relative;
     height: 100vh;
     width: 100%;
     background-color: #eaeaea;
-    top: 0px;
+    top: -100vh;
     box-sizing: border-box;
     z-index: 900;
     display: flex;
