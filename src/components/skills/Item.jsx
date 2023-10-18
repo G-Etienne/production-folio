@@ -5,12 +5,12 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 
 //---------------------------------------------------------
 //images
-const FrontEnd = "./src/assets/Skills/front-end-illustration.jpg";
-const BackEnd = "./src/assets/Skills/back-end-illustration.jpg";
-const Creative = "./src/assets/Skills/creativ-illustration.jpg";
-const Management = "./src/assets/Skills/management.jpg";
-const Other = "./src/assets/Skills/other.jpg";
-const Complementary = "./src/assets/Skills/complementary.jpg";
+const FrontEnd = "./production-folio/assets/Skills/front-end-illustration.jpg";
+const BackEnd = "./production-folio/assets/Skills/back-end-illustration.jpg";
+const Creative = "./production-folio/assets/Skills/creativ-illustration.jpg";
+const Management = "./production-folio/assets/Skills/management.jpg";
+const Other = "./production-folio/assets/Skills/other.jpg";
+const Complementary = "./production-folio/assets/Skills/complementary.jpg";
 
 //---------------------------------------------------------
 function ItemSkill({ title, part, skills }) {
