@@ -1,5 +1,5 @@
 //---------------------------------------------------------
-//import of react router dom
+//imports of react router dom
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 //---------------------------------------------------------

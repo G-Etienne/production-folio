@@ -14,7 +14,7 @@ const Complementary = "src/assets/Skills/complementary.jpg";
 
 //---------------------------------------------------------
 function ItemSkill({ title, part, skills }) {
-    //image to display
+    //images to display
     let image;
     if (part === "Frontend") {
         image = FrontEnd;
