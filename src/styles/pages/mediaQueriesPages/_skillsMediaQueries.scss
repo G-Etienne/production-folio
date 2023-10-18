@@ -4,6 +4,14 @@
         margin-left: 0px;
     }
 }
+@media screen and (max-width: 767px) {
+    //sceen in the center
+    .skillsScreen {
+        &__main {
+            height: 83%;
+        }
+    }
+}
 @media screen and (max-width: 480px) {
     //sceen in the center
     .skillsScreen {

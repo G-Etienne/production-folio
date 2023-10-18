@@ -7596,6 +7596,11 @@ p {
     margin-left: 0px;
   }
 }
+@media screen and (max-width: 767px) {
+  .skillsScreen__main {
+    height: 83%;
+  }
+}
 @media screen and (max-width: 480px) {
   .skillsScreen {
     margin-left: -1px;
