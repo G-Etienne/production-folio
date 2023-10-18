@@ -5,11 +5,12 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 
 //---------------------------------------------------------
 //images
-const FrontEnd = "src/assets/Skills/front-end-illustration.jpg";
-const BackEnd = "src/assets/Skills/back-end-illustration.jpg";
-const Creative = "src/assets/Skills/creativ-illustration.jpg";
-const Management = "src/assets/Skills/management.jpg";
-const Other = "src/assets/Skills/other.jpg";
+const FrontEnd =
+    "production-folio/src/assets/Skills/front-end-illustration.jpg";
+const BackEnd = "production-folio/src/assets/Skills/back-end-illustration.jpg";
+const Creative = "production-folio/src/assets/Skills/creativ-illustration.jpg";
+const Management = "production-folio/src/assets/Skills/management.jpg";
+const Other = "production-folio/src/assets/Skills/other.jpg";
 const Complementary = "src/assets/Skills/complementary.jpg";
 
 //---------------------------------------------------------
