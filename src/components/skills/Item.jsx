@@ -5,18 +5,12 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 
 //---------------------------------------------------------
 //images
-const FrontEnd =
-    "https://g-etienne.github.io/production-folio/assets/Skills/front-end-illustration.jpg";
-const BackEnd =
-    "https://g-etienne.github.io/production-folio/assets/Skills/back-end-illustration.jpg";
-const Creative =
-    "https://g-etienne.github.io/production-folio/assets/Skills/creativ-illustration.jpg";
-const Management =
-    "https://g-etienne.github.io/production-folio/assets/Skills/management.jpg";
-const Other =
-    "https://g-etienne.github.io/production-folio/assets/Skills/other.jpg";
-const Complementary =
-    "https://g-etienne.github.io/production-folio/assets/Skills/complementary.jpg";
+import FrontEnd from "../../assets/Skill/front-end-illustration.jpg";
+import BackEnd from "../../assets/Skill/back-end-illustration.jpg";
+import Creative from "../../assets/Skill/creativ-illustration.jpg";
+import Management from "../../assets/Skill/management.jpg";
+import Other from "../../assets/Skill/other.jpg";
+import Complementary from "../../assets/Skill/complementary.jpg";
 
 //---------------------------------------------------------
 function ItemSkill({ title, part, skills }) {
