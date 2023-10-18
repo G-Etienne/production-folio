@@ -1,0 +1,116 @@
+[
+    {
+        "id": "1",
+        "titleFrench": "Frontend",
+        "titleEnglish": "Frontend",
+        "listeSkillsFrench": [
+            "HTML",
+            "CSS",
+            "SASS",
+            "JavaScript",
+            "Animation",
+            "ReactJS",
+            "SEO",
+            "Accessibilté"
+        ],
+        "listeSkillsEnglish": [
+            "HTML",
+            "CSS",
+            "SASS",
+            "JavaScript",
+            "Animation",
+            "ReactJS",
+            "SEO",
+            "Accessibility"
+        ]
+    },
+    {
+        "id": "2",
+        "titleFrench": "Backend",
+        "titleEnglish": "Backend",
+        "listeSkillsFrench": [
+            "JavaScript",
+            "React.JS",
+            "API REST",
+            "Node.JS",
+            "Express.JS",
+            "MongoDB / MySQL",
+            "Sécurisation de données",
+            "JSON"
+        ],
+        "listeSkillsEnglish": [
+            "JavaScript",
+            "ReactJS",
+            "RESTful API",
+            "Node.js",
+            "Express.js",
+            "MongoDB / MySQL",
+            "Data Security",
+            "JSON"
+        ]
+    },
+    {
+        "id": "3",
+        "titleFrench": "Créativité",
+        "titleEnglish": "Creativity",
+        "listeSkillsFrench": [" Maquette graphique", "Contenus textuels"],
+        "listeSkillsEnglish": ["Graphic Design", "Textual Content"]
+    },
+    {
+        "id": "4",
+        "titleFrench": "Management",
+        "titleEnglish": "Management",
+        "listeSkillsFrench": [
+            " Gestion / Organisation",
+            "Répartition des tâches",
+            "Médiation",
+            "Respect des délais"
+        ],
+        "listeSkillsEnglish": [
+            "Management / Organization",
+            "Task Distribution",
+            "Mediation",
+            "Deadline Adherence"
+        ]
+    },
+    {
+        "id": "5",
+        "titleFrench": "Complémentaire",
+        "titleEnglish": "Complementary",
+        "listeSkillsFrench": [
+            "Google Analytics",
+            "Google Search Console",
+            "Git et GitHub",
+            "Agile",
+            "Scrum"
+        ],
+        "listeSkillsEnglish": [
+            "Google Analytics",
+            "Google Search Console",
+            "Git and GitHub",
+            "Agile",
+            "Scrum"
+        ]
+    },
+    {
+        "id": "6",
+        "titleFrench": "Divers",
+        "titleEnglish": "Other",
+        "listeSkillsFrench": [
+            "Français (Native)",
+            "Anglais (Intermédiaire)",
+            "Rapidité d’apprentissage",
+            "Adaptabilité",
+            "Curiosité",
+            "Implication"
+        ],
+        "listeSkillsEnglish": [
+            "French (Native)",
+            "English (Intermediate)",
+            "Quick Learner",
+            "Adaptability",
+            "Curiosity",
+            "Commitment"
+        ]
+    }
+]

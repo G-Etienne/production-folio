@@ -1,0 +1,203 @@
+//-----------------------------------------------------------------
+//utils
+@import "../utils/variables";
+@import "../utils/Keyframes/keyframes";
+//-----------------------------------------------------------------
+//main rules for the main part of the skills page
+.skillsMain {
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+
+    //title of the page
+    &__titlePage {
+        width: 100%;
+        text-align: center;
+        font-family: "Roboto Mono", monospace;
+        font-size: 40px;
+        text-shadow: 0px 0px 3px white;
+
+        //dark theme
+        &.dark {
+            color: $fluo-color;
+            text-shadow: none;
+        }
+    }
+
+    //block wich contain the skills
+    &__skillsContainer {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+        //one skill
+        & > div {
+            margin: 30px;
+            transition: transform 0.2s ease-in-out;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            //title of the skill
+            & > h2 {
+                text-align: center;
+                font-family: "Roboto Mono", monospace;
+                text-shadow: 0px 0px 3px white;
+            }
+
+            //image of the skill
+            & > img {
+                box-sizing: border-box;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 2px black solid;
+            }
+
+            //hover skill effect
+            &:hover {
+                transform: scale(1.3);
+                z-index: 999;
+            }
+        }
+
+        //list of the skills
+        &__List {
+            padding: 15px;
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            font-family: "Roboto Mono", monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: popUp 0.3s ease-in-out both;
+            font-weight: bold;
+            border: 1px rgb(164, 113, 3) solid;
+            box-shadow: 0px 0px 10px grey;
+            text-align: center;
+
+            background: radial-gradient(
+                lighten($color-back-menu, 20%),
+                darken($color-back-menu, 10%)
+            );
+
+            //each element in the liste
+            & > p {
+                margin: 2px;
+            }
+
+            //dark theme
+            &.dark {
+                border: 1px $fluo-color solid;
+                box-shadow: 0px 0px 10px white;
+
+                background: radial-gradient(
+                    lighten($main-back-color, 20%),
+                    darken($main-back-color, 10%)
+                );
+
+                //each element in the liste
+                & > p {
+                    color: $fluo-color;
+                }
+            }
+        }
+
+        //dark theme
+        &.dark {
+            //one skill
+            & > div {
+                //title of the skill
+                & > h2 {
+                    color: $fluo-color;
+                    text-shadow: none;
+                }
+
+                //image of the skill
+                & > img {
+                    opacity: 0.8;
+                    border: 2px $fluo-color solid;
+                }
+            }
+        }
+    }
+}
+//-----------------------------------------------------------------
+//color in the back of the skills screen
+.skillsScreen {
+    //sun and moon for themes
+    &__star {
+        position: absolute;
+
+        //white theme
+        &.white {
+            top: 0px;
+            height: 100px;
+            width: 100px;
+            border-radius: 0px 0px 100px 0px;
+            background: linear-gradient(to bottom right, #ffd700, #ffffff);
+            box-shadow: 3px 3px 15px white;
+        }
+
+        //dark theme
+        &.dark {
+            bottom: 0px;
+            right: 0px;
+            height: 100px;
+            width: 100px;
+            border-radius: 100px 0px 0px 0px;
+            background: linear-gradient(to bottom right, #87ceeb, #f0f0f0);
+            box-shadow: -1px -1px 15px white;
+        }
+    }
+
+    //white theme back screen
+    &.white {
+        background: linear-gradient(to bottom right, #ffd700 30%, #ff6347);
+    }
+
+    //dark theme back screen
+    &.dark {
+        background: linear-gradient(to bottom right, #000033 75%, #515d69);
+    }
+}
+//**************************************************************************************
+//placing the page in the virtual screen
+.skillsScreen {
+    @include positionPage;
+    height: 73.5%;
+    width: 97.5%;
+    margin-top: 0.5%;
+    margin-left: 4px;
+
+    //adding border and shadow to the screen
+    &.white {
+        border: 2px $border-screen solid;
+        box-shadow: 0px 0px 10px black;
+    }
+
+    //dark theme
+    &.dark {
+        border: 2px darken($border-screen, 25%) solid;
+        box-shadow: 0px 0px 25px lighten($main-back-color, 10%);
+    }
+
+    //change the apparence of the scrool rod
+    &__main {
+        top: 90px;
+        &::-webkit-scrollbar-track {
+            background: #e6d4b1;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: darken($color-back-contact, 30%);
+        }
+    }
+}

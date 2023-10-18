@@ -12,7 +12,7 @@ import Trainings from "../pages/Trainings";
 import Goals from "../pages/Goals";
 import Contact from "../pages/Contact";
 import Resume from "../pages/Resume";
-import WaitSkill from "../pages/Wait/WaitSkill";
+import Skills from "../pages/Skills";
 import WaitProject from "../pages/Wait/WaitProject";
 import WaitGraphic from "../pages/Wait/WaitGraphics";
 //---------------------------------------------------------
@@ -38,7 +38,7 @@ function Roads() {
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/goals" element={<Goals />} />
-                        <Route path="/skills" element={<WaitSkill />} />
+                        <Route path="/skills" element={<Skills />} />
                         <Route path="/projects" element={<WaitProject />} />
                         <Route path="/trainings" element={<Trainings />} />
                         <Route path="/contact" element={<Contact />} />

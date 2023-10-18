@@ -1,0 +1,44 @@
+@media screen and (max-width: 1100px) {
+    //sceen in the center
+    .skillsScreen {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 480px) {
+    //sceen in the center
+    .skillsScreen {
+        margin-left: -1px;
+    }
+
+    //main part screen
+    .skillsMain {
+        //title of the page
+        &__titlePage {
+            font-size: 30px;
+        }
+
+        //container with the skills
+        &__skillsContainer {
+            //one skill
+            & > div {
+                //image of the skill
+                & > img {
+                    height: 150px;
+                    width: 150px;
+                }
+
+                //title of the skill
+                & > h2 {
+                    font-size: 20px;
+                }
+            }
+
+            //list of skills (for one part)
+            &__List {
+                height: 180px;
+                width: 180px;
+                font-size: 15px;
+            }
+        }
+    }
+}

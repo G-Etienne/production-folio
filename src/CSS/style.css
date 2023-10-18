@@ -704,7 +704,6 @@ template {
 }
 
 .footer.projects,
-.footer.skills,
 .footer.graphics {
   display: none;
 }
@@ -714,6 +713,7 @@ template {
 .footer.about,
 .footer.contact,
 .footer.home,
+.footer.skills,
 .footer.trainings {
   display: block;
 }
@@ -5146,6 +5146,233 @@ p {
   opacity: 0.5;
 }
 
+@keyframes linkDeskAnim {
+  0% {
+    transform: scale(0.7) rotate(-5deg);
+  }
+  25% {
+    transform: scale(0.75) rotate(-5deg);
+  }
+  50% {
+    transform: scale(0.7) rotate(-5deg);
+  }
+  75% {
+    transform: scale(0.8) rotate(-5deg);
+  }
+  100% {
+    transform: scale(0.9) rotate(-5deg);
+  }
+}
+@keyframes SpinCube {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+@keyframes scaleLinkAnim {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes popUp {
+  0% {
+    transform: scale(0.5);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.skillsMain {
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
+}
+.skillsMain__titlePage {
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 40px;
+  text-shadow: 0px 0px 3px white;
+}
+.skillsMain__titlePage.dark {
+  color: rgb(112, 249, 242);
+  text-shadow: none;
+}
+.skillsMain__skillsContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.skillsMain__skillsContainer > div {
+  margin: 30px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skillsMain__skillsContainer > div > h2 {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  text-shadow: 0px 0px 3px white;
+}
+.skillsMain__skillsContainer > div > img {
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px black solid;
+}
+.skillsMain__skillsContainer > div:hover {
+  transform: scale(1.3);
+  z-index: 999;
+}
+.skillsMain__skillsContainer__List {
+  padding: 15px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: popUp 0.3s ease-in-out both;
+  font-weight: bold;
+  border: 1px rgb(164, 113, 3) solid;
+  box-shadow: 0px 0px 10px grey;
+  text-align: center;
+  background: radial-gradient(white, #d4d4d4);
+}
+.skillsMain__skillsContainer__List > p {
+  margin: 2px;
+}
+.skillsMain__skillsContainer__List.dark {
+  border: 1px rgb(112, 249, 242) solid;
+  box-shadow: 0px 0px 10px white;
+  background: radial-gradient(#1892a7, #051d21);
+}
+.skillsMain__skillsContainer__List.dark > p {
+  color: rgb(112, 249, 242);
+}
+.skillsMain__skillsContainer.dark > div > h2 {
+  color: rgb(112, 249, 242);
+  text-shadow: none;
+}
+.skillsMain__skillsContainer.dark > div > img {
+  opacity: 0.8;
+  border: 2px rgb(112, 249, 242) solid;
+}
+
+.skillsScreen__star {
+  position: absolute;
+}
+.skillsScreen__star.white {
+  top: 0px;
+  height: 100px;
+  width: 100px;
+  border-radius: 0px 0px 100px 0px;
+  background: linear-gradient(to bottom right, #ffd700, #ffffff);
+  box-shadow: 3px 3px 15px white;
+}
+.skillsScreen__star.dark {
+  bottom: 0px;
+  right: 0px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px 0px 0px 0px;
+  background: linear-gradient(to bottom right, #87ceeb, #f0f0f0);
+  box-shadow: -1px -1px 15px white;
+}
+.skillsScreen.white {
+  background: linear-gradient(to bottom right, #ffd700 30%, #ff6347);
+}
+.skillsScreen.dark {
+  background: linear-gradient(to bottom right, #000033 75%, #515d69);
+}
+
+.skillsScreen {
+  z-index: 100;
+  height: 74%;
+  width: 98%;
+  position: absolute;
+  top: 0px;
+  left: 1%;
+  height: 73.5%;
+  width: 97.5%;
+  margin-top: 0.5%;
+  margin-left: 4px;
+}
+.skillsScreen__headerPage {
+  box-sizing: border-box;
+  height: 110px;
+  width: 100%;
+}
+.skillsScreen__main {
+  box-sizing: border-box;
+  height: 86%;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  padding-right: 2px;
+  padding-left: 6px;
+  right: 3px;
+}
+.skillsScreen__main::-webkit-scrollbar {
+  width: 5px;
+}
+.skillsScreen__main::-webkit-scrollbar-track {
+  background: #e6d4b1;
+}
+.skillsScreen__main::-webkit-scrollbar-thumb {
+  background: #cc6700;
+}
+.skillsScreen__main.dark::-webkit-scrollbar-track {
+  background: #0b444e;
+}
+.skillsScreen__main.dark::-webkit-scrollbar-thumb {
+  background: rgb(112, 249, 242);
+}
+.skillsScreen.white {
+  border: 2px rgb(178, 178, 178) solid;
+  box-shadow: 0px 0px 10px black;
+}
+.skillsScreen.dark {
+  border: 2px #727272 solid;
+  box-shadow: 0px 0px 25px #116b7b;
+}
+.skillsScreen__main {
+  top: 90px;
+}
+.skillsScreen__main::-webkit-scrollbar-track {
+  background: #e6d4b1;
+}
+.skillsScreen__main::-webkit-scrollbar-thumb {
+  background: #cc6700;
+}
+
 @media screen and (max-width: 1199px) {
   .contactMain__bigTitle {
     font-size: 30px;
@@ -7362,6 +7589,31 @@ p {
 @media screen and (max-height: 700px) and (max-width: 300px) {
   .trainingsScreen {
     height: 68%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .skillsScreen {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .skillsScreen {
+    margin-left: -1px;
+  }
+  .skillsMain__titlePage {
+    font-size: 30px;
+  }
+  .skillsMain__skillsContainer > div > img {
+    height: 150px;
+    width: 150px;
+  }
+  .skillsMain__skillsContainer > div > h2 {
+    font-size: 20px;
+  }
+  .skillsMain__skillsContainer__List {
+    height: 180px;
+    width: 180px;
+    font-size: 15px;
   }
 }
 @keyframes linkDeskAnim {
