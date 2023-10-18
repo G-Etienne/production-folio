@@ -40,7 +40,12 @@ function ItemSkill({ title, part, skills }) {
         return (
             // image and title
             <div onClick={() => setIsOpen(true)}>
-                <img src={image} alt="illustration for the front-end part" />
+                <img
+                    rel="preload"
+                    loading="lazy"
+                    src={image}
+                    alt="illustration for the front-end part"
+                />
                 <h2>{title}</h2>
             </div>
         );
