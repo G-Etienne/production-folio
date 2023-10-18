@@ -7598,7 +7598,7 @@ p {
 }
 @media screen and (max-width: 767px) {
   .skillsScreen__main {
-    height: 83%;
+    height: 80%;
   }
 }
 @media screen and (max-width: 480px) {
