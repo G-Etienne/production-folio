@@ -55,3 +55,24 @@
         transform: scale(1);
     }
 }
+
+//-------------------------------------------------
+//animation display text project
+@keyframes showProject {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+//animation hover project
+@keyframes popProject {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}

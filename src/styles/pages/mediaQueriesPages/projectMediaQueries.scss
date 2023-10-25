@@ -1,0 +1,254 @@
+@media screen and (max-width: 1300px) {
+    //main container for  projects
+    .projectMain {
+        width: 90%;
+    }
+
+    //all projects displayed
+    .project1,
+    .project2,
+    .project3,
+    .project4,
+    .project5,
+    .project6,
+    .project7 {
+        //illustration for one project
+        & > div {
+            & > img {
+                height: 200px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1100px) {
+    //screen in the center
+    .projectScreen {
+        margin-left: 0px;
+    }
+
+    //all projects displayed
+    .project1,
+    .project2,
+    .project3,
+    .project4,
+    .project5,
+    .project6,
+    .project7 {
+        //text displayed with an user click
+        &__textPart {
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    //sceen in the center
+    .projectScreen {
+        //main part display on the project page
+        &__main {
+            height: 76%;
+        }
+    }
+
+    //all projects displayed
+    .project1,
+    .project2,
+    .project3,
+    .project4,
+    .project5,
+    .project6,
+    .project7 {
+        margin-top: 50px;
+
+        //project block presentation
+        &__presentationContainer {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        //presentation content container
+        &__presentation {
+            margin: auto;
+            width: 90%;
+            align-items: center;
+
+            //logo image
+            & > img {
+                rotate: 0deg;
+                height: 80px;
+                width: 80px;
+                margin: 0px;
+                background-color: white;
+                padding: 3px;
+                border-radius: 10px;
+            }
+
+            //text content presentation
+            & > div {
+                border: 1px black solid;
+                margin: auto;
+                margin-bottom: 10px;
+                margin-top: 10px;
+
+                & > h3 {
+                    font-size: 18px;
+                }
+
+                & > p {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        //text displayed with an user click
+        &__textPart {
+            width: 82%;
+            margin-top: 5px;
+
+            //texe and model images
+            & > div {
+                & > h3 {
+                    font-size: 22px;
+                    margin-top: 10px;
+                    position: absolute;
+                }
+                & > h5 {
+                    display: none;
+                    & + p {
+                        display: none;
+                    }
+                }
+
+                //models and titles of models
+                & > img {
+                    display: none;
+                    & + p {
+                        display: none;
+                    }
+                }
+            }
+
+            //text part information
+            &__text {
+                width: 100%;
+                margin-left: 0px;
+
+                & > h2 {
+                    font-size: 20px;
+                }
+
+                & > h4 {
+                    font-size: 18px;
+                }
+            }
+
+            //links under the text information
+            &__link {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    //screen in the center
+    .projectScreen {
+        margin-left: -1px;
+    }
+
+    //main part screen
+    .projectMain {
+        //title of the page
+        &__titlePage {
+            font-size: 30px;
+        }
+    }
+
+    //all projects displayed
+    .project1,
+    .project2,
+    .project3,
+    .project4,
+    .project5,
+    .project6,
+    .project7 {
+        //button to close the text information display
+        &__buttonClose {
+            height: 25px;
+            width: 25px;
+            margin-top: -10px;
+            margin-right: -10px;
+        }
+
+        //image of the presentation container
+        &__presentationContainer {
+            & > img {
+                width: 140px;
+                object-fit: cover;
+            }
+        }
+
+        //logo and texte of the presentation container
+        &__presentation {
+            //logo image
+            & > img {
+                height: 40px;
+                width: 40px;
+            }
+
+            //text presentation part
+            & > div {
+                & > h3 {
+                    font-size: 14px;
+                }
+                & > p {
+                    font-size: 11px;
+                }
+            }
+        }
+
+        //text displayed with an user click
+        &__textPart {
+            width: 70%;
+            margin-top: 5px;
+
+            //title of the project
+            & > div {
+                & > h3 {
+                    font-size: 18px;
+                }
+            }
+
+            //text information about a project
+            &__text {
+                width: 100%;
+                margin-left: -10px;
+                border-left: 1px black solid;
+
+                & > h2 {
+                    font-size: 15px;
+                }
+
+                & > h4 {
+                    font-size: 13px;
+                }
+
+                & > p {
+                    font-size: 11px;
+                }
+
+                //liste of technologie
+                & > ul {
+                    & > li {
+                        font-size: 11px;
+                    }
+                }
+            }
+
+            //link under the text information part
+            &__link {
+                font-size: 11px;
+                padding: 5px;
+            }
+        }
+    }
+}

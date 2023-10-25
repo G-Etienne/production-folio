@@ -13,7 +13,7 @@ import Goals from "../pages/Goals";
 import Contact from "../pages/Contact";
 import Resume from "../pages/Resume";
 import Skills from "../pages/Skills";
-import WaitProject from "../pages/Wait/WaitProject";
+import Project from "../pages/Project";
 import WaitGraphic from "../pages/Wait/WaitGraphics";
 //---------------------------------------------------------
 //context importation
@@ -39,7 +39,7 @@ function Roads() {
                         <Route path="/about" element={<About />} />
                         <Route path="/goals" element={<Goals />} />
                         <Route path="/skills" element={<Skills />} />
-                        <Route path="/projects" element={<WaitProject />} />
+                        <Route path="/projects" element={<Project />} />
                         <Route path="/trainings" element={<Trainings />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/resume" element={<Resume />} />

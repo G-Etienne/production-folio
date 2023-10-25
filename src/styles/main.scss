@@ -15,6 +15,7 @@
 @import "./utils/Mixins/mixinFooter";
 @import "./utils/Mixins/mixinHeader";
 @import "./utils/Mixins/mixinPositionPages";
+@import "./utils/Mixins//projectMixin";
 @import "./vendors/normalize";
 @import "./bases/bases";
 @import "./components/deskFooter/desk";
@@ -52,6 +53,7 @@
 @import "./pages/resume";
 @import "./pages/trainings";
 @import "./pages/skills";
+@import "./pages/projects";
 @import "./pages/mediaQueriesPages/contactMediaQueries";
 @import "./pages/mediaQueriesPages/errorMediaQueries";
 @import "./pages/mediaQueriesPages/goalsMediaQueries";
@@ -59,6 +61,7 @@
 @import "./pages/mediaQueriesPages/mediaQueriesHome";
 @import "./pages/mediaQueriesPages/resumeMediaQueries";
 @import "./pages/mediaQueriesPages/trainingsMediaQueries";
-@import "./pages/mediaQueriesPages//skillsMediaQueries";
+@import "./pages/mediaQueriesPages/skillsMediaQueries";
+@import "./pages/mediaQueriesPages/projectMediaQueries.scss";
 @import "./pages/wait/wait";
 @import "./pages/wait/MediaWait/wait_media_queries";

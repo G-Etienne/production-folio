@@ -63,6 +63,22 @@
     transform: scale(1);
   }
 }
+@keyframes showProject {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes popProject {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 @keyframes rotateAnime {
   0% {
     transform: rotate(0deg);
@@ -703,7 +719,6 @@ template {
   display: none;
 }
 
-.footer.projects,
 .footer.graphics {
   display: none;
 }
@@ -714,6 +729,7 @@ template {
 .footer.contact,
 .footer.home,
 .footer.skills,
+.footer.projects,
 .footer.trainings {
   display: block;
 }
@@ -1163,6 +1179,22 @@ p {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes showProject {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes popProject {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
   }
 }
 .linksDesk {
@@ -2508,6 +2540,22 @@ p {
     transform: scale(1);
   }
 }
+@keyframes showProject {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes popProject {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 .cubeContainer {
   position: absolute;
   z-index: 20;
@@ -2844,6 +2892,22 @@ p {
     transform: scale(1);
   }
 }
+@keyframes showProject {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes popProject {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 .headerAbout {
   position: relative;
   z-index: 101;
@@ -3167,6 +3231,22 @@ p {
     transform: scale(1);
   }
 }
+@keyframes showProject {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes popProject {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 .contactMain {
   height: 80%;
   width: 100%;
@@ -3387,6 +3467,22 @@ p {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes showProject {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes popProject {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
   }
 }
 .errorMain {
@@ -4193,6 +4289,22 @@ p {
     transform: scale(1);
   }
 }
+@keyframes showProject {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes popProject {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 .homeMain {
   display: flex;
   height: 100%;
@@ -4486,6 +4598,22 @@ p {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes showProject {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes popProject {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
   }
 }
 .resumeMain {
@@ -5193,6 +5321,22 @@ p {
     transform: scale(1);
   }
 }
+@keyframes showProject {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes popProject {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 .skillsMain {
   height: 100%;
   width: 90%;
@@ -5370,6 +5514,1803 @@ p {
   background: #e6d4b1;
 }
 .skillsScreen__main::-webkit-scrollbar-thumb {
+  background: #cc6700;
+}
+
+@keyframes linkDeskAnim {
+  0% {
+    transform: scale(0.7) rotate(-5deg);
+  }
+  25% {
+    transform: scale(0.75) rotate(-5deg);
+  }
+  50% {
+    transform: scale(0.7) rotate(-5deg);
+  }
+  75% {
+    transform: scale(0.8) rotate(-5deg);
+  }
+  100% {
+    transform: scale(0.9) rotate(-5deg);
+  }
+}
+@keyframes SpinCube {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+@keyframes scaleLinkAnim {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes popUp {
+  0% {
+    transform: scale(0.5);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes showProject {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes popProject {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.projectMain {
+  width: 60%;
+  margin: auto;
+}
+.projectMain__titlePage {
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 40px;
+  text-shadow: 0px 0px 3px white;
+}
+.projectMain__titlePage.dark {
+  color: rgb(112, 249, 242);
+  text-shadow: none;
+}
+.projectMain__projectContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project1 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  box-sizing: border-box;
+  border: 2px black solid;
+  background: linear-gradient(20deg, #ffa200, white);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.project1.dark {
+  background: linear-gradient(20deg, #b37100, #0b444e);
+  border: 2px rgb(112, 249, 242) solid;
+}
+.project1:hover {
+  animation: popProject 200ms ease-in-out both;
+  z-index: 900;
+  box-shadow: 0px 0px 5px rgb(118, 118, 118);
+}
+.project1__buttonOpen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+.project1__buttonClose {
+  height: 40px;
+  width: 40px;
+  background-color: #ffb533;
+  border: 1px #ffa200 solid;
+  position: absolute;
+  right: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 0px 5px #ffd180;
+  box-shadow: 0px 0px 5px #ffa200;
+  transition: transform 0ms ease-in-out both;
+  cursor: pointer;
+}
+.project1__buttonClose:hover {
+  box-shadow: 0px 0px 10px #ffa200;
+  animation: popProject 200ms ease-in-out both;
+}
+.project1 > div > img {
+  margin: 20px;
+  margin-left: 5%;
+  height: 300px;
+  transform: rotateY(20deg) rotateX(20deg);
+  border: 1px #ffa200 solid;
+  border-radius: 10px;
+  box-shadow: -5px 5px 5px #b37100;
+  cursor: pointer;
+}
+.project1__presentationContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.project1__presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  margin-left: 20px;
+}
+.project1__presentation.dark > div {
+  background-color: black;
+  text-shadow: none;
+  color: rgb(112, 249, 242);
+}
+.project1__presentation.dark > img {
+  opacity: 0.8;
+}
+.project1__presentation > img {
+  object-fit: contain;
+  height: 60px;
+  width: 30px;
+  rotate: 30deg;
+  margin-top: 15px;
+  margin-right: 15px;
+  background-color: white;
+  padding: 3px;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.project1__presentation > div {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  text-align: center;
+  text-shadow: 0px 0px 3px white;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 15px #ffa200;
+  margin-left: 20px;
+}
+.project1__presentation > div > h3 {
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  margin-top: 0px;
+}
+.project1__presentation > div > p {
+  font-weight: 500;
+  margin: 0px;
+}
+.project1__textPart {
+  display: flex;
+  position: absolute;
+  left: -1%;
+  top: -1%;
+  width: 95%;
+  min-height: 280px;
+  border: 2px black solid;
+  border-radius: 10px;
+  background: linear-gradient(20deg, #ffa200, white);
+  transform-origin: 10px 10px;
+  transform: scale(0);
+  animation: showProject 450ms ease-in-out both;
+  z-index: 900;
+  padding: 30px;
+}
+.project1__textPart.dark {
+  background: linear-gradient(20deg, #b37100, #0b444e);
+  border: 2px rgb(112, 249, 242) solid;
+}
+.project1__textPart.dark > div {
+  text-shadow: none;
+  color: rgb(112, 249, 242);
+}
+.project1__textPart > div {
+  display: flex;
+  flex-direction: column;
+}
+.project1__textPart > div > h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+}
+.project1__textPart > div > h5 {
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  text-decoration: underline;
+  margin: 5px;
+}
+.project1__textPart > div > img {
+  transform-origin: top;
+  width: 150px;
+  box-shadow: 0px 0px 15px #cc8200;
+}
+.project1__textPart__mobileModel {
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+}
+.project1__textPart.projectOpen {
+  display: flex;
+}
+.project1__textPart.projectNotOpen {
+  display: none;
+}
+.project1__textPart__text {
+  border-left: 3px black solid;
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  padding-left: 5%;
+  margin-left: 5%;
+  margin-top: 50px;
+  text-shadow: 0px 0px 2px white;
+  font-weight: 500;
+}
+.project1__textPart__text > h2 {
+  font-family: "Rubik", sans-serif;
+}
+.project1__textPart__text > h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+.project1__textPart__text.dark {
+  border-left: 3px rgb(112, 249, 242) solid;
+}
+.project1__textPart__text > ul > li {
+  font-family: "Rubik", sans-serif;
+}
+.project1__textPart__links {
+  display: flex;
+  justify-content: space-around;
+}
+.project1__textPart__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px #ffd180;
+  margin-top: 30px;
+}
+.project1__textPart__link:hover {
+  animation: popProject 200ms ease-in-out both;
+}
+.project1__textPart__link.dark {
+  color: rgb(112, 249, 242);
+  background-color: black;
+  text-shadow: none;
+  border: 1px rgb(112, 249, 242) solid;
+  box-shadow: none;
+}
+
+.project2 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  box-sizing: border-box;
+  border: 2px black solid;
+  background: linear-gradient(20deg, #ff6060, white);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.project2.dark {
+  background: linear-gradient(20deg, #ff1414, #0b444e);
+  border: 2px rgb(112, 249, 242) solid;
+}
+.project2:hover {
+  animation: popProject 200ms ease-in-out both;
+  z-index: 900;
+  box-shadow: 0px 0px 5px rgb(118, 118, 118);
+}
+.project2__buttonOpen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+.project2__buttonClose {
+  height: 40px;
+  width: 40px;
+  background-color: #ff9393;
+  border: 1px #ff6060 solid;
+  position: absolute;
+  right: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 0px 5px #ffe0e0;
+  box-shadow: 0px 0px 5px #ff6060;
+  transition: transform 0ms ease-in-out both;
+  cursor: pointer;
+}
+.project2__buttonClose:hover {
+  box-shadow: 0px 0px 10px #ff6060;
+  animation: popProject 200ms ease-in-out both;
+}
+.project2 > div > img {
+  margin: 20px;
+  margin-left: 5%;
+  height: 300px;
+  transform: rotateY(20deg) rotateX(20deg);
+  border: 1px #ff6060 solid;
+  border-radius: 10px;
+  box-shadow: -5px 5px 5px #ff1414;
+  cursor: pointer;
+}
+.project2__presentationContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.project2__presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  margin-left: 20px;
+}
+.project2__presentation.dark > div {
+  background-color: black;
+  text-shadow: none;
+  color: rgb(112, 249, 242);
+}
+.project2__presentation.dark > img {
+  opacity: 0.8;
+}
+.project2__presentation > img {
+  object-fit: contain;
+  height: 60px;
+  width: 60px;
+  rotate: 30deg;
+  margin-top: 15px;
+  margin-right: 10px;
+  background-color: white;
+  padding: 3px;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.project2__presentation > div {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  text-align: center;
+  text-shadow: 0px 0px 3px white;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 15px #ff6060;
+  margin-left: 20px;
+}
+.project2__presentation > div > h3 {
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  margin-top: 0px;
+}
+.project2__presentation > div > p {
+  font-weight: 500;
+  margin: 0px;
+}
+.project2__textPart {
+  display: flex;
+  position: absolute;
+  left: -1%;
+  top: -1%;
+  width: 95%;
+  min-height: 280px;
+  border: 2px black solid;
+  border-radius: 10px;
+  background: linear-gradient(20deg, #ff6060, white);
+  transform-origin: 10px 10px;
+  transform: scale(0);
+  animation: showProject 450ms ease-in-out both;
+  z-index: 900;
+  padding: 30px;
+}
+.project2__textPart.dark {
+  background: linear-gradient(20deg, #ff1414, #0b444e);
+  border: 2px rgb(112, 249, 242) solid;
+}
+.project2__textPart.dark > div {
+  text-shadow: none;
+  color: rgb(112, 249, 242);
+}
+.project2__textPart > div {
+  display: flex;
+  flex-direction: column;
+}
+.project2__textPart > div > h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+}
+.project2__textPart > div > h5 {
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  text-decoration: underline;
+  margin: 5px;
+}
+.project2__textPart > div > img {
+  transform-origin: top;
+  width: 150px;
+  box-shadow: 0px 0px 15px #ff2d2d;
+}
+.project2__textPart__mobileModel {
+  height: 800px;
+  object-fit: cover;
+  object-position: top;
+}
+.project2__textPart.projectOpen {
+  display: flex;
+}
+.project2__textPart.projectNotOpen {
+  display: none;
+}
+.project2__textPart__text {
+  border-left: 3px black solid;
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  padding-left: 5%;
+  margin-left: 5%;
+  margin-top: 50px;
+  text-shadow: 0px 0px 2px white;
+  font-weight: 500;
+}
+.project2__textPart__text > h2 {
+  font-family: "Rubik", sans-serif;
+}
+.project2__textPart__text > h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+.project2__textPart__text.dark {
+  border-left: 3px rgb(112, 249, 242) solid;
+}
+.project2__textPart__text > ul > li {
+  font-family: "Rubik", sans-serif;
+}
+.project2__textPart__links {
+  display: flex;
+  justify-content: space-around;
+}
+.project2__textPart__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px #ffe0e0;
+  margin-top: 30px;
+}
+.project2__textPart__link:hover {
+  animation: popProject 200ms ease-in-out both;
+}
+.project2__textPart__link.dark {
+  color: rgb(112, 249, 242);
+  background-color: black;
+  text-shadow: none;
+  border: 1px rgb(112, 249, 242) solid;
+  box-shadow: none;
+}
+
+.project3 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  box-sizing: border-box;
+  border: 2px black solid;
+  background: linear-gradient(20deg, rgb(249, 82, 41), white);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.project3.dark {
+  background: linear-gradient(20deg, #d02e06, #0b444e);
+  border: 2px rgb(112, 249, 242) solid;
+}
+.project3:hover {
+  animation: popProject 200ms ease-in-out both;
+  z-index: 900;
+  box-shadow: 0px 0px 5px rgb(118, 118, 118);
+}
+.project3__buttonOpen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+.project3__buttonClose {
+  height: 40px;
+  width: 40px;
+  background-color: #fa7a5b;
+  border: 1px rgb(249, 82, 41) solid;
+  position: absolute;
+  right: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 0px 5px #fcb6a5;
+  box-shadow: 0px 0px 5px rgb(249, 82, 41);
+  transition: transform 0ms ease-in-out both;
+  cursor: pointer;
+}
+.project3__buttonClose:hover {
+  box-shadow: 0px 0px 10px rgb(249, 82, 41);
+  animation: popProject 200ms ease-in-out both;
+}
+.project3 > div > img {
+  margin: 20px;
+  margin-left: 5%;
+  height: 300px;
+  transform: rotateY(20deg) rotateX(20deg);
+  border: 1px rgb(249, 82, 41) solid;
+  border-radius: 10px;
+  box-shadow: -5px 5px 5px #d02e06;
+  cursor: pointer;
+}
+.project3__presentationContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.project3__presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  margin-left: 20px;
+}
+.project3__presentation.dark > div {
+  background-color: black;
+  text-shadow: none;
+  color: rgb(112, 249, 242);
+}
+.project3__presentation.dark > img {
+  opacity: 0.8;
+}
+.project3__presentation > img {
+  object-fit: contain;
+  height: 60px;
+  width: 80px;
+  rotate: 30deg;
+  margin-top: 40px;
+  margin-right: 10px;
+  background-color: white;
+  padding: 3px;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.project3__presentation > div {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  text-align: center;
+  text-shadow: 0px 0px 3px white;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 15px rgb(249, 82, 41);
+  margin-left: 20px;
+}
+.project3__presentation > div > h3 {
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  margin-top: 0px;
+}
+.project3__presentation > div > p {
+  font-weight: 500;
+  margin: 0px;
+}
+.project3__textPart {
+  display: flex;
+  position: absolute;
+  left: -1%;
+  top: -1%;
+  width: 95%;
+  min-height: 280px;
+  border: 2px black solid;
+  border-radius: 10px;
+  background: linear-gradient(20deg, rgb(249, 82, 41), white);
+  transform-origin: 10px 10px;
+  transform: scale(0);
+  animation: showProject 450ms ease-in-out both;
+  z-index: 900;
+  padding: 30px;
+}
+.project3__textPart.dark {
+  background: linear-gradient(20deg, #d02e06, #0b444e);
+  border: 2px rgb(112, 249, 242) solid;
+}
+.project3__textPart.dark > div {
+  text-shadow: none;
+  color: rgb(112, 249, 242);
+}
+.project3__textPart > div {
+  display: flex;
+  flex-direction: column;
+}
+.project3__textPart > div > h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+}
+.project3__textPart > div > h5 {
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  text-decoration: underline;
+  margin: 5px;
+}
+.project3__textPart > div > img {
+  transform-origin: top;
+  width: 150px;
+  box-shadow: 0px 0px 15px #e83307;
+}
+.project3__textPart__mobileModel {
+  height: 800px;
+  object-fit: cover;
+  object-position: top;
+}
+.project3__textPart.projectOpen {
+  display: flex;
+}
+.project3__textPart.projectNotOpen {
+  display: none;
+}
+.project3__textPart__text {
+  border-left: 3px black solid;
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  padding-left: 5%;
+  margin-left: 5%;
+  margin-top: 50px;
+  text-shadow: 0px 0px 2px white;
+  font-weight: 500;
+}
+.project3__textPart__text > h2 {
+  font-family: "Rubik", sans-serif;
+}
+.project3__textPart__text > h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+.project3__textPart__text.dark {
+  border-left: 3px rgb(112, 249, 242) solid;
+}
+.project3__textPart__text > ul > li {
+  font-family: "Rubik", sans-serif;
+}
+.project3__textPart__links {
+  display: flex;
+  justify-content: space-around;
+}
+.project3__textPart__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px #fcb6a5;
+  margin-top: 30px;
+}
+.project3__textPart__link:hover {
+  animation: popProject 200ms ease-in-out both;
+}
+.project3__textPart__link.dark {
+  color: rgb(112, 249, 242);
+  background-color: black;
+  text-shadow: none;
+  border: 1px rgb(112, 249, 242) solid;
+  box-shadow: none;
+}
+
+.project4 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  box-sizing: border-box;
+  border: 2px black solid;
+  background: linear-gradient(20deg, rgb(25, 142, 210), white);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.project4.dark {
+  background: linear-gradient(20deg, #11608e, #0b444e);
+  border: 2px rgb(112, 249, 242) solid;
+}
+.project4:hover {
+  animation: popProject 200ms ease-in-out both;
+  z-index: 900;
+  box-shadow: 0px 0px 5px rgb(118, 118, 118);
+}
+.project4__buttonOpen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+.project4__buttonClose {
+  height: 40px;
+  width: 40px;
+  background-color: #37a6e7;
+  border: 1px rgb(25, 142, 210) solid;
+  position: absolute;
+  right: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 0px 5px #7bc5ef;
+  box-shadow: 0px 0px 5px rgb(25, 142, 210);
+  transition: transform 0ms ease-in-out both;
+  cursor: pointer;
+}
+.project4__buttonClose:hover {
+  box-shadow: 0px 0px 10px rgb(25, 142, 210);
+  animation: popProject 200ms ease-in-out both;
+}
+.project4 > div > img {
+  margin: 20px;
+  margin-left: 5%;
+  height: 300px;
+  transform: rotateY(20deg) rotateX(20deg);
+  border: 1px rgb(25, 142, 210) solid;
+  border-radius: 10px;
+  box-shadow: -5px 5px 5px #11608e;
+  cursor: pointer;
+}
+.project4__presentationContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.project4__presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  margin-left: 20px;
+}
+.project4__presentation.dark > div {
+  background-color: black;
+  text-shadow: none;
+  color: rgb(112, 249, 242);
+}
+.project4__presentation.dark > img {
+  opacity: 0.8;
+}
+.project4__presentation > img {
+  object-fit: contain;
+  height: 60px;
+  width: 95px;
+  rotate: 30deg;
+  margin-top: 10px;
+  margin-right: 0px;
+  background-color: white;
+  padding: 3px;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.project4__presentation > div {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  text-align: center;
+  text-shadow: 0px 0px 3px white;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 15px rgb(25, 142, 210);
+  margin-left: 20px;
+}
+.project4__presentation > div > h3 {
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  margin-top: 0px;
+}
+.project4__presentation > div > p {
+  font-weight: 500;
+  margin: 0px;
+}
+.project4__textPart {
+  display: flex;
+  position: absolute;
+  left: -1%;
+  top: -1%;
+  width: 95%;
+  min-height: 280px;
+  border: 2px black solid;
+  border-radius: 10px;
+  background: linear-gradient(20deg, rgb(25, 142, 210), white);
+  transform-origin: 10px 10px;
+  transform: scale(0);
+  animation: showProject 450ms ease-in-out both;
+  z-index: 900;
+  padding: 30px;
+}
+.project4__textPart.dark {
+  background: linear-gradient(20deg, #11608e, #0b444e);
+  border: 2px rgb(112, 249, 242) solid;
+}
+.project4__textPart.dark > div {
+  text-shadow: none;
+  color: rgb(112, 249, 242);
+}
+.project4__textPart > div {
+  display: flex;
+  flex-direction: column;
+}
+.project4__textPart > div > h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+}
+.project4__textPart > div > h5 {
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  text-decoration: underline;
+  margin: 5px;
+}
+.project4__textPart > div > img {
+  transform-origin: top;
+  width: 150px;
+  box-shadow: 0px 0px 15px #146fa4;
+}
+.project4__textPart__mobileModel {
+  height: 800px;
+  object-fit: cover;
+  object-position: top;
+}
+.project4__textPart.projectOpen {
+  display: flex;
+}
+.project4__textPart.projectNotOpen {
+  display: none;
+}
+.project4__textPart__text {
+  border-left: 3px black solid;
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  padding-left: 5%;
+  margin-left: 5%;
+  margin-top: 50px;
+  text-shadow: 0px 0px 2px white;
+  font-weight: 500;
+}
+.project4__textPart__text > h2 {
+  font-family: "Rubik", sans-serif;
+}
+.project4__textPart__text > h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+.project4__textPart__text.dark {
+  border-left: 3px rgb(112, 249, 242) solid;
+}
+.project4__textPart__text > ul > li {
+  font-family: "Rubik", sans-serif;
+}
+.project4__textPart__links {
+  display: flex;
+  justify-content: space-around;
+}
+.project4__textPart__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px #7bc5ef;
+  margin-top: 30px;
+}
+.project4__textPart__link:hover {
+  animation: popProject 200ms ease-in-out both;
+}
+.project4__textPart__link.dark {
+  color: rgb(112, 249, 242);
+  background-color: black;
+  text-shadow: none;
+  border: 1px rgb(112, 249, 242) solid;
+  box-shadow: none;
+}
+
+.project5 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  box-sizing: border-box;
+  border: 2px black solid;
+  background: linear-gradient(20deg, #d14313, white);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.project5.dark {
+  background: linear-gradient(20deg, #8b2d0d, #0b444e);
+  border: 2px rgb(112, 249, 242) solid;
+}
+.project5:hover {
+  animation: popProject 200ms ease-in-out both;
+  z-index: 900;
+  box-shadow: 0px 0px 5px rgb(118, 118, 118);
+}
+.project5__buttonOpen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+.project5__buttonClose {
+  height: 40px;
+  width: 40px;
+  background-color: #ec5c2b;
+  border: 1px #d14313 solid;
+  position: absolute;
+  right: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 0px 5px #f29271;
+  box-shadow: 0px 0px 5px #d14313;
+  transition: transform 0ms ease-in-out both;
+  cursor: pointer;
+}
+.project5__buttonClose:hover {
+  box-shadow: 0px 0px 10px #d14313;
+  animation: popProject 200ms ease-in-out both;
+}
+.project5 > div > img {
+  margin: 20px;
+  margin-left: 5%;
+  height: 300px;
+  transform: rotateY(20deg) rotateX(20deg);
+  border: 1px #d14313 solid;
+  border-radius: 10px;
+  box-shadow: -5px 5px 5px #8b2d0d;
+  cursor: pointer;
+}
+.project5__presentationContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.project5__presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  margin-left: 20px;
+}
+.project5__presentation.dark > div {
+  background-color: black;
+  text-shadow: none;
+  color: rgb(112, 249, 242);
+}
+.project5__presentation.dark > img {
+  opacity: 0.8;
+}
+.project5__presentation > img {
+  object-fit: contain;
+  height: 60px;
+  width: 95px;
+  rotate: 30deg;
+  margin-top: 15px;
+  margin-right: 0px;
+  background-color: white;
+  padding: 3px;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.project5__presentation > div {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  text-align: center;
+  text-shadow: 0px 0px 3px white;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 15px #d14313;
+  margin-left: 20px;
+}
+.project5__presentation > div > h3 {
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  margin-top: 0px;
+}
+.project5__presentation > div > p {
+  font-weight: 500;
+  margin: 0px;
+}
+.project5__textPart {
+  display: flex;
+  position: absolute;
+  left: -1%;
+  top: -1%;
+  width: 95%;
+  min-height: 280px;
+  border: 2px black solid;
+  border-radius: 10px;
+  background: linear-gradient(20deg, #d14313, white);
+  transform-origin: 10px 10px;
+  transform: scale(0);
+  animation: showProject 450ms ease-in-out both;
+  z-index: 900;
+  padding: 30px;
+}
+.project5__textPart.dark {
+  background: linear-gradient(20deg, #8b2d0d, #0b444e);
+  border: 2px rgb(112, 249, 242) solid;
+}
+.project5__textPart.dark > div {
+  text-shadow: none;
+  color: rgb(112, 249, 242);
+}
+.project5__textPart > div {
+  display: flex;
+  flex-direction: column;
+}
+.project5__textPart > div > h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+}
+.project5__textPart > div > h5 {
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  text-decoration: underline;
+  margin: 5px;
+}
+.project5__textPart > div > img {
+  transform-origin: top;
+  width: 150px;
+  box-shadow: 0px 0px 15px #a2340f;
+}
+.project5__textPart__mobileModel {
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+.project5__textPart.projectOpen {
+  display: flex;
+}
+.project5__textPart.projectNotOpen {
+  display: none;
+}
+.project5__textPart__text {
+  border-left: 3px black solid;
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  padding-left: 5%;
+  margin-left: 5%;
+  margin-top: 50px;
+  text-shadow: 0px 0px 2px white;
+  font-weight: 500;
+}
+.project5__textPart__text > h2 {
+  font-family: "Rubik", sans-serif;
+}
+.project5__textPart__text > h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+.project5__textPart__text.dark {
+  border-left: 3px rgb(112, 249, 242) solid;
+}
+.project5__textPart__text > ul > li {
+  font-family: "Rubik", sans-serif;
+}
+.project5__textPart__links {
+  display: flex;
+  justify-content: space-around;
+}
+.project5__textPart__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px #f29271;
+  margin-top: 30px;
+}
+.project5__textPart__link:hover {
+  animation: popProject 200ms ease-in-out both;
+}
+.project5__textPart__link.dark {
+  color: rgb(112, 249, 242);
+  background-color: black;
+  text-shadow: none;
+  border: 1px rgb(112, 249, 242) solid;
+  box-shadow: none;
+}
+
+.project6 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  box-sizing: border-box;
+  border: 2px black solid;
+  background: linear-gradient(20deg, #9356dc, white);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.project6.dark {
+  background: linear-gradient(20deg, #6c27be, #0b444e);
+  border: 2px rgb(112, 249, 242) solid;
+}
+.project6:hover {
+  animation: popProject 200ms ease-in-out both;
+  z-index: 900;
+  box-shadow: 0px 0px 5px rgb(118, 118, 118);
+}
+.project6__buttonOpen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+.project6__buttonClose {
+  height: 40px;
+  width: 40px;
+  background-color: #ae80e5;
+  border: 1px #9356dc solid;
+  position: absolute;
+  right: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 0px 5px #d7c0f2;
+  box-shadow: 0px 0px 5px #9356dc;
+  transition: transform 0ms ease-in-out both;
+  cursor: pointer;
+}
+.project6__buttonClose:hover {
+  box-shadow: 0px 0px 10px #9356dc;
+  animation: popProject 200ms ease-in-out both;
+}
+.project6 > div > img {
+  margin: 20px;
+  margin-left: 5%;
+  height: 300px;
+  transform: rotateY(20deg) rotateX(20deg);
+  border: 1px #9356dc solid;
+  border-radius: 10px;
+  box-shadow: -5px 5px 5px #6c27be;
+  cursor: pointer;
+}
+.project6__presentationContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.project6__presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  margin-left: 20px;
+}
+.project6__presentation.dark > div {
+  background-color: black;
+  text-shadow: none;
+  color: rgb(112, 249, 242);
+}
+.project6__presentation.dark > img {
+  opacity: 0.8;
+}
+.project6__presentation > img {
+  object-fit: contain;
+  height: 60px;
+  width: 95px;
+  rotate: 30deg;
+  margin-top: 15px;
+  margin-right: 0px;
+  background-color: white;
+  padding: 3px;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.project6__presentation > div {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  text-align: center;
+  text-shadow: 0px 0px 3px white;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 15px #9356dc;
+  margin-left: 20px;
+}
+.project6__presentation > div > h3 {
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  margin-top: 0px;
+}
+.project6__presentation > div > p {
+  font-weight: 500;
+  margin: 0px;
+}
+.project6__textPart {
+  display: flex;
+  position: absolute;
+  left: -1%;
+  top: -1%;
+  width: 95%;
+  min-height: 280px;
+  border: 2px black solid;
+  border-radius: 10px;
+  background: linear-gradient(20deg, #9356dc, white);
+  transform-origin: 10px 10px;
+  transform: scale(0);
+  animation: showProject 450ms ease-in-out both;
+  z-index: 900;
+  padding: 30px;
+}
+.project6__textPart.dark {
+  background: linear-gradient(20deg, #6c27be, #0b444e);
+  border: 2px rgb(112, 249, 242) solid;
+}
+.project6__textPart.dark > div {
+  text-shadow: none;
+  color: rgb(112, 249, 242);
+}
+.project6__textPart > div {
+  display: flex;
+  flex-direction: column;
+}
+.project6__textPart > div > h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+}
+.project6__textPart > div > h5 {
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  text-decoration: underline;
+  margin: 5px;
+}
+.project6__textPart > div > img {
+  transform-origin: top;
+  width: 150px;
+  box-shadow: 0px 0px 15px #782cd3;
+}
+.project6__textPart__mobileModel {
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+.project6__textPart.projectOpen {
+  display: flex;
+}
+.project6__textPart.projectNotOpen {
+  display: none;
+}
+.project6__textPart__text {
+  border-left: 3px black solid;
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  padding-left: 5%;
+  margin-left: 5%;
+  margin-top: 50px;
+  text-shadow: 0px 0px 2px white;
+  font-weight: 500;
+}
+.project6__textPart__text > h2 {
+  font-family: "Rubik", sans-serif;
+}
+.project6__textPart__text > h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+.project6__textPart__text.dark {
+  border-left: 3px rgb(112, 249, 242) solid;
+}
+.project6__textPart__text > ul > li {
+  font-family: "Rubik", sans-serif;
+}
+.project6__textPart__links {
+  display: flex;
+  justify-content: space-around;
+}
+.project6__textPart__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px #d7c0f2;
+  margin-top: 30px;
+}
+.project6__textPart__link:hover {
+  animation: popProject 200ms ease-in-out both;
+}
+.project6__textPart__link.dark {
+  color: rgb(112, 249, 242);
+  background-color: black;
+  text-shadow: none;
+  border: 1px rgb(112, 249, 242) solid;
+  box-shadow: none;
+}
+
+.project7 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  box-sizing: border-box;
+  border: 2px black solid;
+  background: linear-gradient(20deg, rgb(38, 109, 217), white);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.project7.dark {
+  background: linear-gradient(20deg, #1b4c98, #0b444e);
+  border: 2px rgb(112, 249, 242) solid;
+}
+.project7:hover {
+  animation: popProject 200ms ease-in-out both;
+  z-index: 900;
+  box-shadow: 0px 0px 5px rgb(118, 118, 118);
+}
+.project7__buttonOpen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+.project7__buttonClose {
+  height: 40px;
+  width: 40px;
+  background-color: #518ae1;
+  border: 1px rgb(38, 109, 217) solid;
+  position: absolute;
+  right: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 0px 5px #93b6ec;
+  box-shadow: 0px 0px 5px rgb(38, 109, 217);
+  transition: transform 0ms ease-in-out both;
+  cursor: pointer;
+}
+.project7__buttonClose:hover {
+  box-shadow: 0px 0px 10px rgb(38, 109, 217);
+  animation: popProject 200ms ease-in-out both;
+}
+.project7 > div > img {
+  margin: 20px;
+  margin-left: 5%;
+  height: 300px;
+  transform: rotateY(20deg) rotateX(20deg);
+  border: 1px rgb(38, 109, 217) solid;
+  border-radius: 10px;
+  box-shadow: -5px 5px 5px #1b4c98;
+  cursor: pointer;
+}
+.project7__presentationContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.project7__presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  margin-left: 20px;
+}
+.project7__presentation.dark > div {
+  background-color: black;
+  text-shadow: none;
+  color: rgb(112, 249, 242);
+}
+.project7__presentation.dark > img {
+  opacity: 0.8;
+}
+.project7__presentation > img {
+  object-fit: contain;
+  height: 60px;
+  width: 95px;
+  rotate: 30deg;
+  margin-top: 15px;
+  margin-right: 10px;
+  background-color: white;
+  padding: 3px;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.project7__presentation > div {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  text-align: center;
+  text-shadow: 0px 0px 3px white;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 15px rgb(38, 109, 217);
+  margin-left: 20px;
+}
+.project7__presentation > div > h3 {
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  margin-top: 0px;
+}
+.project7__presentation > div > p {
+  font-weight: 500;
+  margin: 0px;
+}
+.project7__textPart {
+  display: flex;
+  position: absolute;
+  left: -1%;
+  top: -1%;
+  width: 95%;
+  min-height: 280px;
+  border: 2px black solid;
+  border-radius: 10px;
+  background: linear-gradient(20deg, rgb(38, 109, 217), white);
+  transform-origin: 10px 10px;
+  transform: scale(0);
+  animation: showProject 450ms ease-in-out both;
+  z-index: 900;
+  padding: 30px;
+}
+.project7__textPart.dark {
+  background: linear-gradient(20deg, #1b4c98, #0b444e);
+  border: 2px rgb(112, 249, 242) solid;
+}
+.project7__textPart.dark > div {
+  text-shadow: none;
+  color: rgb(112, 249, 242);
+}
+.project7__textPart > div {
+  display: flex;
+  flex-direction: column;
+}
+.project7__textPart > div > h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+}
+.project7__textPart > div > h5 {
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  text-decoration: underline;
+  margin: 5px;
+}
+.project7__textPart > div > img {
+  transform-origin: top;
+  width: 150px;
+  box-shadow: 0px 0px 15px #1e57ae;
+}
+.project7__textPart__mobileModel {
+  height: 650px;
+  object-fit: cover;
+  object-position: top;
+}
+.project7__textPart.projectOpen {
+  display: flex;
+}
+.project7__textPart.projectNotOpen {
+  display: none;
+}
+.project7__textPart__text {
+  border-left: 3px black solid;
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  padding-left: 5%;
+  margin-left: 5%;
+  margin-top: 50px;
+  text-shadow: 0px 0px 2px white;
+  font-weight: 500;
+}
+.project7__textPart__text > h2 {
+  font-family: "Rubik", sans-serif;
+}
+.project7__textPart__text > h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+.project7__textPart__text.dark {
+  border-left: 3px rgb(112, 249, 242) solid;
+}
+.project7__textPart__text > ul > li {
+  font-family: "Rubik", sans-serif;
+}
+.project7__textPart__links {
+  display: flex;
+  justify-content: space-around;
+}
+.project7__textPart__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px #93b6ec;
+  margin-top: 30px;
+}
+.project7__textPart__link:hover {
+  animation: popProject 200ms ease-in-out both;
+}
+.project7__textPart__link.dark {
+  color: rgb(112, 249, 242);
+  background-color: black;
+  text-shadow: none;
+  border: 1px rgb(112, 249, 242) solid;
+  box-shadow: none;
+}
+
+.disabled {
+  display: none;
+}
+
+.desabledModel {
+  display: none;
+}
+
+.projectScreen__star {
+  position: absolute;
+}
+.projectScreen__star.white {
+  top: 0px;
+  height: 100px;
+  width: 100px;
+  border-radius: 0px 0px 100px 0px;
+  background: linear-gradient(to bottom right, #ffd700, #ffffff);
+  box-shadow: 3px 3px 15px white;
+}
+.projectScreen__star.dark {
+  bottom: 0px;
+  right: 0px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px 0px 0px 0px;
+  background: linear-gradient(to bottom right, #87ceeb, #f0f0f0);
+  box-shadow: -1px -1px 15px white;
+}
+.projectScreen.white {
+  background: linear-gradient(to bottom right, #ffd700 30%, #ff6347);
+}
+.projectScreen.dark {
+  background: linear-gradient(to bottom right, #000033 75%, #515d69);
+}
+
+.projectScreen {
+  z-index: 100;
+  height: 74%;
+  width: 98%;
+  position: absolute;
+  top: 0px;
+  left: 1%;
+  height: 73.5%;
+  width: 97.5%;
+  margin-top: 0.5%;
+  margin-left: 4px;
+}
+.projectScreen__headerPage {
+  box-sizing: border-box;
+  height: 110px;
+  width: 100%;
+}
+.projectScreen__main {
+  box-sizing: border-box;
+  height: 86%;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  padding-right: 2px;
+  padding-left: 6px;
+  right: 3px;
+}
+.projectScreen__main::-webkit-scrollbar {
+  width: 5px;
+}
+.projectScreen__main::-webkit-scrollbar-track {
+  background: #e6d4b1;
+}
+.projectScreen__main::-webkit-scrollbar-thumb {
+  background: #cc6700;
+}
+.projectScreen__main.dark::-webkit-scrollbar-track {
+  background: #0b444e;
+}
+.projectScreen__main.dark::-webkit-scrollbar-thumb {
+  background: rgb(112, 249, 242);
+}
+.projectScreen.white {
+  border: 2px rgb(178, 178, 178) solid;
+  box-shadow: 0px 0px 10px black;
+}
+.projectScreen.dark {
+  border: 2px #727272 solid;
+  box-shadow: 0px 0px 25px #116b7b;
+}
+.projectScreen__main {
+  top: 90px;
+}
+.projectScreen__main::-webkit-scrollbar-track {
+  background: #e6d4b1;
+}
+.projectScreen__main::-webkit-scrollbar-thumb {
   background: #cc6700;
 }
 
@@ -7621,6 +9562,342 @@ p {
     font-size: 15px;
   }
 }
+@media screen and (max-width: 1300px) {
+  .projectMain {
+    width: 90%;
+  }
+  .project1 > div > img,
+  .project2 > div > img,
+  .project3 > div > img,
+  .project4 > div > img,
+  .project5 > div > img,
+  .project6 > div > img,
+  .project7 > div > img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .projectScreen {
+    margin-left: 0px;
+  }
+  .project1__textPart,
+  .project2__textPart,
+  .project3__textPart,
+  .project4__textPart,
+  .project5__textPart,
+  .project6__textPart,
+  .project7__textPart {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .projectScreen__main {
+    height: 76%;
+  }
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5,
+  .project6,
+  .project7 {
+    margin-top: 50px;
+  }
+  .project1__presentationContainer,
+  .project2__presentationContainer,
+  .project3__presentationContainer,
+  .project4__presentationContainer,
+  .project5__presentationContainer,
+  .project6__presentationContainer,
+  .project7__presentationContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .project1__presentation,
+  .project2__presentation,
+  .project3__presentation,
+  .project4__presentation,
+  .project5__presentation,
+  .project6__presentation,
+  .project7__presentation {
+    margin: auto;
+    width: 90%;
+    align-items: center;
+  }
+  .project1__presentation > img,
+  .project2__presentation > img,
+  .project3__presentation > img,
+  .project4__presentation > img,
+  .project5__presentation > img,
+  .project6__presentation > img,
+  .project7__presentation > img {
+    rotate: 0deg;
+    height: 80px;
+    width: 80px;
+    margin: 0px;
+    background-color: white;
+    padding: 3px;
+    border-radius: 10px;
+  }
+  .project1__presentation > div,
+  .project2__presentation > div,
+  .project3__presentation > div,
+  .project4__presentation > div,
+  .project5__presentation > div,
+  .project6__presentation > div,
+  .project7__presentation > div {
+    border: 1px black solid;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .project1__presentation > div > h3,
+  .project2__presentation > div > h3,
+  .project3__presentation > div > h3,
+  .project4__presentation > div > h3,
+  .project5__presentation > div > h3,
+  .project6__presentation > div > h3,
+  .project7__presentation > div > h3 {
+    font-size: 18px;
+  }
+  .project1__presentation > div > p,
+  .project2__presentation > div > p,
+  .project3__presentation > div > p,
+  .project4__presentation > div > p,
+  .project5__presentation > div > p,
+  .project6__presentation > div > p,
+  .project7__presentation > div > p {
+    font-size: 13px;
+  }
+  .project1__textPart,
+  .project2__textPart,
+  .project3__textPart,
+  .project4__textPart,
+  .project5__textPart,
+  .project6__textPart,
+  .project7__textPart {
+    width: 82%;
+    margin-top: 5px;
+  }
+  .project1__textPart > div > h3,
+  .project2__textPart > div > h3,
+  .project3__textPart > div > h3,
+  .project4__textPart > div > h3,
+  .project5__textPart > div > h3,
+  .project6__textPart > div > h3,
+  .project7__textPart > div > h3 {
+    font-size: 22px;
+    margin-top: 10px;
+    position: absolute;
+  }
+  .project1__textPart > div > h5,
+  .project2__textPart > div > h5,
+  .project3__textPart > div > h5,
+  .project4__textPart > div > h5,
+  .project5__textPart > div > h5,
+  .project6__textPart > div > h5,
+  .project7__textPart > div > h5 {
+    display: none;
+  }
+  .project1__textPart > div > h5 + p,
+  .project2__textPart > div > h5 + p,
+  .project3__textPart > div > h5 + p,
+  .project4__textPart > div > h5 + p,
+  .project5__textPart > div > h5 + p,
+  .project6__textPart > div > h5 + p,
+  .project7__textPart > div > h5 + p {
+    display: none;
+  }
+  .project1__textPart > div > img,
+  .project2__textPart > div > img,
+  .project3__textPart > div > img,
+  .project4__textPart > div > img,
+  .project5__textPart > div > img,
+  .project6__textPart > div > img,
+  .project7__textPart > div > img {
+    display: none;
+  }
+  .project1__textPart > div > img + p,
+  .project2__textPart > div > img + p,
+  .project3__textPart > div > img + p,
+  .project4__textPart > div > img + p,
+  .project5__textPart > div > img + p,
+  .project6__textPart > div > img + p,
+  .project7__textPart > div > img + p {
+    display: none;
+  }
+  .project1__textPart__text,
+  .project2__textPart__text,
+  .project3__textPart__text,
+  .project4__textPart__text,
+  .project5__textPart__text,
+  .project6__textPart__text,
+  .project7__textPart__text {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .project1__textPart__text > h2,
+  .project2__textPart__text > h2,
+  .project3__textPart__text > h2,
+  .project4__textPart__text > h2,
+  .project5__textPart__text > h2,
+  .project6__textPart__text > h2,
+  .project7__textPart__text > h2 {
+    font-size: 20px;
+  }
+  .project1__textPart__text > h4,
+  .project2__textPart__text > h4,
+  .project3__textPart__text > h4,
+  .project4__textPart__text > h4,
+  .project5__textPart__text > h4,
+  .project6__textPart__text > h4,
+  .project7__textPart__text > h4 {
+    font-size: 18px;
+  }
+  .project1__textPart__link,
+  .project2__textPart__link,
+  .project3__textPart__link,
+  .project4__textPart__link,
+  .project5__textPart__link,
+  .project6__textPart__link,
+  .project7__textPart__link {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .projectScreen {
+    margin-left: -1px;
+  }
+  .projectMain__titlePage {
+    font-size: 30px;
+  }
+  .project1__buttonClose,
+  .project2__buttonClose,
+  .project3__buttonClose,
+  .project4__buttonClose,
+  .project5__buttonClose,
+  .project6__buttonClose,
+  .project7__buttonClose {
+    height: 25px;
+    width: 25px;
+    margin-top: -10px;
+    margin-right: -10px;
+  }
+  .project1__presentationContainer > img,
+  .project2__presentationContainer > img,
+  .project3__presentationContainer > img,
+  .project4__presentationContainer > img,
+  .project5__presentationContainer > img,
+  .project6__presentationContainer > img,
+  .project7__presentationContainer > img {
+    width: 140px;
+    object-fit: cover;
+  }
+  .project1__presentation > img,
+  .project2__presentation > img,
+  .project3__presentation > img,
+  .project4__presentation > img,
+  .project5__presentation > img,
+  .project6__presentation > img,
+  .project7__presentation > img {
+    height: 40px;
+    width: 40px;
+  }
+  .project1__presentation > div > h3,
+  .project2__presentation > div > h3,
+  .project3__presentation > div > h3,
+  .project4__presentation > div > h3,
+  .project5__presentation > div > h3,
+  .project6__presentation > div > h3,
+  .project7__presentation > div > h3 {
+    font-size: 14px;
+  }
+  .project1__presentation > div > p,
+  .project2__presentation > div > p,
+  .project3__presentation > div > p,
+  .project4__presentation > div > p,
+  .project5__presentation > div > p,
+  .project6__presentation > div > p,
+  .project7__presentation > div > p {
+    font-size: 11px;
+  }
+  .project1__textPart,
+  .project2__textPart,
+  .project3__textPart,
+  .project4__textPart,
+  .project5__textPart,
+  .project6__textPart,
+  .project7__textPart {
+    width: 70%;
+    margin-top: 5px;
+  }
+  .project1__textPart > div > h3,
+  .project2__textPart > div > h3,
+  .project3__textPart > div > h3,
+  .project4__textPart > div > h3,
+  .project5__textPart > div > h3,
+  .project6__textPart > div > h3,
+  .project7__textPart > div > h3 {
+    font-size: 18px;
+  }
+  .project1__textPart__text,
+  .project2__textPart__text,
+  .project3__textPart__text,
+  .project4__textPart__text,
+  .project5__textPart__text,
+  .project6__textPart__text,
+  .project7__textPart__text {
+    width: 100%;
+    margin-left: -10px;
+    border-left: 1px black solid;
+  }
+  .project1__textPart__text > h2,
+  .project2__textPart__text > h2,
+  .project3__textPart__text > h2,
+  .project4__textPart__text > h2,
+  .project5__textPart__text > h2,
+  .project6__textPart__text > h2,
+  .project7__textPart__text > h2 {
+    font-size: 15px;
+  }
+  .project1__textPart__text > h4,
+  .project2__textPart__text > h4,
+  .project3__textPart__text > h4,
+  .project4__textPart__text > h4,
+  .project5__textPart__text > h4,
+  .project6__textPart__text > h4,
+  .project7__textPart__text > h4 {
+    font-size: 13px;
+  }
+  .project1__textPart__text > p,
+  .project2__textPart__text > p,
+  .project3__textPart__text > p,
+  .project4__textPart__text > p,
+  .project5__textPart__text > p,
+  .project6__textPart__text > p,
+  .project7__textPart__text > p {
+    font-size: 11px;
+  }
+  .project1__textPart__text > ul > li,
+  .project2__textPart__text > ul > li,
+  .project3__textPart__text > ul > li,
+  .project4__textPart__text > ul > li,
+  .project5__textPart__text > ul > li,
+  .project6__textPart__text > ul > li,
+  .project7__textPart__text > ul > li {
+    font-size: 11px;
+  }
+  .project1__textPart__link,
+  .project2__textPart__link,
+  .project3__textPart__link,
+  .project4__textPart__link,
+  .project5__textPart__link,
+  .project6__textPart__link,
+  .project7__textPart__link {
+    font-size: 11px;
+    padding: 5px;
+  }
+}
 @keyframes linkDeskAnim {
   0% {
     transform: scale(0.7) rotate(-5deg);
@@ -7666,6 +9943,22 @@ p {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes showProject {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes popProject {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
   }
 }
 .waitBack > img {

@@ -1,0 +1,146 @@
+//-----------------------------------------------------------------
+//utils
+@import "../utils/variables";
+@import "../utils/Keyframes/keyframes";
+@import "../utils/Mixins/projectMixin";
+//-----------------------------------------------------------------
+//main rules for the main part of the project page
+.projectMain {
+    width: 60%;
+    margin: auto;
+
+    //title of the page
+    &__titlePage {
+        width: 100%;
+        text-align: center;
+        font-family: "Roboto Mono", monospace;
+        font-size: 40px;
+        text-shadow: 0px 0px 3px white;
+
+        //dark theme
+        &.dark {
+            color: $fluo-color;
+            text-shadow: none;
+        }
+    }
+
+    // block with all the project
+    &__projectContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+//each project
+.project1 {
+    @include projectStyle($primary-Folio, 400px, 30px, 15px, 15px);
+}
+
+.project2 {
+    @include projectStyle($primary-Kasa, 800px, 60px, 15px, 10px);
+}
+
+.project3 {
+    @include projectStyle($primary-HotTakes, 800px, 80px, 40px, 10px);
+}
+
+.project4 {
+    @include projectStyle($primary-Kanap, 800px, 95px, 10px, 0px);
+}
+
+.project5 {
+    @include projectStyle($primary-laPanthere, 500px, 95px, 15px, 0px);
+}
+
+.project6 {
+    @include projectStyle($primary-ohmyfood, 500px, 95px, 15px, 0px);
+}
+
+.project7 {
+    @include projectStyle($primary-booki, 650px, 95px, 15px, 10px);
+}
+
+//disabled button (for the projects without website)
+.disabled {
+    display: none;
+}
+
+//disabled model (for the project without mobile exemple)
+.desabledModel {
+    display: none;
+}
+
+//-----------------------------------------------------------------
+//color in the back of the skills screen
+.projectScreen {
+    //sun and moon for themes
+    &__star {
+        position: absolute;
+
+        //white theme
+        &.white {
+            top: 0px;
+            height: 100px;
+            width: 100px;
+            border-radius: 0px 0px 100px 0px;
+            background: linear-gradient(to bottom right, #ffd700, #ffffff);
+            box-shadow: 3px 3px 15px white;
+        }
+
+        //dark theme
+        &.dark {
+            bottom: 0px;
+            right: 0px;
+            height: 100px;
+            width: 100px;
+            border-radius: 100px 0px 0px 0px;
+            background: linear-gradient(to bottom right, #87ceeb, #f0f0f0);
+            box-shadow: -1px -1px 15px white;
+        }
+    }
+
+    //white theme back screen
+    &.white {
+        background: linear-gradient(to bottom right, #ffd700 30%, #ff6347);
+    }
+
+    //dark theme back screen
+    &.dark {
+        background: linear-gradient(to bottom right, #000033 75%, #515d69);
+    }
+}
+//**************************************************************************************
+//placing the page in the virtual screen
+.projectScreen {
+    @include positionPage;
+    height: 73.5%;
+    width: 97.5%;
+    margin-top: 0.5%;
+    margin-left: 4px;
+
+    //adding border and shadow to the screen
+    &.white {
+        border: 2px $border-screen solid;
+        box-shadow: 0px 0px 10px black;
+    }
+
+    //dark theme
+    &.dark {
+        border: 2px darken($border-screen, 25%) solid;
+        box-shadow: 0px 0px 25px lighten($main-back-color, 10%);
+    }
+
+    //change the apparence of the scrool rod
+    &__main {
+        top: 90px;
+        &::-webkit-scrollbar-track {
+            background: #e6d4b1;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: darken($color-back-contact, 30%);
+        }
+    }
+}

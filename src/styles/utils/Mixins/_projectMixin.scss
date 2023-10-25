@@ -1,0 +1,316 @@
+//mixin for the adaptable style of a project in the projects page
+@mixin projectStyle(
+    $mainColor,
+    $sizeMobileMaquette,
+    $widthlogo,
+    $topDistance,
+    $rightDistance
+) {
+    //project container
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    box-sizing: border-box;
+    border: 2px black solid;
+    background: linear-gradient(20deg, $mainColor, white);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+
+    //dark theme
+    &.dark {
+        background: linear-gradient(
+            20deg,
+            darken($mainColor, 15%),
+            $main-back-color
+        );
+
+        border: 2px $fluo-color solid;
+    }
+
+    //hover project effect
+    &:hover {
+        animation: popProject 200ms ease-in-out both;
+        z-index: 900;
+        box-shadow: 0px 0px 5px rgb(118, 118, 118);
+    }
+
+    //invisible button to open the informations about à project
+    &__buttonOpen {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    //button to close the informations about a project
+    &__buttonClose {
+        height: 40px;
+        width: 40px;
+        background-color: lighten($mainColor, 10%);
+        border: 1px $mainColor solid;
+        position: absolute;
+        right: 30px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: white;
+        text-shadow: 0px 0px 5px lighten($mainColor, 25%);
+        box-shadow: 0px 0px 5px $mainColor;
+        transition: transform 00ms ease-in-out both;
+        cursor: pointer;
+
+        //hover effect for the close button
+        &:hover {
+            box-shadow: 0px 0px 10px $mainColor;
+            animation: popProject 200ms ease-in-out both;
+        }
+    }
+
+    //illustration for one project
+    & > div {
+        & > img {
+            margin: 20px;
+            margin-left: 5%;
+            height: 300px;
+            transform: rotateY(20deg) rotateX(20deg);
+            border: 1px $mainColor solid;
+            border-radius: 10px;
+            box-shadow: -5px 5px 5px darken($mainColor, 15%);
+            cursor: pointer;
+        }
+    }
+
+    //position of the elements for the project block presentation
+    &__presentationContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    //logo and introduction
+    &__presentation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 100%;
+        margin-left: 20px;
+
+        //dark theme
+        &.dark {
+            //text introduction container
+            & > div {
+                background-color: black;
+                text-shadow: none;
+                color: $fluo-color;
+            }
+
+            //image introduction
+            & > img {
+                opacity: 0.8;
+            }
+        }
+
+        //logo
+        & > img {
+            object-fit: contain;
+            height: 60px;
+            width: $widthlogo;
+            rotate: 30deg;
+            margin-top: $topDistance;
+            margin-right: $rightDistance;
+            background-color: white;
+            padding: 3px;
+            border-radius: 10px;
+            margin-top: 25px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        //introduction text container
+        & > div {
+            width: 90%;
+            height: 90%;
+            margin: 5%;
+            text-align: center;
+            text-shadow: 0px 0px 3px white;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 3px 3px 15px $mainColor;
+            margin-left: 20px;
+
+            //title introduction
+            & > h3 {
+                font-weight: bold;
+                font-family: "Rubik", sans-serif;
+                font-size: 20px;
+                margin-top: 0px;
+            }
+
+            //introduction
+            & > p {
+                font-weight: 500;
+                margin: 0px;
+            }
+        }
+    }
+
+    //text displayed with an user click
+    &__textPart {
+        display: flex;
+        position: absolute;
+        left: -1%;
+        top: -1%;
+        width: 95%;
+        min-height: 280px;
+        border: 2px black solid;
+        border-radius: 10px;
+        background: linear-gradient(20deg, $mainColor, white);
+        transform-origin: 10px 10px;
+        transform: scale(0);
+        animation: showProject 450ms ease-in-out both;
+        z-index: 900;
+        padding: 30px;
+
+        //dark theme
+        &.dark {
+            background: linear-gradient(
+                20deg,
+                darken($mainColor, 15%),
+                $main-back-color
+            );
+
+            border: 2px $fluo-color solid;
+
+            //text introduction part
+            & > div {
+                text-shadow: none;
+                color: $fluo-color;
+            }
+        }
+
+        //text and model (left part of the informations blok)
+        & > div {
+            display: flex;
+            flex-direction: column;
+
+            //title (left part)
+            & > h3 {
+                font-family: "Rubik", sans-serif;
+                font-size: 30px;
+            }
+
+            & > h5 {
+                font-size: 20px;
+                font-family: "Rubik", sans-serif;
+                text-decoration: underline;
+                margin: 5px;
+            }
+
+            //image (models)
+            & > img {
+                transform-origin: top;
+                width: 150px;
+                box-shadow: 0px 0px 15px darken($mainColor, 10%);
+            }
+        }
+
+        //mobile model image
+        &__mobileModel {
+            height: $sizeMobileMaquette;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        //show and hide the text informations for one project
+        &.projectOpen {
+            display: flex;
+        }
+
+        &.projectNotOpen {
+            display: none;
+        }
+
+        //text content (right part when the project is open)
+        &__text {
+            border-left: 3px black solid;
+            margin: auto;
+            width: 70%;
+            height: 100%;
+            padding-left: 5%;
+            margin-left: 5%;
+            margin-top: 50px;
+            text-shadow: 0px 0px 2px white;
+            font-weight: 500;
+
+            //title of the text part
+            & > h2 {
+                font-family: "Rubik", sans-serif;
+            }
+
+            //title of each part of the text
+            & > h4 {
+                font-family: "Rubik", sans-serif;
+                font-size: 20px;
+            }
+
+            //dark theme
+            &.dark {
+                border-left: 3px $fluo-color solid;
+            }
+            & > ul {
+                & > li {
+                    font-family: "Rubik", sans-serif;
+                }
+            }
+        }
+
+        // all the links for one project
+        &__links {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        //link one by one
+        &__link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            text-align: center;
+            background-color: white;
+            color: black;
+            font-family: "Rubik", sans-serif;
+            font-weight: bold;
+            padding: 15px;
+            margin: 5px;
+            border-radius: 6px;
+            box-shadow: 0px 0px 5px lighten($mainColor, 25%);
+            margin-top: 30px;
+
+            //hover effect link project
+            &:hover {
+                animation: popProject 200ms ease-in-out both;
+            }
+
+            //dark theme links
+            &.dark {
+                color: $fluo-color;
+                background-color: black;
+                text-shadow: none;
+                border: 1px $fluo-color solid;
+                box-shadow: none;
+            }
+        }
+    }
+}
