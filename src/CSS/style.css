@@ -5652,7 +5652,6 @@ p {
   margin: 20px;
   margin-left: 5%;
   height: 300px;
-  transform: rotateY(20deg) rotateX(20deg);
   border: 1px #ffa200 solid;
   border-radius: 10px;
   box-shadow: -5px 5px 5px #b37100;
@@ -5881,7 +5880,6 @@ p {
   margin: 20px;
   margin-left: 5%;
   height: 300px;
-  transform: rotateY(20deg) rotateX(20deg);
   border: 1px #ff6060 solid;
   border-radius: 10px;
   box-shadow: -5px 5px 5px #ff1414;
@@ -6110,7 +6108,6 @@ p {
   margin: 20px;
   margin-left: 5%;
   height: 300px;
-  transform: rotateY(20deg) rotateX(20deg);
   border: 1px rgb(249, 82, 41) solid;
   border-radius: 10px;
   box-shadow: -5px 5px 5px #d02e06;
@@ -6339,7 +6336,6 @@ p {
   margin: 20px;
   margin-left: 5%;
   height: 300px;
-  transform: rotateY(20deg) rotateX(20deg);
   border: 1px rgb(25, 142, 210) solid;
   border-radius: 10px;
   box-shadow: -5px 5px 5px #11608e;
@@ -6568,7 +6564,6 @@ p {
   margin: 20px;
   margin-left: 5%;
   height: 300px;
-  transform: rotateY(20deg) rotateX(20deg);
   border: 1px #d14313 solid;
   border-radius: 10px;
   box-shadow: -5px 5px 5px #8b2d0d;
@@ -6797,7 +6792,6 @@ p {
   margin: 20px;
   margin-left: 5%;
   height: 300px;
-  transform: rotateY(20deg) rotateX(20deg);
   border: 1px #9356dc solid;
   border-radius: 10px;
   box-shadow: -5px 5px 5px #6c27be;
@@ -7026,7 +7020,6 @@ p {
   margin: 20px;
   margin-left: 5%;
   height: 300px;
-  transform: rotateY(20deg) rotateX(20deg);
   border: 1px rgb(38, 109, 217) solid;
   border-radius: 10px;
   box-shadow: -5px 5px 5px #1b4c98;
