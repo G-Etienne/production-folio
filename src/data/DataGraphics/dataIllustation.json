@@ -1,0 +1,17 @@
+[
+    {
+        "id": "illustration3",
+        "name": "CuisineBot",
+        "description": "Une illustration d'un robot cuisinier, arborant un sourire chaleureux et des yeux accueillants. Cette création capture la joie contagieuse de cuisiner."
+    },
+    {
+        "id": "illustration1",
+        "name": "Esquisse d'un Homme Heureux",
+        "description": "Illustration d'un homme à casquette, son regard pétillant et son sourire en coin évoquent une énergie positive et une attitude décontractée. ."
+    },
+    {
+        "id": "illustration2",
+        "name": "Huby, la boule de poils",
+        "description": "Illustration de Huby, le chien rayonnant de bonheur avec sa langue pendue, ses yeux joyeux et sa fourrure douce."
+    }
+]

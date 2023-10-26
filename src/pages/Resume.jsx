@@ -42,6 +42,7 @@ function Resume() {
     const [fullScreenRecommendation, setfullScreenRecommendation] =
         useState("little");
 
+    //image in the back
     let backImage = backImageClear;
 
     if (theme === "white") {
@@ -58,142 +59,150 @@ function Resume() {
             fullScreenRecommendation === "little"
         ) {
             return (
-                // part for placing the on the virtual screen
-                <div className={`resumeScreen ${theme}`}>
-                    {/* image for the back of the screen */}
-                    <img
-                        className={`backImageScreen ${theme}`}
-                        src={backImage}
-                        alt="image for the back of the screen"
-                        rel="preload"
-                        loading="lazy"
-                    />
-                    {/* header resume */}
-                    <div className="resumeScreen__headerPage"></div>
+                <>
+                    {/* part for placing the on the virtual screen */}
+                    <div className={`resumeScreen ${theme}`}>
+                        {/* image for the back of the screen */}
+                        <img
+                            className={`backImageScreen ${theme}`}
+                            src={backImage}
+                            alt="image for the back of the screen"
+                            rel="preload"
+                            loading="lazy"
+                        />
+                        {/* header resume */}
+                        <div className="resumeScreen__headerPage"></div>
 
-                    {/* main part resume */}
-                    <div className={`resumeScreen__main ${theme}`}>
-                        <div className={`resumeMain ${theme}`}>
-                            {/* Classic resume part */}
-                            <div
-                                id="resume"
-                                className={`resumeMain__resumeContainer ${theme}`}
-                            >
-                                {/* illustration of the classic resume */}
+                        {/* main part resume */}
+                        <div className={`resumeScreen__main ${theme}`}>
+                            <div className={`resumeMain ${theme}`}>
+                                {/* Classic resume part */}
                                 <div
-                                    className={`resumeMain__resumeContainer__illustration ${theme}`}
+                                    id="resume"
+                                    className={`resumeMain__resumeContainer ${theme}`}
                                 >
-                                    <img
-                                        onClick={() =>
-                                            setFullScreenResume("big")
-                                        }
-                                        src={resumeImage}
-                                        alt="illustration for the resume"
-                                        rel="preload"
-                                        loading="lazy"
-                                    ></img>
-                                </div>
-
-                                {/* text part for classic resume */}
-                                <div
-                                    className={`resumeMain__resumeContainer__textContainer ${theme}`}
-                                >
-                                    {/* text */}
-                                    <h2>Mon CV</h2>
-
-                                    <p>
-                                        Découvrez mon cv sous sa forme
-                                        classique.
-                                        <br /> <br /> Allez directement à
-                                        l&apos;essentiel sans perdre de temps!
-                                    </p>
-
-                                    {/* links part */}
-                                    <div>
-                                        <a
+                                    {/* illustration of the classic resume */}
+                                    <div
+                                        className={`resumeMain__resumeContainer__illustration ${theme}`}
+                                    >
+                                        <img
                                             onClick={() =>
                                                 setFullScreenResume("big")
                                             }
-                                        >
-                                            Mon CV
-                                        </a>
+                                            src={resumeImage}
+                                            alt="illustration for the resume"
+                                            rel="preload"
+                                            loading="lazy"
+                                        ></img>
+                                    </div>
 
-                                        <a
-                                            href={ResumeFile}
-                                            download="resume_Etienne_Ginet"
-                                        >
-                                            Télécharger le document
-                                        </a>
+                                    {/* text part for classic resume */}
+                                    <div
+                                        className={`resumeMain__resumeContainer__textContainer ${theme}`}
+                                    >
+                                        {/* text */}
+                                        <h2>Mon CV</h2>
 
-                                        <a href="#recommendation">
-                                            Découvrir mes recommendations
-                                        </a>
+                                        <p>
+                                            Découvrez mon cv sous sa forme
+                                            classique.
+                                            <br /> <br /> Allez directement à
+                                            l&apos;essentiel sans perdre de
+                                            temps!
+                                        </p>
+
+                                        {/* links part */}
+                                        <div>
+                                            <a
+                                                onClick={() =>
+                                                    setFullScreenResume("big")
+                                                }
+                                            >
+                                                Mon CV
+                                            </a>
+
+                                            <a
+                                                href={ResumeFile}
+                                                download="resume_Etienne_Ginet"
+                                            >
+                                                Télécharger le document
+                                            </a>
+
+                                            <a href="#recommendation">
+                                                Découvrir mes recommendations
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            {/* recommendation part */}
-                            <div
-                                id="recommendation"
-                                className={`resumeMain__recommendationContainer ${theme}`}
-                            >
-                                {/* illustration of the recommendation part */}
+                                {/* recommendation part */}
                                 <div
-                                    className={`resumeMain__recommendationContainer__illustration ${theme}`}
+                                    id="recommendation"
+                                    className={`resumeMain__recommendationContainer ${theme}`}
                                 >
-                                    <img
-                                        onClick={() =>
-                                            setfullScreenRecommendation("big")
-                                        }
-                                        src={recommendationImage}
-                                        alt="illustration for the resume"
-                                        rel="preload"
-                                        loading="lazy"
-                                    ></img>
-                                </div>
-
-                                {/* text part of the recommendation part */}
-                                <div
-                                    className={`resumeMain__recommendationContainer__textContainer ${theme}`}
-                                >
-                                    {/* text */}
-                                    <h2>Mes recommendations</h2>
-
-                                    <p>
-                                        Découvrez la lettre de recommendation de
-                                        mon ancien mentor.
-                                        <br /> <br /> Une confirmation de mon
-                                        aptitude à être une personne
-                                        persévérante et à assimiler rapidement
-                                        de nouvelles connaissances.
-                                    </p>
-
-                                    {/* links part */}
-                                    <div>
-                                        <a
+                                    {/* illustration of the recommendation part */}
+                                    <div
+                                        className={`resumeMain__recommendationContainer__illustration ${theme}`}
+                                    >
+                                        <img
                                             onClick={() =>
                                                 setfullScreenRecommendation(
                                                     "big",
                                                 )
                                             }
-                                        >
-                                            La lettre
-                                        </a>
+                                            src={recommendationImage}
+                                            alt="illustration for the resume"
+                                            rel="preload"
+                                            loading="lazy"
+                                        ></img>
+                                    </div>
 
-                                        <a
-                                            href={RecommendationFile}
-                                            download="recommendation_Etienne_Ginet"
-                                        >
-                                            Télécharger le document
-                                        </a>
+                                    {/* text part of the recommendation part */}
+                                    <div
+                                        className={`resumeMain__recommendationContainer__textContainer ${theme}`}
+                                    >
+                                        {/* text */}
+                                        <h2>Mes recommendations</h2>
 
-                                        <a href="#resume">Découvrir mon CV</a>
+                                        <p>
+                                            Découvrez la lettre de
+                                            recommendation de mon ancien mentor.
+                                            <br /> <br /> Une confirmation de
+                                            mon aptitude à être une personne
+                                            persévérante et à assimiler
+                                            rapidement de nouvelles
+                                            connaissances.
+                                        </p>
+
+                                        {/* links part */}
+                                        <div>
+                                            <a
+                                                onClick={() =>
+                                                    setfullScreenRecommendation(
+                                                        "big",
+                                                    )
+                                                }
+                                            >
+                                                La lettre
+                                            </a>
+
+                                            <a
+                                                href={RecommendationFile}
+                                                download="recommendation_Etienne_Ginet"
+                                            >
+                                                Télécharger le document
+                                            </a>
+
+                                            <a href="#resume">
+                                                Découvrir mon CV
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </>
             );
         }
 

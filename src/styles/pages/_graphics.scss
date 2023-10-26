@@ -1,0 +1,233 @@
+//-----------------------------------------------------------------
+//utils
+@import "../utils/variables";
+@import "../utils/Keyframes/keyframes";
+
+//-----------------------------------------------------------------
+//main rules for the main part of the graphics page
+.graphicsMain {
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+
+    //title of the page
+    &__titlePage {
+        width: 100%;
+        text-align: center;
+        font-family: "Roboto Mono", monospace;
+        font-size: 40px;
+        text-shadow: 0px 0px 3px white;
+
+        //dark theme
+        &.dark {
+            color: $fluo-color;
+            text-shadow: none;
+        }
+    }
+
+    //menu on the graphics page
+    &__menu {
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        font-weight: bold;
+        background: linear-gradient(0deg, #faaf2e -100%, black 80%, #faaf2e);
+        border-bottom: 2px white solid;
+
+        //dark theme
+        &.dark {
+            border-bottom: 2px $fluo-color solid;
+
+            background: linear-gradient(
+                0deg,
+                $main-back-color -100%,
+                black 80%,
+                $main-back-color
+            );
+        }
+
+        //block with on link for the menu of the graphic page
+        &__space {
+            border-right: 1px white solid;
+            border-left: 1px white solid;
+            width: 33.33333333333%;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+
+            //dark theme
+            &.dark {
+                border-right: 1px $fluo-color solid;
+                border-left: 1px $fluo-color solid;
+            }
+
+            //text content menu
+            & > p {
+                color: white;
+                border-bottom: 1px white solid;
+                transition: transform ease-in-out 200ms;
+
+                //hover text effect
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+
+            //dark theme
+            &.dark {
+                //text content menu
+                & > p {
+                    color: $fluo-color;
+                    text-shadow: none;
+                    border-bottom: 1px $fluo-color solid;
+                }
+            }
+        }
+    }
+
+    //container who contains all the graphics item displayed
+    &__projectsContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+//one Item
+.graphicItem {
+    padding: 15px;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    background: radial-gradient(#565656 80%, #b0b0b0);
+    border: 1px black solid;
+
+    //dark theme
+    &.dark {
+        background: radial-gradient(#414141 80%, black);
+        box-shadow: 0px 0px 10px darken($fluo-color, 50%);
+        border: 1px darken($fluo-color, 50%) solid;
+    }
+
+    //image display for on item
+    &__image {
+        width: 20vw;
+        cursor: pointer;
+        border-radius: 5px;
+        object-fit: cover;
+
+        //big image displayed
+        &.bigImage {
+            width: 60vw;
+        }
+
+        //hover effect image
+        &:hover {
+            box-shadow: 0px 0px 10px black;
+            border: 1px white solid;
+        }
+
+        //dark theme hover effect image
+        &.dark {
+            &:hover {
+                box-shadow: 0px 0px 10px $fluo-color;
+                border: 1px $fluo-color solid;
+            }
+        }
+    }
+
+    //container for border effect
+    &__container {
+        display: flex;
+        width: 100%;
+        background: radial-gradient(white, #b0b0b0 60%);
+        padding: 5px;
+        border-radius: 10px;
+
+        //dark theme
+        &.dark {
+            background: radial-gradient(#565656, black);
+        }
+    }
+
+    //container with the text for one item
+    &__textContainer {
+        padding-left: 25px;
+        padding-top: 15px;
+        width: 100%;
+        text-shadow: 0px 0px 5px white;
+
+        //hidding text when the big image is displayed
+        &.bigImage {
+            display: none;
+        }
+
+        //dark theme
+        &.dark {
+            color: $fluo-color;
+            text-shadow: 0px 0px 5px black;
+        }
+    }
+
+    //title and description for one Item
+    &__title {
+        font-family: "Rubik", sans-serif;
+        font-size: 40px;
+    }
+
+    &__description {
+        font-family: "Rubik", sans-serif;
+        font-size: 25px;
+    }
+}
+
+//-----------------------------------------------------------------
+//color in the back of the graphics screen
+.graphicsScreen {
+    //white theme back screen
+    &.white {
+        background: linear-gradient(to bottom right, #ffd700 30%, #ff6347);
+    }
+
+    //dark theme back screen
+    &.dark {
+        background: linear-gradient(to bottom right, #000033 75%, #515d69);
+    }
+}
+//**************************************************************************************
+//placing the page in the virtual screen
+.graphicsScreen {
+    @include positionPage;
+    height: 73.5%;
+    width: 97.5%;
+    margin-top: 0.5%;
+    margin-left: 4px;
+
+    //adding border and shadow to the screen
+    &.white {
+        border: 2px $border-screen solid;
+        box-shadow: 0px 0px 10px black;
+    }
+
+    //dark theme
+    &.dark {
+        border: 2px darken($border-screen, 25%) solid;
+        box-shadow: 0px 0px 25px lighten($main-back-color, 10%);
+    }
+
+    //change the apparence of the scrool rod
+    &__main {
+        top: 90px;
+        &::-webkit-scrollbar-track {
+            background: #e6d4b1;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: darken($color-back-contact, 30%);
+        }
+    }
+}

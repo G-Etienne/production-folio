@@ -32,9 +32,8 @@
 
     //hover project effect
     &:hover {
-        animation: popProject 200ms ease-in-out both;
         z-index: 900;
-        box-shadow: 0px 0px 5px rgb(118, 118, 118);
+        box-shadow: 0px 0px 30px white;
     }
 
     //invisible button to open the informations about à project

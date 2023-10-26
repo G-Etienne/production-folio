@@ -14,7 +14,7 @@ import Contact from "../pages/Contact";
 import Resume from "../pages/Resume";
 import Skills from "../pages/Skills";
 import Project from "../pages/Project";
-import WaitGraphic from "../pages/Wait/WaitGraphics";
+import Graphics from "../pages/Graphics";
 //---------------------------------------------------------
 //context importation
 import { ThemeProvider } from "../contexts/ThemeContext";
@@ -43,7 +43,7 @@ function Roads() {
                         <Route path="/trainings" element={<Trainings />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/resume" element={<Resume />} />
-                        <Route path="/graphics" element={<WaitGraphic />} />
+                        <Route path="/graphics" element={<Graphics />} />
                     </Routes>
                 </LangueProvider>
             </ThemeProvider>

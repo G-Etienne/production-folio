@@ -21,7 +21,7 @@
         "work": "En tant que responsable de la conception graphique et du développement du site, j'ai pris en charge la création de composants React, la gestion du routage, la mise en œuvre d'une mise en page responsive pour différentes tailles d'écran, la création d'une conception attrayante et professionnelle, et l'hébergement du site.",
         "workDetails": "Les tâches comprenaient la conception de composants modulaires via React.js pour organiser le contenu du site, la mise en place du routage pour une navigation fluide, la création d'une mise en page responsive assurant une expérience utilisateur optimale sur différents appareils, et la réalisation complète des graphismes du site en utilisant CSS, SASS et HTML.",
         "conclusion": "Mon portfolio personnel, fruit d'une réalisation complète, démontre mes compétences en conception et développement web. Il présente mes projets et mon parcours, offrant aux visiteurs une expérience interactive et informative.",
-        "linkSite": "https://g-etienne.github.io/production-folio/",
+        "linkSite": "#",
         "linkCode": "https://github.com/G-Etienne/production-folio",
         "linkSiteText": "Accueil du site",
         "linkCodeText": "Voir le code"
